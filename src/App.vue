@@ -1,26 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<link href="https://fonts.googleapis.com/css?family=Rye&family=Chilanka" rel="stylesheet">
+  <main-menu></main-menu>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import MainMenu from './components/MainMenu.vue'
+// import getJson from './services/getJson.js'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MainMenu
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Chilanka', cursive;
 }
+
 </style>

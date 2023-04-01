@@ -1,0 +1,33 @@
+[
+{"menuId":0,"menuName":"","price":0,"category":"","menuImg":"","explanation1":"","explanation2":"","online":true},
+
+{"menuId":1,"menuName":"2 Dolce Set A","price":6.99,"category":"set","menuImg":"","explanation1":"Please Choose 2 Dolces from $3.99 Mini Dolce List","explanation2":"","online":true},
+
+{"menuId":2,"menuName":"2 Dolce Set B","price":7.99,"category":"set","menuImg":"","explanation1":"Please Choose 1 Mini Dolce from $3.99, 1 Dolce from $4.99 Tart or Dolce","explanation2":"","online":true},
+
+{"menuId":3,"menuName":"2 Dolce Set C","price":8.99,"category":"set","menuImg":"","explanation1":"Please Choose 2 Dolces from $4.99 Tart or Cake","explanation2":"","online":true},
+
+
+
+
+{"menuId":4,"menuName":"Japanese Style Coffee Jelly","price":3.99,"category":"s_3doller","menuImg":"","explanation1":"Unsweetened","explanation2":"Choice of Whipping Cream on Top, or Comes with Coffee Cream & Sugar Syrup","online":true},
+
+{"menuId":5,"menuName":"Mini Cake","price":3.99,"category":"s_3doller","menuImg":"","explanation1":"Jp Style Baked Cheese Cake, Choice of Matcha Cheese Cake, Yuzu Cheese Cake","explanation2":"Red Velvet, Sacher Torte, Tiramisu, Old-Fashioned Lemon SQ, Pecan SQ, Butter Tart, Very Berries Crumbles, Apple Crumbles","online":true},
+
+{"menuId":6,"menuName":"Original Milk Pudding","price":4.99,"category":"s_4doller","menuImg":"","explanation1":"Annin Tofu, Ichigo Pudding, Mango Pudding","explanation2":"Seasonal Pudding","online":true},
+
+{"menuId":7,"menuName":"Original Mousse","price":4.99,"category":"s_4doller","menuImg":"","explanation1":"Raspberry, Matcha, Belgium Chocolate","explanation2":"","online":true},
+
+{"menuId":7,"menuName":"Apple Crumble w/Vanilla Ice Cream","price":4.99,"category":"s_4doller","menuImg":"","explanation1":"","explanation2":"","online":true},
+
+{"menuId":8,"menuName":"Very Berries Crumble w/Vanilla Ice Cream","price":4.99,"category":"s_4doller","menuImg":"","explanation1":"","explanation2":"","online":true},
+
+{"menuId":9,"menuName":"Belgium Chocolate Mousse Cake","price":4.99,"category":"s_4doller","menuImg":"","explanation1":"","explanation2":"","online":true},
+
+{"menuId":10,"menuName":"Tiramisu Parfait","price":6.99,"category":"s_6doller","menuImg":"","explanation1":"Layers of Tiramisu Cake & Original Coffe Felly, GF Granola with Vanilla Ice Cream & Whip Cream","explanation2":"","online":true},
+
+{"menuId":11,"menuName":"Espresso Affogato","price":0,"category":"s_46doller","menuImg":"","explanation1":"Vanilla Ice Cream with Espresso","explanation2":"Single $4.99 / Double $6.99","online":true},
+
+{"menuId":12,"menuName":"Teapresso Affogato","price":0,"category":"s_46doller","menuImg":"","explanation1":"Vanilla Ice Cream with Rose Tea","explanation2":"Single $4.99 / Double $6.99","online":true}
+
+]
