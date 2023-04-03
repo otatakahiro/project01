@@ -26,8 +26,8 @@
 
 {"menuId":10,"menuName":"Tiramisu Parfait","price":6.99,"category":"s_6doller","menuImg":"","explanation1":"Layers of Tiramisu Cake & Original Coffe Felly, GF Granola with Vanilla Ice Cream & Whip Cream","explanation2":"","online":true},
 
-{"menuId":11,"menuName":"Espresso Affogato","price":0,"category":"s_46doller","menuImg":"","explanation1":"Vanilla Ice Cream with Espresso","explanation2":"Single $4.99 / Double $6.99","online":true},
+{"menuId":11,"menuName":"Espresso Affogato","price":"Single $4.99 / Double $6.99","category":"s_46doller","menuImg":"","explanation1":"Vanilla Ice Cream with Espresso","explanation2":"","online":true},
 
-{"menuId":12,"menuName":"Teapresso Affogato","price":0,"category":"s_46doller","menuImg":"","explanation1":"Vanilla Ice Cream with Rose Tea","explanation2":"Single $4.99 / Double $6.99","online":true}
+{"menuId":12,"menuName":"Teapresso Affogato","price":"Single $4.99 / Double $6.99","category":"s_46doller","menuImg":"","explanation1":"Vanilla Ice Cream with Rose Tea","explanation2":"","online":true}
 
 ]

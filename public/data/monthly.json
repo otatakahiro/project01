@@ -8,9 +8,11 @@
 
 
 
-{"menuId":3,"menuName":"Organic Hot Apple Cider","price":0,"category":"m_drink","menuImg":"","explanation1":"12oz $3.75","explanation2":"16oz $4.55","online":true},
+{"menuId":3,"menuName":"Organic Hot Apple Cider","price":"12oz $3.75 / 16oz $4.55","category":"m_drink","menuImg":"","explanation1":"","explanation2":"","online":true},
 
-{"menuId":4,"menuName":"Cream Brulee Tea Latte","price":0,"category":"m_drink","menuImg":"","explanation1":"12oz $3.95","explanation2":"16oz $4.75","online":true},
+{"menuId":4,"menuName":"Cream Brulee Tea Latte","price":"12oz $3.95 / 16oz $4.75","category":"m_drink","menuImg":"","explanation1":"","explanation2":"","online":true},
+
+
 
 
 

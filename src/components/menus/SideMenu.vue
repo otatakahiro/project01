@@ -2,43 +2,73 @@
     <div class="displaymenu">
     <h3>Japanese Side Menu</h3>
         <article>
-            <div v-for="(side, index) in japanesesidefilter" :key='index'>
-                <p>{{side.menuName}}</p>
-                <p>${{side.price}}</p>
+            <div class="gomodal" v-for="(side, index) in japanesesidefilter" :key='index'>
+            <div class="details">
+            <p>{{side.menuName}}</p>
+            <p>${{side.price}}</p>
             </div>
+            <div class="buttonarea">
+                <button class="modalbutton" @click='openModal(side)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+            </div>
+        </div>
+        <modal-window v-show='showContent' @from-child='closeModal' :side='sideDetail'></modal-window>
         </article>
     </div>
+
+
+
+
     <div class="displaymenu">
     <h3>Daily Soup & Salad</h3>
         <article>
-            <div v-for="(side, index) in dailysoupfilter" :key='index'>
-                <p>{{side.menuName}}</p>
-                <p>${{side.price}}</p>
+            <div class="gomodal" v-for="(side, index) in dailysoupfilter" :key='index'>
+            <div class="details">
+            <p>{{side.menuName}}</p>
+            <p>${{side.price}}</p>
             </div>
+            <div class="buttonarea">
+                <button class="modalbutton" @click='openModal(side)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+            </div>
+        </div>
+        <modal-window v-show='showContent' @from-child='closeModal' :side='sideDetail'></modal-window>
         </article>
     </div>
+
+
+
+
+
     <div class="displaymenu">
     <h3>Other Side Menu</h3>
         <article>
-            <div v-for="(side, index) in othersidefilter" :key='index'>
-                <p>{{side.menuName}}</p>
-                <p>${{side.price}}</p>
+            <div class="gomodal" v-for="(side, index) in othersidefilter" :key='index'>
+            <div class="details">
+            <p>{{side.menuName}}</p>
+            <p>${{side.price}}</p>
             </div>
+            <div class="buttonarea">
+                <button class="modalbutton" @click='openModal(side)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+            </div>
+        </div>
+        <modal-window v-show='showContent' @from-child='closeModal' :side='sideDetail'></modal-window>
         </article>
     </div>
 </template>
 <script>
 import getJson from '@/services/getJson'
+import ModalWindow from './ModalWindow.vue'
 
 
 export default {
     name:'SideMenu',
     components:{
-
+        ModalWindow
     },
     data(){
         return {
-            jpnsides: new Array()
+            jpnsides: new Array(),
+            showContent: false,
+            sideDetail:[{},{}]
         }
     },
     computed:{
@@ -59,6 +89,15 @@ export default {
         this.jpnsides = res.data;
         })
       .catch((e)=>console.log(e))
+    },
+    openModal(side){
+        this.showContent = true,
+        this.sideDetail = side,
+        console.log(this.sideDetail)
+    },
+    closeModal(){
+        this.showContent = false,
+        this.sideDetail = [{},{}]
     }
   },
   mounted(){
@@ -98,21 +137,42 @@ export default {
         padding: 10px;
     }
 
-    .displaymenu div {
+    .gomodal {
         width: 100%;
         display: flex;
         flex-direction: column;
         color: black;
+        row-gap: 5px;
     }
 
-    .displaymenu p:first-child {
-        border-bottom: 1px solid black;
+    .details {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        border-bottom: 2px solid black;
+        column-gap: 10px
     }
 
-    .displaymenu p:last-child {
+    .buttonarea {
+        width: 100%;
         display: flex;
         justify-content: right;
     }
+
+    .modalbutton{
+        font-size: 14px;
+        padding: 2px;
+        width: 20%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .modalbutton:hover {
+        background-color: orange;
+        color: white;    
+    }
+
 }
 
 @media (min-width:800px) {

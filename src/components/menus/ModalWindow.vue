@@ -1,6 +1,6 @@
 <template>
     <div id='overlay' v-on:click='clickEvent'>
-        <div id="content" v-on:click='stopEvent'>
+        <div id="content" v-on:click='stopEvent' v-if='breakfast'>
             <img :src="breakfast.menuImg" :alt="breakfast.menuName">
             <h3>{{breakfast.menuName}}</h3>
             <p>${{breakfast.price}}</p>
@@ -12,25 +12,110 @@
             <button class='closemodal' @click='clickEvent'>close</button>
         </div>
 
+
+
+
+        <div id="content" v-on:click='stopEvent' v-if='dish'>
+            <img :src="dish.menuImg" :alt="dish.menuName">
+            <h3>{{dish.menuName}}</h3>
+            <p>${{dish.price}}</p>
+            <div class="details" v-if="dish.explanation1">
+                <p>{{dish.explanation1}}</p>
+                <p v-if="dish.explanation2">{{dish.explanation2}}</p>
+                <p v-if="dish.explanation3">{{dish.explanation3}}</p>
+            </div>
+            <button class='closemodal' @click='clickEvent'>close</button>
+        </div>
+
+
+
+
+
+        <div id="content" v-on:click='stopEvent' v-if='side'>
+            <img :src="side.menuImg" :alt="side.menuName">
+            <h3>{{side.menuName}}</h3>
+            <p>${{side.price}}</p>
+            <div class="details" v-if="side.explanation1">
+                <p>{{side.explanation1}}</p>
+                <p v-if="side.explanation2">{{side.explanation2}}</p>
+                <p v-if="side.explanation3">{{side.explanation3}}</p>
+            </div>
+            <button class='closemodal' @click='clickEvent'>close</button>
+        </div>
+
+
+
+
+
+        <div id="content" v-on:click='stopEvent' v-if='month'>
+            <img :src="month.menuImg" :alt="month.menuName">
+            <h3>{{month.menuName}}</h3>
+            <p>${{month.price}}</p>
+            <div class="details" v-if="month.explanation1">
+                <p>{{month.explanation1}}</p>
+                <p v-if="month.explanation2">{{month.explanation2}}</p>
+                <p v-if="month.explanation3">{{month.explanation3}}</p>
+            </div>
+            <button class='closemodal' @click='clickEvent'>close</button>
+        </div>
+
+
+
+
+
+
+
+        <div id="content" v-on:click='stopEvent' v-if='sweet'>
+            <img :src="sweet.menuImg" :alt="sweet.menuName">
+            <h3>{{sweet.menuName}}</h3>
+            <p>${{sweet.price}}</p>
+            <div class="details" v-if="sweet.explanation1">
+                <p>{{sweet.explanation1}}</p>
+                <p v-if="sweet.explanation2">{{sweet.explanation2}}</p>
+                <p v-if="sweet.explanation3">{{sweet.explanation3}}</p>
+            </div>
+            <button class='closemodal' @click='clickEvent'>close</button>
+        </div>
+
+
+
+
+
+
+
+        <div id="content" v-on:click='stopEvent' v-if='beverage'>
+            <img :src="beverage.menuImg" :alt="beverage.menuName">
+            <h3>{{beverage.menuName}}</h3>
+            <p>{{beverage.price}}</p>
+            <div class="details" v-if="beverage.explanation1">
+                <p>{{beverage.explanation1}}</p>
+                <p v-if="beverage.explanation2">{{beverage.explanation2}}</p>
+                <p v-if="beverage.explanation3">{{beverage.explanation3}}</p>
+            </div>
+            <button class='closemodal' @click='clickEvent'>close</button>
+        </div>
     </div>
+
+
+    <!-- <div id='overlay' v-on:click='clickEvent' >
+    </div> -->
 </template>
 
 <script>
 
 export default {
     name:'ModalWindow',
-    props: {
-        breakfast: Object       
-    },
-    data() {
-        return {
-            
-        }
+    props:{
+        breakfast: Object,
+        dish: Object,
+        side: Object,
+        month: Object,
+        sweet: Object,
+        beverage: Object
     },
     methods: {
         clickEvent() {
             this.$emit('from-child');
-            console.log(this.breakfast.menuName)
         },
         stopEvent() {
             this.$emit('from-child');

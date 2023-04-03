@@ -7,44 +7,74 @@
     <div class="displaymenu">
         <h3>Monthly Meal</h3>
         <article>
-            <div v-for="(month, index) in monthlymealfilter" :key='index'>
-                <p>{{month.menuName}}</p>
-                <p>${{month.price}}</p>
+            <div class="gomodal" v-for="(month, index) in monthlymealfilter" :key='index'>
+            <div class="details">
+            <p>{{month.menuName}}</p>
+            <p>${{month.price}}</p>
             </div>
+            <div class="buttonarea">
+                <button class="modalbutton" @click='openModal(month)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+            </div>
+        </div>
+        <modal-window v-show='showContent' @from-child='closeModal' :month='monthDetail'></modal-window>
         </article>
     </div>
+
+
+
+
     <div class="displaymenu">
         <h3>Monthly Drink</h3>
         <article>
-            <div v-for="(month, index) in monthlydrinkfilter" :key='index'>
-                <p>{{month.menuName}}</p>
-                <p>${{month.explanation1}} / ${{month.explanation2}}</p>
+            <div class="gomodal" v-for="(month, index) in monthlydrinkfilter" :key='index'>
+            <div class="detailsfordrink">
+            <p>{{month.menuName}}</p>
+            <p>{{month.price}}</p>
             </div>
+            <div class="buttonarea">
+                <button class="modalbutton" @click='openModal(month)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+            </div>
+        </div>
+        <modal-window v-show='showContent' @from-child='closeModal' :month='monthDetail'></modal-window>
         </article>
     </div>
+
+
+
+
+
     <div class="displaymenu">
         <h3>Monthly Sweets</h3>
         <article>
-            <div v-for="(month, index) in monthlysweetfilter" :key='index'>
-                <p>{{month.menuName}}</p>
-                <p>${{month.price}}</p>
+            <div class="gomodal" v-for="(month, index) in monthlysweetfilter" :key='index'>
+            <div class="details">
+            <p>{{month.menuName}}</p>
+            <p>${{month.price}}</p>
             </div>
+            <div class="buttonarea">
+                <button class="modalbutton" @click='openModal(month)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+            </div>
+        </div>
+        <modal-window v-show='showContent' @from-child='closeModal' :month='monthDetail'></modal-window>
         </article>
     </div>
 </section>
 </template>
 <script>
 import getJson from '@/services/getJson'
+import ModalWindow from './ModalWindow.vue'
 
 export default {
     name:'MonthlyMenu',
     data(){
         return {
-            monthly: new Array()
+            monthly: new Array(),
+            showContent: false,
+            monthDetail:[{},{}]
         }
     },
     components:{
-
+        ModalWindow
     },
     computed:{
         monthlymealfilter(){
@@ -64,6 +94,15 @@ export default {
                 this.monthly = res.data;
             })
             .catch((e)=> console.log(e))
+        },
+        openModal(month){
+            this.showContent = true,
+            this.monthDetail = month,
+            console.log(this.monthDetail)
+        },
+        closeModal(){
+            this.showContent = false,
+            this.monthDetail = [{},{}]
         }
     },
     mounted(){
@@ -114,20 +153,52 @@ export default {
         padding: 10px;
     } 
 
-    .displaymenu div {
+    .gomodal {
         width: 100%;
         display: flex;
         flex-direction: column;
         color: black;
+        row-gap: 5px;
     }
 
-    .displaymenu p:first-child {
-        border-bottom: 1px solid black;
+    .details {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        border-bottom: 2px solid black;
+        column-gap: 10px
     }
 
-    .displaymenu p:last-child {
+    .detailsfordrink {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        border-bottom: 2px solid black;
+    }
+
+    .detailsfordrink > p:first-child {
+        margin-right: auto;
+    }
+
+    .buttonarea {
+        width: 100%;
         display: flex;
         justify-content: right;
+    }
+
+    .modalbutton{
+        font-size: 14px;
+        padding: 2px;
+        width: 20%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .modalbutton:hover {
+        background-color: orange;
+        color: white;    
     }
 }
 @media (min-width:800px) {

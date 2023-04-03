@@ -144,7 +144,7 @@ export default {
     },
     data(){
         return {
-            breakfasts: new Array,
+            breakfasts: new Array(),
             showContent: false,
             breakfastDetail: [{},{}]
         }
@@ -181,15 +181,15 @@ export default {
       .catch((e)=>console.log(e))
     },
     openModal(breakfast){
-        this.showContent = true;
-        this.breakfastDetail = breakfast;
+        this.showContent = true,
+        this.breakfastDetail = breakfast,
         console.log(this.breakfastDetail)
 
     },
     closeModal(){
-        this.showContent = false;
-        this.breakfastDetail = [{},{}];
-},
+        this.showContent = false,
+        this.breakfastDetail = [{},{}]
+    },
   },
   mounted(){
     this.loadBreakfast();
@@ -227,6 +227,7 @@ export default {
         background-color: antiquewhite;
         padding: 10px;
     }
+
     .gomodal {
         width: 100%;
         display: flex;
