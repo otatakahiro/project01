@@ -3,7 +3,6 @@
         <article class="mobile-order">
             <button href="#">Order</button>
         </article>
-
         <article class="announcement">
             <ul>
                 <li v-for='(anouncement, index) in announcements' :key='index'>{{anouncement.news}}</li>

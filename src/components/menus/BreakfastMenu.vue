@@ -3,7 +3,7 @@
         <h3>Breakfast Plates</h3>
         <article>
                 <div class="gomodal" v-for="(breakfast, index) in breakfastplatefilter" :key='index'>
-                    <div class="details">
+                    <div class="detailsforbeverage">
                         <p>{{breakfast.menuName}}</p>
                         <p>${{breakfast.price}}</p>
                     </div>
@@ -22,7 +22,7 @@
         <h3>Japanese Style Breakfasts</h3>
         <article>
                 <div class="gomodal" v-for="(breakfast, index) in jpnbreakfastfilter" :key='index'>
-                    <div class="details">
+                    <div class="detailsforbeverage">
                         <p>{{breakfast.menuName}}</p>
                         <p>${{breakfast.price}}</p>
                     </div>
@@ -41,7 +41,7 @@
         <h3>Eggs Bennies on English Muffin</h3>
         <article>
             <div class="gomodal" v-for="(breakfast, index) in eggbennyfilter" :key='index'>
-                <div class="details">
+                <div class="detailsforbeverage">
                     <p>{{breakfast.menuName}}</p>
                     <p>${{breakfast.price}}</p>
                 </div>
@@ -61,7 +61,7 @@
         <h3>Breakfast Wraps</h3>
         <article>
             <div class="gomodal" v-for="(breakfast, index) in breakfastwrapfilter" :key='index'>
-                <div class="details">
+                <div class="detailsforbeverage">
                     <p>{{breakfast.menuName}}</p>
                     <p>${{breakfast.price}}</p>
                 </div>
@@ -80,7 +80,7 @@
         <h3>Waffle / Yogurt</h3>
         <article>
             <div class="gomodal" v-for="(breakfast, index) in waffleyogurtfilter" :key='index'>
-                <div class="details">
+                <div class="detailsforbeverage">
                     <p>{{breakfast.menuName}}</p>
                     <p>${{breakfast.price}}</p>
                 </div>
@@ -99,7 +99,7 @@
         <h3>Original Sandwiches / Wraps</h3>
         <article>
             <div class="gomodal" v-for="(breakfast, index) in sandwichewrapfilter" :key='index'>
-                <div class="details">
+                <div class="detailsforbeverage">
                     <p>{{breakfast.menuName}}</p>
                     <p>${{breakfast.price}}</p>
                 </div>
@@ -119,7 +119,7 @@
         <h3>Daily Soup & Salad</h3>
         <article>
             <div class="gomodal" v-for="(breakfast, index) in dailysoupfilter" :key='index'>
-                <div class="details">
+                <div class="detailsforbeverage">
                     <p>{{breakfast.menuName}}</p>
                     <p>${{breakfast.price}}</p>
                 </div>
@@ -236,12 +236,24 @@ export default {
         row-gap: 5px;
     }
 
-    .details {
+    /* .details {
         display: flex;
         width: 100%;
         justify-content: space-between;
         border-bottom: 2px solid black;
         column-gap: 10px
+    } */
+
+    .detailsforbeverage {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        border-bottom: 2px solid black;
+    }
+
+    .detailsforbeverage > p:first-child {
+        margin-right: auto;
     }
 
     .buttonarea {

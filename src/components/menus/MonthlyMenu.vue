@@ -8,7 +8,7 @@
         <h3>Monthly Meal</h3>
         <article>
             <div class="gomodal" v-for="(month, index) in monthlymealfilter" :key='index'>
-            <div class="details">
+            <div class="detailsforbeverage">
             <p>{{month.menuName}}</p>
             <p>${{month.price}}</p>
             </div>
@@ -27,7 +27,7 @@
         <h3>Monthly Drink</h3>
         <article>
             <div class="gomodal" v-for="(month, index) in monthlydrinkfilter" :key='index'>
-            <div class="detailsfordrink">
+            <div class="detailsforbeverage">
             <p>{{month.menuName}}</p>
             <p>{{month.price}}</p>
             </div>
@@ -47,7 +47,7 @@
         <h3>Monthly Sweets</h3>
         <article>
             <div class="gomodal" v-for="(month, index) in monthlysweetfilter" :key='index'>
-            <div class="details">
+            <div class="detailsforbeverage">
             <p>{{month.menuName}}</p>
             <p>${{month.price}}</p>
             </div>
@@ -161,15 +161,15 @@ export default {
         row-gap: 5px;
     }
 
-    .details {
+    /* .details {
         display: flex;
         width: 100%;
         justify-content: space-between;
         border-bottom: 2px solid black;
         column-gap: 10px
-    }
+    } */
 
-    .detailsfordrink {
+    .detailsforbeverage {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -177,7 +177,7 @@ export default {
         border-bottom: 2px solid black;
     }
 
-    .detailsfordrink > p:first-child {
+    .detailsforbeverage > p:first-child {
         margin-right: auto;
     }
 

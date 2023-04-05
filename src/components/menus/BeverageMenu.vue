@@ -190,7 +190,7 @@ import getJson from '@/services/getJson'
 import ModalWindow from './ModalWindow.vue'
 
 export default {
-    name:'DrinkMenu',
+    name:'BeverageMenu',
     components:{
         ModalWindow
     },

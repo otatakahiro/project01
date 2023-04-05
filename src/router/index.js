@@ -4,7 +4,7 @@ import DishesMenu from '../components/menus/DishesMenu.vue'
 import SideMenu from '../components/menus/SideMenu.vue'
 import MonthlyMenu from '../components/menus/MonthlyMenu.vue'
 import SweetsMenu from '../components/menus/SweetsMenu.vue'
-import DrinkMenu from '../components/menus/DrinkMenu.vue'
+import BeverageMenu from '../components/menus/BeverageMenu.vue'
 
 
 const routes = [
@@ -43,7 +43,7 @@ const routes = [
         path:'/beverages',
         alias:'/beverages',
         name:'beverages-menu',
-        component: DrinkMenu
+        component: BeverageMenu
     }
 ];
 const router = createRouter({

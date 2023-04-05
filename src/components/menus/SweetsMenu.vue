@@ -3,7 +3,7 @@
         <h3>2 Dolce Set</h3>
         <article>
             <div class="gomodal" v-for="(sweet, index) in setfilter" :key='index'>
-                <div class="details">
+                <div class="detailsforbeverage">
                     <p>{{sweet.menuName}}</p>
                     <p>${{sweet.price}}</p>
                 </div>
@@ -24,7 +24,7 @@
         <h3>Sweets & Desserts</h3>
         <article>
             <div class="gomodal" v-for="(sweet, index) in threefilter" :key='index'>
-                <div class="details">
+                <div class="detailsforbeverage">
                     <p>{{sweet.menuName}}</p>
                     <p>${{sweet.price}}</p>
                 </div>
@@ -39,7 +39,7 @@
 
         <article>
            <div class="gomodal" v-for="(sweet, index) in fourfilter" :key='index'>
-                <div class="details">
+                <div class="detailsforbeverage">
                     <p>{{sweet.menuName}}</p>
                     <p>${{sweet.price}}</p>
                 </div>
@@ -56,7 +56,7 @@
 
         <article>
             <div class="gomodal" v-for="(sweet, index) in sixfilter" :key='index'>
-                <div class="details">
+                <div class="detailsforbeverage">
                     <p>{{sweet.menuName}}</p>
                     <p>${{sweet.price}}</p>
                 </div>
@@ -73,7 +73,7 @@
         
         <article>
             <div class="gomodal" v-for="(sweet, index) in foursixfilter" :key='index'>
-                <div class="detailsfordrink">
+                <div class="detailsforbeverage">
                     <p>{{sweet.menuName}}</p>
                     <p>${{sweet.price}}</p>
                 </div>
@@ -180,15 +180,15 @@ export default {
         row-gap: 5px;
     }
 
-    .details {
+    /* .details {
         display: flex;
         width: 100%;
         justify-content: space-between;
         border-bottom: 2px solid black;
         column-gap: 10px
-    }
+    } */
 
-    .detailsfordrink {
+    .detailsforbeverage {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -196,7 +196,7 @@ export default {
         border-bottom: 2px solid black;
     }
 
-    .detailsfordrink > p:first-child {
+    .detailsforbeverage > p:first-child {
         margin-right: auto;
     }
 

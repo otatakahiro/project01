@@ -20,6 +20,10 @@
                 <img src="/img/katsu.jpg" alt="">
             </article>
 
+            <article class="menutopbutton">
+                <a type="button" href="#menu">Menu Top<font-awesome-icon icon="fa-solid fa-caret-up" /></a>
+            </article>
+
 
 
             <article class="menu-img">
@@ -70,7 +74,7 @@ export default {
         border-bottom: 3px solid;
     }
     
-    button {
+    .mobile-order > button {
         font-size: 25px;
         width: 40%;
         height: 60px;
@@ -88,6 +92,7 @@ export default {
         background-color: rgba(142, 94, 69, .6);
         padding-bottom: 60px;
         color: white;
+        row-gap: 10px;
     }
 
     .title {
@@ -149,9 +154,19 @@ export default {
         display: none;
     }
 
-    .close {
-        width: 100%;
-        text-align: right;
+    .menutopbutton {
+        width: 90%;
+    }
+
+    .menutopbutton > a {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 32%;
+        font-size: 16px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin-left: auto;
     }
 
     .picture2{

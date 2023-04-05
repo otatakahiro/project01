@@ -3,7 +3,7 @@
     <h3>Donburi</h3>
     <article>
         <div class="gomodal" v-for="(dish, index) in donburifilter" :key='index'>
-            <div class="details">
+            <div class="detailsforbeverage">
             <p>{{dish.menuName}}</p>
             <p>${{dish.price}}</p>
             </div>
@@ -20,7 +20,7 @@
     <h3>Other Yoshoku</h3>
     <article>
         <div class="gomodal" v-for="(dish, index) in yoshokufilter" :key='index'>
-            <div class="details">
+            <div class="detailsforbeverage">
             <p>{{dish.menuName}}</p>
             <p>${{dish.price}}</p>
             </div>
@@ -38,7 +38,7 @@
     <h3>Hamburger Steaks</h3>
     <article>
         <div class="gomodal" v-for="(dish, index) in steakfilter" :key='index'>
-            <div class="details">
+            <div class="detailsforbeverage">
             <p>{{dish.menuName}}</p>
             <p>${{dish.price}}</p>
             </div>
@@ -58,7 +58,7 @@
         <p>with White Rice</p>
         <section class="inmenu">
         <div class="gomodal" v-for="(dish, index) in omuwhitefilter" :key='index'>
-            <div class="details">
+            <div class="detailsforbeverage">
             <p>{{dish.menuName}}</p>
             <p>${{dish.price}}</p>
             </div>
@@ -76,7 +76,7 @@
         <p>with Garlic Rice</p>
         <section class="inmenu">
         <div class="gomodal" v-for="(dish, index) in omugarlicfilter" :key='index'>
-            <div class="details">
+            <div class="detailsforbeverage">
             <p>{{dish.menuName}}</p>
             <p>${{dish.price}}</p>
             </div>
@@ -96,7 +96,7 @@
         <p>with Ketchup Rice</p>
         <section class="inmenu">
         <div class="gomodal" v-for="(dish, index) in omuketchupfilter" :key='index'>
-            <div class="details">
+            <div class="detailsforbeverage">
             <p>{{dish.menuName}}</p>
             <p>${{dish.price}}</p>
             </div>
@@ -210,12 +210,24 @@ export default {
         row-gap: 5px;
     }
 
-    .details {
+    /* .details {
         display: flex;
         width: 100%;
         justify-content: space-between;
         border-bottom: 2px solid black;
         column-gap: 10px
+    } */
+
+    .detailsforbeverage {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        border-bottom: 2px solid black;
+    }
+
+    .detailsforbeverage > p:first-child {
+        margin-right: auto;
     }
 
     .buttonarea {

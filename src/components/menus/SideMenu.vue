@@ -3,7 +3,7 @@
     <h3>Japanese Side Menu</h3>
         <article>
             <div class="gomodal" v-for="(side, index) in japanesesidefilter" :key='index'>
-            <div class="details">
+            <div class="detailsforbeverage">
             <p>{{side.menuName}}</p>
             <p>${{side.price}}</p>
             </div>
@@ -22,7 +22,7 @@
     <h3>Daily Soup & Salad</h3>
         <article>
             <div class="gomodal" v-for="(side, index) in dailysoupfilter" :key='index'>
-            <div class="details">
+            <div class="detailsforbeverage">
             <p>{{side.menuName}}</p>
             <p>${{side.price}}</p>
             </div>
@@ -42,7 +42,7 @@
     <h3>Other Side Menu</h3>
         <article>
             <div class="gomodal" v-for="(side, index) in othersidefilter" :key='index'>
-            <div class="details">
+            <div class="detailsforbeverage">
             <p>{{side.menuName}}</p>
             <p>${{side.price}}</p>
             </div>
@@ -145,12 +145,24 @@ export default {
         row-gap: 5px;
     }
 
-    .details {
+    /* .details {
         display: flex;
         width: 100%;
         justify-content: space-between;
         border-bottom: 2px solid black;
         column-gap: 10px
+    } */
+
+    .detailsforbeverage {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        border-bottom: 2px solid black;
+    }
+
+    .detailsforbeverage > p:first-child {
+        margin-right: auto;
     }
 
     .buttonarea {
