@@ -1,14 +1,13 @@
 <template>
-<div class="displaymenu">
+<div class="displaymenu">      <!--FOR DONBURI -->
     <h3>Donburi</h3>
     <article>
-        <div class="gomodal" v-for="(dish, index) in donburifilter" :key='index'>
-            <div class="detailsforbeverage">
-            <p>{{dish.menuName}}</p>
-            <p>${{dish.price}}</p>
-            </div>
-            <div class="buttonarea">
-                <button class="modalbutton" @click='openModal(dish)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+        <div class="gomodal" v-for="(dish, index) in donburifilter" @click='openModal(dish)' :key='index'>
+            <div class="details">
+                <p>{{dish.menuName}}</p>
+                <p>${{dish.price}}
+                    <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                </p>
             </div>
         </div>
         <modal-window v-show='showContent' @from-child='closeModal' :dish='dishDetail'></modal-window>
@@ -16,16 +15,15 @@
 </div>
 
 
-<div class="displaymenu">
+<div class="displaymenu">      <!--FOR OTHER YOSHOKU -->
     <h3>Other Yoshoku</h3>
     <article>
-        <div class="gomodal" v-for="(dish, index) in yoshokufilter" :key='index'>
-            <div class="detailsforbeverage">
-            <p>{{dish.menuName}}</p>
-            <p>${{dish.price}}</p>
-            </div>
-            <div class="buttonarea">
-                <button class="modalbutton" @click='openModal(dish)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+        <div class="gomodal" v-for="(dish, index) in yoshokufilter" @click='openModal(dish)' :key='index'>
+            <div class="details">
+                <p>{{dish.menuName}}</p>
+                <p>${{dish.price}}
+                    <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                </p>
             </div>
         </div>
         <modal-window v-show='showContent' @from-child='closeModal' :dish='dishDetail'></modal-window>
@@ -34,16 +32,15 @@
 
 
 
-<div class="displaymenu">
+<div class="displaymenu">      <!--FOR HAMBURGER STEAKS -->
     <h3>Hamburger Steaks</h3>
     <article>
-        <div class="gomodal" v-for="(dish, index) in steakfilter" :key='index'>
-            <div class="detailsforbeverage">
-            <p>{{dish.menuName}}</p>
-            <p>${{dish.price}}</p>
-            </div>
-            <div class="buttonarea">
-                <button class="modalbutton" @click='openModal(dish)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+        <div class="gomodal" v-for="(dish, index) in steakfilter" @click='openModal(dish)' :key='index'>
+            <div class="details">
+                <p>{{dish.menuName}}</p>
+                <p>${{dish.price}}
+                    <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                </p>
             </div>
         </div>
         <modal-window v-show='showContent' @from-child='closeModal' :dish='dishDetail'></modal-window>
@@ -52,18 +49,17 @@
 
 
 
-<div class="displaymenu">
+<div class="displaymenu">      <!--FOR CURRY & OMU RICE -->
     <h3>Japanese Curry & Omu Rice</h3>
-    <article class="rice">
+    <article class="rice">      <!--FOR WHITE RICE -->
         <p>with White Rice</p>
         <section class="inmenu">
-        <div class="gomodal" v-for="(dish, index) in omuwhitefilter" :key='index'>
-            <div class="detailsforbeverage">
-            <p>{{dish.menuName}}</p>
-            <p>${{dish.price}}</p>
-            </div>
-            <div class="buttonarea">
-                <button class="modalbutton" @click='openModal(dish)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+        <div class="gomodal" v-for="(dish, index) in omuwhitefilter" @click='openModal(dish)' :key='index'>
+            <div class="details">
+                <p>{{dish.menuName}}</p>
+                <p>${{dish.price}}
+                    <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                </p>
             </div>
         </div>
         <modal-window v-show='showContent' @from-child='closeModal' :dish='dishDetail'></modal-window>
@@ -72,16 +68,16 @@
 
 
 
-    <article class="rice">
+    <article class="rice">      <!--FOR GARLIC RICE -->
         <p>with Garlic Rice</p>
         <section class="inmenu">
-        <div class="gomodal" v-for="(dish, index) in omugarlicfilter" :key='index'>
-            <div class="detailsforbeverage">
-            <p>{{dish.menuName}}</p>
-            <p>${{dish.price}}</p>
-            </div>
-            <div class="buttonarea">
-                <button class="modalbutton" @click='openModal(dish)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+        <div class="gomodal" v-for="(dish, index) in omugarlicfilter" 
+        @click='openModal(dish)' :key='index'>
+            <div class="details">
+                <p>{{dish.menuName}}</p>
+                <p>${{dish.price}}
+                    <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                </p>
             </div>
         </div>
         <modal-window v-show='showContent' @from-child='closeModal' :dish='dishDetail'></modal-window>
@@ -92,16 +88,16 @@
 
 
 
-    <article class="rice">
+    <article class="rice">      <!--FOR KETCHUP RICE -->
         <p>with Ketchup Rice</p>
         <section class="inmenu">
-        <div class="gomodal" v-for="(dish, index) in omuketchupfilter" :key='index'>
-            <div class="detailsforbeverage">
-            <p>{{dish.menuName}}</p>
-            <p>${{dish.price}}</p>
-            </div>
-            <div class="buttonarea">
-                <button class="modalbutton" @click='openModal(dish)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+        <div class="gomodal" v-for="(dish, index) in omuketchupfilter" 
+        @click='openModal(dish)' :key='index'>
+            <div class="details">
+                <p>{{dish.menuName}}</p>
+                <p>${{dish.price}}
+                    <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                </p>
             </div>
         </div>
         <modal-window v-show='showContent' @from-child='closeModal' :dish='dishDetail'></modal-window>
@@ -200,6 +196,7 @@ export default {
         outline: 2px dashed orange;
         background-color: antiquewhite;
         padding: 10px;
+        row-gap: 10px;
     }
 
     .gomodal {
@@ -210,39 +207,37 @@ export default {
         row-gap: 5px;
     }
 
-    /* .details {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        border-bottom: 2px solid black;
-        column-gap: 10px
-    } */
-
-    .detailsforbeverage {
+    .details {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         width: 100%;
         border-bottom: 2px solid black;
+        row-gap: 5px;
     }
 
-    .detailsforbeverage > p:first-child {
+    .details > p:first-child {
         margin-right: auto;
     }
 
-    .buttonarea {
-        width: 100%;
+    .details > p:last-child {
         display: flex;
+        column-gap: 3%;
+        width:100%;
         justify-content: right;
+        padding-bottom: 1%;
+        align-items: center;
     }
 
     .modalbutton{
         font-size: 14px;
-        padding: 2px;
-        width: 20%;
+        padding: 5px;
+        width: 28px;
+        height: 28px;
         display: flex;
         justify-content: space-around;
         align-items: center;
+        border-radius: 50%;
     }
 
     .modalbutton:hover {

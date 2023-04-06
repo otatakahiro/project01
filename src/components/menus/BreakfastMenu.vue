@@ -2,13 +2,12 @@
     <div class="displaymenu">   <!--FOR BREAKFAST PLATES -->
         <h3>Breakfast Plates</h3>
         <article>
-                <div class="gomodal" v-for="(breakfast, index) in breakfastplatefilter" :key='index'>
-                    <div class="detailsforbeverage">
+                <div class="gomodal" v-for="(breakfast, index) in breakfastplatefilter" @click='openModal(breakfast)' :key='index'>
+                    <div class="details">
                         <p>{{breakfast.menuName}}</p>
-                        <p>${{breakfast.price}}</p>
-                    </div>
-                    <div class="buttonarea">
-                        <button class="modalbutton" @click='openModal(breakfast)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+                        <p>${{breakfast.price}}
+                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                        </p>
                     </div>
                 </div>
                 <modal-window v-show='showContent' @from-child='closeModal' :breakfast='breakfastDetail'></modal-window>
@@ -21,15 +20,14 @@
     <div class="displaymenu">    <!--FOR JAPANESE STYLE BREAKFASTS -->
         <h3>Japanese Style Breakfasts</h3>
         <article>
-                <div class="gomodal" v-for="(breakfast, index) in jpnbreakfastfilter" :key='index'>
-                    <div class="detailsforbeverage">
+                <div class="gomodal" v-for="(breakfast, index) in jpnbreakfastfilter" @click='openModal(breakfast)' :key='index'>
+                    <div class="details">
                         <p>{{breakfast.menuName}}</p>
-                        <p>${{breakfast.price}}</p>
+                        <p>${{breakfast.price}}
+                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                        </p>
                     </div>
-                    <div class="buttonarea">
-                        <button class="modalbutton" @click='openModal(breakfast)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
-                    </div>
-            </div>
+                </div>
             <modal-window v-show='showContent' @from-child='closeModal' :breakfast='breakfastDetail'></modal-window>
         </article>
     </div>
@@ -40,13 +38,12 @@
     <div class="displaymenu">    <!--FOR EGGS BENNIES-->
         <h3>Eggs Bennies on English Muffin</h3>
         <article>
-            <div class="gomodal" v-for="(breakfast, index) in eggbennyfilter" :key='index'>
-                <div class="detailsforbeverage">
+            <div class="gomodal" v-for="(breakfast, index) in eggbennyfilter" @click='openModal(breakfast)' :key='index'>
+                <div class="details">
                     <p>{{breakfast.menuName}}</p>
-                    <p>${{breakfast.price}}</p>
-                </div>
-                <div class="buttonarea">
-                    <button class="modalbutton" @click='openModal(breakfast)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+                    <p>${{breakfast.price}}
+                        <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                    </p>
                 </div>
             </div>
             <modal-window v-show='showContent' @from-child='closeModal' :breakfast='breakfastDetail'></modal-window>
@@ -60,13 +57,12 @@
     <div class="displaymenu">    <!--BREAKFAST WRAPS-->
         <h3>Breakfast Wraps</h3>
         <article>
-            <div class="gomodal" v-for="(breakfast, index) in breakfastwrapfilter" :key='index'>
-                <div class="detailsforbeverage">
+            <div class="gomodal" v-for="(breakfast, index) in breakfastwrapfilter" @click='openModal(breakfast)' :key='index'>
+                <div class="details">
                     <p>{{breakfast.menuName}}</p>
-                    <p>${{breakfast.price}}</p>
-                </div>
-                <div class="buttonarea">
-                    <button class="modalbutton" @click='openModal(breakfast)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+                    <p>${{breakfast.price}}
+                        <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                    </p>
                 </div>
             </div>
             <modal-window v-show='showContent' @from-child='closeModal' :breakfast='breakfastDetail'></modal-window>
@@ -79,13 +75,12 @@
     <div class="displaymenu">    <!--FOR WAFFLE / YOGURT-->
         <h3>Waffle / Yogurt</h3>
         <article>
-            <div class="gomodal" v-for="(breakfast, index) in waffleyogurtfilter" :key='index'>
-                <div class="detailsforbeverage">
+            <div class="gomodal" v-for="(breakfast, index) in waffleyogurtfilter" @click='openModal(breakfast)' :key='index'>
+                <div class="details">
                     <p>{{breakfast.menuName}}</p>
-                    <p>${{breakfast.price}}</p>
-                </div>
-                <div class="buttonarea">
-                    <button class="modalbutton" @click='openModal(breakfast)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+                    <p>${{breakfast.price}}
+                        <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                    </p>
                 </div>
             </div>
             <modal-window v-show='showContent' @from-child='closeModal' :breakfast='breakfastDetail'></modal-window>
@@ -98,13 +93,12 @@
     <div class="displaymenu">    <!--FOR SANDWICHES / WRAPS-->
         <h3>Original Sandwiches / Wraps</h3>
         <article>
-            <div class="gomodal" v-for="(breakfast, index) in sandwichewrapfilter" :key='index'>
-                <div class="detailsforbeverage">
+            <div class="gomodal" v-for="(breakfast, index) in sandwichewrapfilter" @click='openModal(breakfast)' :key='index'>
+                <div class="details">
                     <p>{{breakfast.menuName}}</p>
-                    <p>${{breakfast.price}}</p>
-                </div>
-                <div class="buttonarea">
-                    <button class="modalbutton" @click='openModal(breakfast)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+                    <p>${{breakfast.price}}
+                        <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                    </p>
                 </div>
             </div>
             <modal-window v-show='showContent' @from-child='closeModal' :breakfast='breakfastDetail'></modal-window>
@@ -118,13 +112,12 @@
     <div class="displaymenu">    <!--FOR DAILY SOUP AND SALAD-->
         <h3>Daily Soup & Salad</h3>
         <article>
-            <div class="gomodal" v-for="(breakfast, index) in dailysoupfilter" :key='index'>
-                <div class="detailsforbeverage">
+            <div class="gomodal" v-for="(breakfast, index) in dailysoupfilter" @click='openModal(breakfast)' :key='index'>
+                <div class="details">
                     <p>{{breakfast.menuName}}</p>
-                    <p>${{breakfast.price}}</p>
-                </div>
-                <div class="buttonarea">
-                    <button class="modalbutton" @click='openModal(breakfast)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+                    <p>${{breakfast.price}}
+                        <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                    </p>
                 </div>
             </div>
             <modal-window v-show='showContent' @from-child='closeModal' :breakfast='breakfastDetail'></modal-window>
@@ -226,6 +219,7 @@ export default {
         outline: 2px dashed orange;
         background-color: antiquewhite;
         padding: 10px;
+        row-gap: 10px;
     }
 
     .gomodal {
@@ -233,42 +227,39 @@ export default {
         display: flex;
         flex-direction: column;
         color: black;
-        row-gap: 5px;
     }
 
-    /* .details {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        border-bottom: 2px solid black;
-        column-gap: 10px
-    } */
-
-    .detailsforbeverage {
+    .details {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         width: 100%;
         border-bottom: 2px solid black;
+        row-gap: 5px;
     }
 
-    .detailsforbeverage > p:first-child {
+    .details > p:first-child {
         margin-right: auto;
     }
 
-    .buttonarea {
-        width: 100%;
+    .details > p:last-child {
         display: flex;
+        column-gap: 3%;
+        width:100%;
         justify-content: right;
+        padding-bottom: 1%;
+        align-items: center;
     }
 
     .modalbutton{
         font-size: 14px;
-        padding: 2px;
-        width: 20%;
+        padding: 5px;
+        width: 28px;
+        height: 28px;
         display: flex;
         justify-content: space-around;
         align-items: center;
+        border-radius: 50%;
     }
 
     .modalbutton:hover {

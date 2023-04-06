@@ -4,16 +4,23 @@
         <img src="/img/pudd.jpg" alt="">
     </article>
 
-    <div class="displaymenu">
+    <div class="displaymenu">      <!--FOR MONTHLY
+    
+    
+    
+    
+    
+    
+    
+     MEAL -->
         <h3>Monthly Meal</h3>
         <article>
-            <div class="gomodal" v-for="(month, index) in monthlymealfilter" :key='index'>
-            <div class="detailsforbeverage">
-            <p>{{month.menuName}}</p>
-            <p>${{month.price}}</p>
-            </div>
-            <div class="buttonarea">
-                <button class="modalbutton" @click='openModal(month)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+            <div class="gomodal" v-for="(month, index) in monthlymealfilter" @click='openModal(month)' :key='index'>
+            <div class="details">
+                <p>{{month.menuName}}</p>
+                <p>${{month.price}}
+                    <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                </p>
             </div>
         </div>
         <modal-window v-show='showContent' @from-child='closeModal' :month='monthDetail'></modal-window>
@@ -23,16 +30,15 @@
 
 
 
-    <div class="displaymenu">
+    <div class="displaymenu">      <!--FOR MONTHLY DRINK -->
         <h3>Monthly Drink</h3>
         <article>
-            <div class="gomodal" v-for="(month, index) in monthlydrinkfilter" :key='index'>
-            <div class="detailsforbeverage">
-            <p>{{month.menuName}}</p>
-            <p>{{month.price}}</p>
-            </div>
-            <div class="buttonarea">
-                <button class="modalbutton" @click='openModal(month)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+            <div class="gomodal" v-for="(month, index) in monthlydrinkfilter" @click='openModal(month)' :key='index'>
+            <div class="details">
+                <p>{{month.menuName}}</p>
+                <p>{{month.price}}
+                    <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                </p>
             </div>
         </div>
         <modal-window v-show='showContent' @from-child='closeModal' :month='monthDetail'></modal-window>
@@ -43,16 +49,15 @@
 
 
 
-    <div class="displaymenu">
+    <div class="displaymenu">      <!--FOR MONTHLY SWEETS -->
         <h3>Monthly Sweets</h3>
         <article>
-            <div class="gomodal" v-for="(month, index) in monthlysweetfilter" :key='index'>
-            <div class="detailsforbeverage">
-            <p>{{month.menuName}}</p>
-            <p>${{month.price}}</p>
-            </div>
-            <div class="buttonarea">
-                <button class="modalbutton" @click='openModal(month)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+            <div class="gomodal" v-for="(month, index) in monthlysweetfilter" @click='openModal(month)' :key='index'>
+            <div class="details">
+                <p>{{month.menuName}}</p>
+                <p>${{month.price}}
+                    <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                </p>
             </div>
         </div>
         <modal-window v-show='showContent' @from-child='closeModal' :month='monthDetail'></modal-window>
@@ -151,7 +156,30 @@ export default {
         outline: 2px dashed orange;
         background-color: antiquewhite;
         padding: 10px;
+        row-gap: 10px;
     } 
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        border-bottom: 2px solid black;
+        row-gap: 5px;
+    }
+
+    .details > p:first-child {
+        margin-right: auto;
+    }
+
+    .details > p:last-child {
+        display: flex;
+        column-gap: 3%;
+        width:100%;
+        justify-content: right;
+        padding-bottom: 1%;
+        align-items: center;
+    }
 
     .gomodal {
         width: 100%;
@@ -161,39 +189,15 @@ export default {
         row-gap: 5px;
     }
 
-    /* .details {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        border-bottom: 2px solid black;
-        column-gap: 10px
-    } */
-
-    .detailsforbeverage {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        width: 100%;
-        border-bottom: 2px solid black;
-    }
-
-    .detailsforbeverage > p:first-child {
-        margin-right: auto;
-    }
-
-    .buttonarea {
-        width: 100%;
-        display: flex;
-        justify-content: right;
-    }
-
     .modalbutton{
         font-size: 14px;
-        padding: 2px;
-        width: 20%;
+        padding: 5px;
+        width: 28px;
+        height: 28px;
         display: flex;
         justify-content: space-around;
         align-items: center;
+        border-radius: 50%;
     }
 
     .modalbutton:hover {

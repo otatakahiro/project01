@@ -21,7 +21,7 @@
 
 {"menuId":10,"menuName":"Japanese Style Breakfast - All on it","price":15.99,"category":"japanese_breakfast","menuImg":"./img/jbre.jpg","explanation1":"Grilled Wild Salmon, Japanese Plain Omelet, Rice, Miso Soup, Natto, Tofu, Oshinko and Nori","explanation2":"","online":true},
 
-{"menuId":11,"menuName":"Double Benny","price":16.99,"category":"egg_benny","menuImg":"","explanation1":"Choice of Bacon, Wild Alaskan Smoked Salmon, or Fresh Tomato & Spring Mix","explanation2":"Add 1 Hashbrown Plus $1.00,\n Add 2 Hashbrown Plus $1.75,\nAdd Tomato Plus $1.75,\n Add Guacamole Plus $2.25","explanation3":"Switch to on Tomato, or On Hashbrown Plus $1.00,\nSwitch to on Gluten Free Bun Plus $1.75","online":true},
+{"menuId":11,"menuName":"Double Benny","price":16.99,"category":"egg_benny","menuImg":"./img/doublebenny.jpg","explanation1":"Choice of Bacon, Wild Alaskan Smoked Salmon, or Fresh Tomato & Spring Mix","explanation2":"Add 1 Hashbrown Plus $1.00,\n Add 2 Hashbrown Plus $1.75,\nAdd Tomato Plus $1.75,\n Add Guacamole Plus $2.25","explanation3":"Switch to on Tomato, or On Hashbrown Plus $1.00,\nSwitch to on Gluten Free Bun Plus $1.75","online":true},
 
 {"menuId":12,"menuName":"Single Benny","price":8.99,"category":"egg_benny","menuImg":"","explanation1":"Choice of Bacon, Wild Alaskan Smoked Salmon, or Fresh Tomato & Spring Mix","explanation2":"Add 1 Hashbrown Plus $1.00, Add 2 Hashbrown Plus $1.75,\nAdd Tomato Plus $1.00,\n Add Guacamole Plus $1.50","explanation3":"Switch to on Tomato, or On Hashbrown Plus $0.75,\nSwitch to on Gluten Free Bun Plus $1.00","online":true},
 

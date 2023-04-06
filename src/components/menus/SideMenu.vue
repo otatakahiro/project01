@@ -1,14 +1,13 @@
 <template>
-    <div class="displaymenu">
+    <div class="displaymenu">      <!--FOR SIDE MENU -->
     <h3>Japanese Side Menu</h3>
         <article>
-            <div class="gomodal" v-for="(side, index) in japanesesidefilter" :key='index'>
-            <div class="detailsforbeverage">
-            <p>{{side.menuName}}</p>
-            <p>${{side.price}}</p>
-            </div>
-            <div class="buttonarea">
-                <button class="modalbutton" @click='openModal(side)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+            <div class="gomodal" v-for="(side, index) in japanesesidefilter" @click='openModal(side)' :key='index'>
+            <div class="details">
+                <p>{{side.menuName}}</p>
+                <p>${{side.price}}
+                    <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                </p>
             </div>
         </div>
         <modal-window v-show='showContent' @from-child='closeModal' :side='sideDetail'></modal-window>
@@ -18,16 +17,15 @@
 
 
 
-    <div class="displaymenu">
+    <div class="displaymenu">      <!--FOR DAIL SOUP & SALAD -->
     <h3>Daily Soup & Salad</h3>
         <article>
-            <div class="gomodal" v-for="(side, index) in dailysoupfilter" :key='index'>
-            <div class="detailsforbeverage">
-            <p>{{side.menuName}}</p>
-            <p>${{side.price}}</p>
-            </div>
-            <div class="buttonarea">
-                <button class="modalbutton" @click='openModal(side)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+            <div class="gomodal" v-for="(side, index) in dailysoupfilter" @click='openModal(side)' :key='index'>
+            <div class="details">
+                <p>{{side.menuName}}</p>
+                <p>${{side.price}}
+                    <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                </p>
             </div>
         </div>
         <modal-window v-show='showContent' @from-child='closeModal' :side='sideDetail'></modal-window>
@@ -41,13 +39,12 @@
     <div class="displaymenu">
     <h3>Other Side Menu</h3>
         <article>
-            <div class="gomodal" v-for="(side, index) in othersidefilter" :key='index'>
-            <div class="detailsforbeverage">
-            <p>{{side.menuName}}</p>
-            <p>${{side.price}}</p>
-            </div>
-            <div class="buttonarea">
-                <button class="modalbutton" @click='openModal(side)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+            <div class="gomodal" v-for="(side, index) in othersidefilter" @click='openModal(side)' :key='index'>
+            <div class="details">
+                <p>{{side.menuName}}</p>
+                <p>${{side.price}}
+                    <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                </p>
             </div>
         </div>
         <modal-window v-show='showContent' @from-child='closeModal' :side='sideDetail'></modal-window>
@@ -135,6 +132,7 @@ export default {
         outline: 2px dashed orange;
         background-color: antiquewhite;
         padding: 10px;
+        row-gap: 10px;
     }
 
     .gomodal {
@@ -145,39 +143,37 @@ export default {
         row-gap: 5px;
     }
 
-    /* .details {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        border-bottom: 2px solid black;
-        column-gap: 10px
-    } */
-
-    .detailsforbeverage {
+    .details {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         width: 100%;
         border-bottom: 2px solid black;
+        row-gap: 5px;
     }
 
-    .detailsforbeverage > p:first-child {
+    .details > p:first-child {
         margin-right: auto;
     }
 
-    .buttonarea {
-        width: 100%;
+    .details > p:last-child {
         display: flex;
+        column-gap: 3%;
+        width:100%;
         justify-content: right;
+        padding-bottom: 1%;
+        align-items: center;
     }
 
     .modalbutton{
         font-size: 14px;
-        padding: 2px;
-        width: 20%;
+        padding: 5px;
+        width: 28px;
+        height: 28px;
         display: flex;
         justify-content: space-around;
         align-items: center;
+        border-radius: 50%;
     }
 
     .modalbutton:hover {

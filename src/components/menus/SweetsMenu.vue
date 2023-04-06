@@ -1,14 +1,13 @@
 <template>
-    <div class="displaymenu">
+    <div class="displaymenu">      <!--FOR DOLCE SET -->
         <h3>2 Dolce Set</h3>
         <article>
-            <div class="gomodal" v-for="(sweet, index) in setfilter" :key='index'>
-                <div class="detailsforbeverage">
+            <div class="gomodal" v-for="(sweet, index) in setfilter" @click='openModal(sweet)' :key='index'>
+                <div class="details">
                     <p>{{sweet.menuName}}</p>
-                    <p>${{sweet.price}}</p>
-                </div>
-                <div class="buttonarea">
-                    <button class="modalbutton" @click='openModal(sweet)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+                    <p>${{sweet.price}}
+                        <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                    </p>
                 </div>
             </div>
             <modal-window v-show='showContent' @from-child='closeModal' :sweet='sweetDetail'></modal-window>
@@ -20,16 +19,15 @@
 
 
 
-    <div class="displaymenu">
+    <div class="displaymenu">      <!--FOR $3.99 -->
         <h3>Sweets & Desserts</h3>
         <article>
-            <div class="gomodal" v-for="(sweet, index) in threefilter" :key='index'>
-                <div class="detailsforbeverage">
+            <div class="gomodal" v-for="(sweet, index) in threefilter" @click='openModal(sweet)' :key='index'>
+                <div class="details">
                     <p>{{sweet.menuName}}</p>
-                    <p>${{sweet.price}}</p>
-                </div>
-                <div class="buttonarea">
-                    <button class="modalbutton" @click='openModal(sweet)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+                    <p>${{sweet.price}}
+                        <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                    </p>
                 </div>
             </div>
             <modal-window v-show='showContent' @from-child='closeModal' :sweet='sweetDetail'></modal-window>
@@ -37,14 +35,13 @@
 
 
 
-        <article>
-           <div class="gomodal" v-for="(sweet, index) in fourfilter" :key='index'>
-                <div class="detailsforbeverage">
+        <article>      <!--FOR $4.99 -->
+           <div class="gomodal" v-for="(sweet, index) in fourfilter" @click='openModal(sweet)' :key='index'>
+                <div class="details">
                     <p>{{sweet.menuName}}</p>
-                    <p>${{sweet.price}}</p>
-                </div>
-                <div class="buttonarea">
-                    <button class="modalbutton" @click='openModal(sweet)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+                    <p>${{sweet.price}}
+                        <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                    </p>
                 </div>
             </div>
             <modal-window v-show='showContent' @from-child='closeModal' :sweet='sweetDetail'></modal-window>
@@ -54,14 +51,13 @@
 
 
 
-        <article>
-            <div class="gomodal" v-for="(sweet, index) in sixfilter" :key='index'>
-                <div class="detailsforbeverage">
+        <article>      <!--FOR $6.99 -->
+            <div class="gomodal" v-for="(sweet, index) in sixfilter" @click='openModal(sweet)' :key='index'>
+                <div class="details">
                     <p>{{sweet.menuName}}</p>
-                    <p>${{sweet.price}}</p>
-                </div>
-                <div class="buttonarea">
-                    <button class="modalbutton" @click='openModal(sweet)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+                    <p>${{sweet.price}}
+                        <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                    </p>
                 </div>
             </div>
             <modal-window v-show='showContent' @from-child='closeModal' :sweet='sweetDetail'></modal-window>
@@ -71,14 +67,13 @@
 
 
         
-        <article>
-            <div class="gomodal" v-for="(sweet, index) in foursixfilter" :key='index'>
-                <div class="detailsforbeverage">
+        <article>      <!--FOR AFFOGATO -->
+            <div class="gomodal" v-for="(sweet, index) in foursixfilter" @click='openModal(sweet)' :key='index'>
+                <div class="details">
                     <p>{{sweet.menuName}}</p>
-                    <p>${{sweet.price}}</p>
-                </div>
-                <div class="buttonarea">
-                    <button class="modalbutton" @click='openModal(sweet)'>More<font-awesome-icon icon="fa-solid fa-caret-right" /></button>
+                    <p>${{sweet.price}}
+                        <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                    </p>
                 </div>
             </div>
             <modal-window v-show='showContent' @from-child='closeModal' :sweet='sweetDetail'></modal-window>
@@ -170,6 +165,7 @@ export default {
         outline: 2px dashed orange;
         background-color: antiquewhite;
         padding: 10px;
+        row-gap: 10px;
     }
 
     .gomodal {
@@ -180,39 +176,37 @@ export default {
         row-gap: 5px;
     }
 
-    /* .details {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        border-bottom: 2px solid black;
-        column-gap: 10px
-    } */
-
-    .detailsforbeverage {
+    .details {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         width: 100%;
         border-bottom: 2px solid black;
+        row-gap: 5px;
     }
 
-    .detailsforbeverage > p:first-child {
+    .details > p:first-child {
         margin-right: auto;
     }
 
-    .buttonarea {
-        width: 100%;
+    .details > p:last-child {
         display: flex;
+        column-gap: 3%;
+        width:100%;
         justify-content: right;
+        padding-bottom: 1%;
+        align-items: center;
     }
 
     .modalbutton{
         font-size: 14px;
-        padding: 2px;
-        width: 20%;
+        padding: 5px;
+        width: 28px;
+        height: 28px;
         display: flex;
         justify-content: space-around;
         align-items: center;
+        border-radius: 50%;
     }
 
     .modalbutton:hover {

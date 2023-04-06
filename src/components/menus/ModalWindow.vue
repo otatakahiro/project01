@@ -1,7 +1,7 @@
 <template>
     <div id='overlay' v-on:click='clickEvent'>
         <div id="content" v-on:click='stopEvent' v-if='breakfast'>
-            <img :src="breakfast.menuImg" :alt="breakfast.menuName">
+            <img v-if='breakfast.menuImg' :src="breakfast.menuImg" :alt="breakfast.menuName">
             <h3>{{breakfast.menuName}}</h3>
             <p>${{breakfast.price}}</p>
             <div class="details" v-if="breakfast.explanation1">
@@ -16,7 +16,7 @@
 
 
         <div id="content" v-on:click='stopEvent' v-if='dish'>
-            <img :src="dish.menuImg" :alt="dish.menuName">
+            <img v-if='dish.menuImg' :src="dish.menuImg" :alt="dish.menuName">
             <h3>{{dish.menuName}}</h3>
             <p>${{dish.price}}</p>
             <div class="details" v-if="dish.explanation1">
@@ -32,7 +32,7 @@
 
 
         <div id="content" v-on:click='stopEvent' v-if='side'>
-            <img :src="side.menuImg" :alt="side.menuName">
+            <img v-if='side.menuImg' :src="side.menuImg" :alt="side.menuName">
             <h3>{{side.menuName}}</h3>
             <p>${{side.price}}</p>
             <div class="details" v-if="side.explanation1">
@@ -48,7 +48,7 @@
 
 
         <div id="content" v-on:click='stopEvent' v-if='month'>
-            <img :src="month.menuImg" :alt="month.menuName">
+            <img v-if='month.menuImg' :src="month.menuImg" :alt="month.menuName">
             <h3>{{month.menuName}}</h3>
             <p>${{month.price}}</p>
             <div class="details" v-if="month.explanation1">
@@ -66,7 +66,7 @@
 
 
         <div id="content" v-on:click='stopEvent' v-if='sweet'>
-            <img :src="sweet.menuImg" :alt="sweet.menuName">
+            <img v-if='sweet.menuImg' :src="sweet.menuImg" :alt="sweet.menuName">
             <h3>{{sweet.menuName}}</h3>
             <p>${{sweet.price}}</p>
             <div class="details" v-if="sweet.explanation1">
@@ -84,7 +84,7 @@
 
 
         <div id="content" v-on:click='stopEvent' v-if='beverage'>
-            <img :src="beverage.menuImg" :alt="beverage.menuName">
+            <img v-if='beverage.menuImg' :src="beverage.menuImg" :alt="beverage.menuName">
             <h3>{{beverage.menuName}}</h3>
             <p>{{beverage.price}}</p>
             <div class="details" v-if="beverage.explanation1">
@@ -153,11 +153,12 @@ export default {
     }
 
     #content {
+        border-radius: 15px;
         z-index: 1;
         overflow-y: scroll;
         width: 70%;
         height: 70%;
-        padding: 2%;
+        padding: 3%;
         background-color: #dfc6b5;
         color: black;
         display: flex;
@@ -182,6 +183,9 @@ export default {
     }
 
     .closemodal {
-        width: 80%;
+        width: 40%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 16px;
     }
 </style>

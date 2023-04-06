@@ -164,9 +164,17 @@ export default {
         align-items: center;
         width: 32%;
         font-size: 16px;
-        padding-top: 2%;
-        padding-bottom: 2%;
+        padding: 2%;
         margin-left: auto;
+        background-color: #ED6D3D;
+        color: antiquewhite;
+        text-decoration: none;
+        border-radius: 10px; 
+    }
+
+    .menutopbutton > a:hover {
+        color: #ED6D3D;
+        background-color: antiquewhite;
     }
 
     .picture2{
