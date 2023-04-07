@@ -1,7 +1,7 @@
 [
 {"menuId":0,"menuName":"","price":0,"category":"","menuImg":"","explanation1":"","explanation2":"","online":true},
 
-{"menuId":1,"menuName":"Freshly Brewed Coffee","price":"12oz $1.75 / 16oz $1.95","category":"coffee","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":1,"menuName":"Freshly Brewed Coffee","price":"12oz $1.75 / 16oz $1.95","category":"coffee","menuImg":"","explanation1":"Refills 12oz $1.00 / 16oz $1.20","explanation2":"","online":true},
 
 {"menuId":2,"menuName":"Freshly Brewed Refills","price":"12oz $1.00 / 16oz $1.20","category":"coffee","menuImg":"","explanation1":"","explanation2":"","online":true},
 

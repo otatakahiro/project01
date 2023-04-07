@@ -1,18 +1,10 @@
 <template>
-<section>
+<section id="#monthly">
     <article>
         <img src="/img/pudd.jpg" alt="">
     </article>
 
-    <div class="displaymenu">      <!--FOR MONTHLY
-    
-    
-    
-    
-    
-    
-    
-     MEAL -->
+    <div class="displaymenu">      <!--FOR MONTHLY MEAL -->
         <h3>Monthly Meal</h3>
         <article>
             <div class="gomodal" v-for="(month, index) in monthlymealfilter" @click='openModal(month)' :key='index'>
@@ -189,6 +181,11 @@ export default {
         row-gap: 5px;
     }
 
+    .gomodal:hover {
+        color: slategray;
+        cursor: pointer;
+    }
+
     .modalbutton{
         font-size: 14px;
         padding: 5px;
@@ -206,6 +203,12 @@ export default {
     }
 }
 @media (min-width:800px) {
+        .displaymenu > h3 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size:35px;
+    }
+
     .displaymenu > article {
         font-size: 18px;
     }
@@ -216,7 +219,7 @@ export default {
         column-gap: 4%;
     }
 
-    .displaymenu div {
+    .gomodal {
         width: 48%;
     }
 }

@@ -66,6 +66,11 @@
 
 export default {
     name:'AccessCompo',
+    method:{
+        desktopsize(){
+            console.log(screen.width)
+        }
+    }
 }
 </script>
 

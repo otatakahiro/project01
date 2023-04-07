@@ -1,55 +1,58 @@
 <template>
-    <div class="displaymenu">      <!--FOR SIDE MENU -->
-    <h3>Japanese Side Menu</h3>
-        <article>
-            <div class="gomodal" v-for="(side, index) in japanesesidefilter" @click='openModal(side)' :key='index'>
-            <div class="details">
-                <p>{{side.menuName}}</p>
-                <p>${{side.price}}
-                    <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                </p>
+    <article id="side">
+
+        <div class="displaymenu">      <!--FOR SIDE MENU -->
+        <h3>Japanese Side Menu</h3>
+            <article>
+                <div class="gomodal" v-for="(side, index) in japanesesidefilter" @click='openModal(side)' :key='index'>
+                <div class="details">
+                    <p>{{side.menuName}}</p>
+                    <p>${{side.price}}
+                        <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                    </p>
+                </div>
             </div>
+            <modal-window v-show='showContent' @from-child='closeModal' :side='sideDetail'></modal-window>
+            </article>
         </div>
-        <modal-window v-show='showContent' @from-child='closeModal' :side='sideDetail'></modal-window>
-        </article>
-    </div>
 
 
 
 
-    <div class="displaymenu">      <!--FOR DAIL SOUP & SALAD -->
-    <h3>Daily Soup & Salad</h3>
-        <article>
-            <div class="gomodal" v-for="(side, index) in dailysoupfilter" @click='openModal(side)' :key='index'>
-            <div class="details">
-                <p>{{side.menuName}}</p>
-                <p>${{side.price}}
-                    <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                </p>
+        <div class="displaymenu">      <!--FOR DAIL SOUP & SALAD -->
+        <h3>Daily Soup & Salad</h3>
+            <article>
+                <div class="gomodal" v-for="(side, index) in dailysoupfilter" @click='openModal(side)' :key='index'>
+                <div class="details">
+                    <p>{{side.menuName}}</p>
+                    <p>${{side.price}}
+                        <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                    </p>
+                </div>
             </div>
+            <modal-window v-show='showContent' @from-child='closeModal' :side='sideDetail'></modal-window>
+            </article>
         </div>
-        <modal-window v-show='showContent' @from-child='closeModal' :side='sideDetail'></modal-window>
-        </article>
-    </div>
 
 
 
 
 
-    <div class="displaymenu">
-    <h3>Other Side Menu</h3>
-        <article>
-            <div class="gomodal" v-for="(side, index) in othersidefilter" @click='openModal(side)' :key='index'>
-            <div class="details">
-                <p>{{side.menuName}}</p>
-                <p>${{side.price}}
-                    <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                </p>
+        <div class="displaymenu">
+        <h3>Other Side Menu</h3>
+            <article>
+                <div class="gomodal" v-for="(side, index) in othersidefilter" @click='openModal(side)' :key='index'>
+                <div class="details">
+                    <p>{{side.menuName}}</p>
+                    <p>${{side.price}}
+                        <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                    </p>
+                </div>
             </div>
+            <modal-window v-show='showContent' @from-child='closeModal' :side='sideDetail'></modal-window>
+            </article>
         </div>
-        <modal-window v-show='showContent' @from-child='closeModal' :side='sideDetail'></modal-window>
-        </article>
-    </div>
+    </article>
 </template>
 <script>
 import getJson from '@/services/getJson'
@@ -143,6 +146,11 @@ export default {
         row-gap: 5px;
     }
 
+    .gomodal:hover {
+        color: slategray;
+        cursor: pointer;
+    }
+
     .details {
         display: flex;
         flex-direction: column;
@@ -184,6 +192,12 @@ export default {
 }
 
 @media (min-width:800px) {
+        .displaymenu > h3 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size:35px;
+    }
+
     .displaymenu > article {
         font-size: 18px;
     }
@@ -194,7 +208,7 @@ export default {
         column-gap: 4%;
     }
 
-    .displaymenu div {
+    .gomodal {
         width: 48%;
     }
 }

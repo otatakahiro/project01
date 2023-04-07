@@ -1,179 +1,182 @@
 <template>
-    <div class="displaymenu">     
-    <h3>Coffee / Espresso</h3>
-    <article>          <!--FOR COFFEE -->
-        <div class="gomodal" v-for="(beverage, index) in coffeefilter" @click='openModal(beverage)' :key='index'>
-            <div class="details">
-                <p>{{beverage.menuName}}</p>
-                <p>{{beverage.price}}
-                    <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                </p>
-            </div>
+    <article id="beverage">
+
+            <div class="displaymenu">     
+            <h3>Coffee / Espresso</h3>
+            <article>          <!--FOR COFFEE -->
+                <div class="gomodal" v-for="(beverage, index) in coffeefilter" @click='openModal(beverage)' :key='index'>
+                    <div class="details">
+                        <p>{{beverage.menuName}}</p>
+                        <p>{{beverage.price}}
+                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                        </p>
+                    </div>
+                </div>
+                <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
+            </article>
+
+
+
+            <article>         <!--FOR ESPRESSO -->
+                <div class="gomodal" v-for="(beverage, index) in espressofilter" @click='openModal(beverage)' :key='index'>
+                    <div class="details">
+                        <p>{{beverage.menuName}}</p>
+                        <p>{{beverage.price}}
+                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                        </p>
+                    </div>
+                </div>
+                <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
+            </article>
         </div>
-        <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
-    </article>
 
 
 
-    <article>         <!--FOR ESPRESSO -->
-        <div class="gomodal" v-for="(beverage, index) in espressofilter" @click='openModal(beverage)' :key='index'>
-            <div class="details">
-                <p>{{beverage.menuName}}</p>
-                <p>{{beverage.price}}
-                    <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                </p>
-            </div>
+        <div class="displaymenu">
+            <h3>Tea</h3>
+            <article class="rice">      <!--FOR BLACK TEA-->
+                <p>Black Tea</p>
+                <section class="inmenu">
+                <div class="gomodal" v-for="(beverage, index) in blackteafilter" @click='openModal(beverage)' :key='index'>
+                    <div class="details">
+                        <p>{{beverage.menuName}}</p>
+                        <p>{{beverage.price}}
+                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                        </p>
+                    </div>
+                </div>
+                <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
+                </section>
+            </article>
+
+
+
+            <article class="rice">      <!--FOR GREEN TEA-->
+                <p>Green Tea</p>
+                <section class="inmenu">
+                <div class="gomodal" v-for="(beverage, index) in greenteafilter"  @click='openModal(beverage)' :key='index'>
+                    <div class="details">
+                        <p>{{beverage.menuName}}</p>
+                        <p>{{beverage.price}}
+                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                        </p>
+                    </div>
+                </div>
+                <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
+                </section>
+            </article>
+
+
+
+
+            <article class="rice">      <!--FOR CHINESE TEA-->
+                <p>Chinese Tea</p>
+                <section class="inmenu">
+                <div class="gomodal" v-for="(beverage, index) in chineseteafilter" @click='openModal(beverage)' :key='index'>
+                    <div class="details">
+                        <p>{{beverage.menuName}}</p>
+                        <p>{{beverage.price}}
+                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                        </p>
+                    </div>
+                </div>
+                <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
+                </section>
+            </article>
+
+
+
+
+            <article class="rice">      <!--FOR ROOIBOS TEA-->
+                <p>Rooibos Tea</p>
+                <section class="inmenu">
+                <div class="gomodal" v-for="(beverage, index) in rooibosteafilter" @click='openModal(beverage)' :key='index'>
+                    <div class="details">
+                        <p>{{beverage.menuName}}</p>
+                        <p>{{beverage.price}}
+                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                        </p>
+                    </div>
+                </div>
+                <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
+                </section>
+            </article>
+
+
+
+
+
+            <article class="rice">      <!--FOR HERBAL TEA-->
+                <p>Herbal Tea</p>
+                <section class="inmenu">
+                <div class="gomodal" v-for="(beverage, index) in herbalteafilter" @click='openModal(beverage)' :key='index'>
+                    <div class="details">
+                        <p>{{beverage.menuName}}</p>
+                        <p>{{beverage.price}}
+                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                        </p>
+                    </div>
+                </div>
+                <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
+                </section>
+            </article>
+
+
+
+
+
+            <article class="rice">      <!--FOR TISANE TEA-->
+                <p>Tisane Tea</p>
+                <section class="inmenu">
+                <div class="gomodal" v-for="(beverage, index) in tisaneteafilter" @click='openModal(beverage)' :key='index'>
+                <div class="details">
+                        <p>{{beverage.menuName}}</p>
+                        <p>{{beverage.price}}
+                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                        </p>
+                    </div>
+                </div>
+                <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
+                </section>
+            </article>
         </div>
-        <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
-    </article>
-</div>
 
 
 
-<div class="displaymenu">
-    <h3>Tea</h3>
-    <article class="rice">      <!--FOR BLACK TEA-->
-        <p>Black Tea</p>
-        <section class="inmenu">
-        <div class="gomodal" v-for="(beverage, index) in blackteafilter" @click='openModal(beverage)' :key='index'>
-            <div class="details">
-                <p>{{beverage.menuName}}</p>
-                <p>{{beverage.price}}
-                    <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                </p>
-            </div>
+        <div class="displaymenu">      <!--FOR OTHER BEVRAGES-->
+            <h3>Other Beverages</h3>
+            <article>
+                <div class="gomodal" v-for="(beverage, index) in otherbeveragefilter" @click='openModal(beverage)' :key='index'>
+                    <div class="details">
+                        <p>{{beverage.menuName}}</p>
+                        <p>{{beverage.price}}
+                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                        </p>
+                    </div>
+                </div>
+                <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
+            </article>
         </div>
-        <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
-        </section>
-    </article>
 
 
 
-    <article class="rice">      <!--FOR GREEN TEA-->
-        <p>Green Tea</p>
-        <section class="inmenu">
-        <div class="gomodal" v-for="(beverage, index) in greenteafilter"  @click='openModal(beverage)' :key='index'>
-            <div class="details">
-                <p>{{beverage.menuName}}</p>
-                <p>{{beverage.price}}
-                    <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                </p>
-            </div>
+
+
+        <div class="displaymenu">      <!--FOR ALCOHOLIC-->
+            <h3>Alcoholic</h3>
+            <article>
+                <div class="gomodal" v-for="(beverage, index) in alcoholicfilter" @click='openModal(beverage)' :key='index'>
+                    <div class="details">
+                        <p>{{beverage.menuName}}</p>
+                        <p>{{beverage.price}}
+                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                        </p>
+                    </div>
+                </div>
+                <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
+            </article>
         </div>
-        <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
-        </section>
     </article>
-
-
-
-
-    <article class="rice">      <!--FOR CHINESE TEA-->
-        <p>Chinese Tea</p>
-        <section class="inmenu">
-        <div class="gomodal" v-for="(beverage, index) in chineseteafilter" @click='openModal(beverage)' :key='index'>
-            <div class="details">
-                <p>{{beverage.menuName}}</p>
-                <p>{{beverage.price}}
-                    <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                </p>
-            </div>
-        </div>
-        <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
-        </section>
-    </article>
-
-
-
-
-    <article class="rice">      <!--FOR ROOIBOS TEA-->
-        <p>Rooibos Tea</p>
-        <section class="inmenu">
-        <div class="gomodal" v-for="(beverage, index) in rooibosteafilter" @click='openModal(beverage)' :key='index'>
-            <div class="details">
-                <p>{{beverage.menuName}}</p>
-                <p>{{beverage.price}}
-                    <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                </p>
-            </div>
-        </div>
-        <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
-        </section>
-    </article>
-
-
-
-
-
-    <article class="rice">      <!--FOR HERBAL TEA-->
-        <p>Herbal Tea</p>
-        <section class="inmenu">
-        <div class="gomodal" v-for="(beverage, index) in herbalteafilter" @click='openModal(beverage)' :key='index'>
-            <div class="details">
-                <p>{{beverage.menuName}}</p>
-                <p>{{beverage.price}}
-                    <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                </p>
-            </div>
-        </div>
-        <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
-        </section>
-    </article>
-
-
-
-
-
-    <article class="rice">      <!--FOR TISANE TEA-->
-        <p>Tisane Tea</p>
-        <section class="inmenu">
-        <div class="gomodal" v-for="(beverage, index) in tisaneteafilter" @click='openModal(beverage)' :key='index'>
-           <div class="details">
-                <p>{{beverage.menuName}}</p>
-                <p>{{beverage.price}}
-                    <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                </p>
-            </div>
-        </div>
-        <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
-        </section>
-    </article>
-</div>
-
-
-
-<div class="displaymenu">      <!--FOR OTHER BEVRAGES-->
-    <h3>Other Beverages</h3>
-    <article>
-        <div class="gomodal" v-for="(beverage, index) in otherbeveragefilter" @click='openModal(beverage)' :key='index'>
-            <div class="details">
-                <p>{{beverage.menuName}}</p>
-                <p>{{beverage.price}}
-                    <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                </p>
-            </div>
-        </div>
-        <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
-    </article>
-</div>
-
-
-
-
-
-<div class="displaymenu">      <!--FOR ALCOHOLIC-->
-    <h3>Alcoholic</h3>
-    <article>
-        <div class="gomodal" v-for="(beverage, index) in alcoholicfilter" @click='openModal(beverage)' :key='index'>
-            <div class="details">
-                <p>{{beverage.menuName}}</p>
-                <p>{{beverage.price}}
-                    <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                </p>
-            </div>
-        </div>
-        <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
-    </article>
-</div>
 </template>
 <script>
 import getJson from '@/services/getJson'
@@ -287,6 +290,11 @@ export default {
         row-gap: 5px;
     }
 
+    .gomodal:hover {
+        color: slategray;
+        cursor: pointer;
+    }
+
     .details {
         display: flex;
         flex-direction: column;
@@ -346,6 +354,11 @@ export default {
 }
 
 @media (min-width:800px) {
+    .displaymenu > h3 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size:35px;
+    }
     .displaymenu > article {
         font-size: 18px;
     }
@@ -356,7 +369,7 @@ export default {
         column-gap: 4%;
     }
 
-    .displaymenu div {
+    .gomodal {
         width: 48%;
     }
 

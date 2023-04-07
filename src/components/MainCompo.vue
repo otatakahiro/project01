@@ -1,9 +1,9 @@
 <template>
     <main>
         <TopCompo></TopCompo>
-        <MenuCompo id='menu'></MenuCompo>
-        <NewsCompo id='news'></NewsCompo>
-        <AccessCompo id='access'></AccessCompo>
+        <MenuCompo></MenuCompo>
+        <NewsCompo></NewsCompo>
+        <AccessCompo></AccessCompo>
     </main>
 </template>
 <script>

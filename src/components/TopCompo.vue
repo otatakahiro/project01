@@ -15,6 +15,7 @@
 In Japan, not only coffee/tea and some snacks but also some Japanese meals are provided.
 Especially, 洋食 (Yo-shoku) which means western style meals is enjoyed in 喫茶店for example Omu-rice and Curry-rice. Also you can enjoy some traditional/native-popular Japanese meals in Marulilu cafe; you have to know Japanese foods are not only sushi and tempura. Marulilu cafe is only one place to experience the real Japanese-style foods and drinks in Vancouver.</p>
         </article>
+        <div id="menu"></div>
     </section>
 </template>
 

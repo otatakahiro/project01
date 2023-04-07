@@ -126,6 +126,9 @@ export default {
 </script>
 
 <style scoped>
+
+@media (min-width:300px){
+
     img {
         width: 90%;
         border-radius: 5px;
@@ -165,6 +168,11 @@ export default {
         flex-direction: column;
         align-items: center;
         row-gap: 2%;
+        
+    }
+
+    #content::-webkit-scrollbar{    
+        display: none;
     }
 
     .details {
@@ -176,10 +184,12 @@ export default {
         background-color: antiquewhite;
         white-space: pre-wrap;
         padding: 3% 1%;
+        width: 90%;
     }
 
     .details > p {
         border-bottom: 1px solid orange;
+        padding-bottom: 15px;
     }
 
     .closemodal {
@@ -187,5 +197,31 @@ export default {
         padding-top: 2%;
         padding-bottom: 2%;
         font-size: 16px;
+        cursor: pointer;
     }
+}
+
+@media (min-width:800px){
+    h3 {
+        font-size: 22px;
+    }
+
+    .closemodal {
+        width: 20%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        font-size: 18px;
+    }
+}
+
+@media (min-width:1200px){
+    img {
+        width: 50%;
+
+    }
+
+    .details {
+        width: 70% !important;
+    }
+}
 </style>

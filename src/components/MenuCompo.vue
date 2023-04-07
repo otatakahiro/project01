@@ -12,47 +12,48 @@
             <article class="menu-title">
 
                 <div>
-                    <router-link class="router-link" v-for='(menu,index) in menus' :key='index' :to='menu.path'>
+                    <router-link class="router-link" v-for='(menu,index) in menus' :key='index' :to='menu.path' @click='move'>
                         <img :src="menu.src" :alt="menu.src">{{menu.title}}
                     </router-link>
-                    <router-view></router-view>
+                    <router-view id="moveto"></router-view>
                 </div>
                 <img src="/img/katsu.jpg" alt="">
             </article>
 
             <article class="menutopbutton">
-                <a type="button" href="#menu">Menu Top<font-awesome-icon icon="fa-solid fa-caret-up" /></a>
+                <a type="button" href="#moveto">Menu Top<font-awesome-icon icon="fa-solid fa-angles-up" /></a>
             </article>
 
-
-
-            <article class="menu-img">
-                <img src="/img/katsu.jpg" alt="">
-                <img src="/img/katsu.jpg" alt="">
-                <img src="/img/katsu.jpg" alt="">
-            </article>
+            <div id="news"></div>
         </section>
-        
 </template>
 <script>
+// import { faTextHeight } from '@fortawesome/free-solid-svg-icons'
 
 export default {
     name:'MenuCompo',
     data() {
         return {
             menus: [
-                {title: 'ALL-DAY BREAKFASTS', href: '#', src:'img/katsu.jpg', path:'/breakfast',name:'Breakfast Menu'},
-                {title: 'JAPANESE DISH & YOSHOKU', href: '#', src:'img/katsu.jpg', path:'/jpndish',name:'Jpn Dish Menu'},
-                {title: 'JAPANESE SIDE MENU', href: '#', src:'img/katsu.jpg', path:'/jpnside',name:'Jpn Side Menu'},
-                {title: 'MONTHLY SPECIAL', href: '#', src:'img/katsu.jpg', path:'/monthly',name:'Monthly Menu'},
-                {title: 'SWEET & DESSERTS', href: '#', src:'img/katsu.jpg', path:'/sweets',name:'Sweets Menu'},
-                {title: 'BEVERAGES', href: '#', src:'img/katsu.jpg', path:'/beverages',name:'Beverages Menu'},
+                {title: 'ALL-DAY BREAKFASTS', href: 'breakfast', src:'img/katsu.jpg', path:'/breakfast',name:'Breakfast Menu'},
+                {title: 'JAPANESE DISH & YOSHOKU', href: 'dish', src:'img/katsu.jpg', path:'/jpndish',name:'Jpn Dish Menu'},
+                {title: 'JAPANESE SIDE MENU', href: 'side', src:'img/katsu.jpg', path:'/jpnside',name:'Jpn Side Menu'},
+                {title: 'MONTHLY SPECIAL', href: 'monthly', src:'img/katsu.jpg', path:'/monthly',name:'Monthly Menu'},
+                {title: 'SWEET & DESSERTS', href: 'sweets', src:'img/katsu.jpg', path:'/sweets',name:'Sweets Menu'},
+                {title: 'BEVERAGES', href: 'beverage', src:'img/katsu.jpg', path:'/beverages',name:'Beverages Menu'},
             ],
             curretPath:'',
         }
     },
     methods:{
-
+        move(){
+            let movetoHeight = document.getElementById('moveto');
+            movetoHeight.scrollIntoView({
+                behavior:'smooth',
+                block:'start',
+                
+            });
+        }
     }
 }
 </script>
@@ -188,11 +189,13 @@ export default {
         font-size: 45px;
     }
 
+    #moveto {
+        padding-top: 70px;
+    }
+
     .menu-title > div {
         width: 100%;
         justify-content: space-evenly;
-        /* flex-wrap: unset; */
-        /* flex-direction: column; */
     }
 
     .menu-title a{
@@ -206,14 +209,21 @@ export default {
     }
 
     .menu-title > img {
-        /* display: unset; */
-        /* position: absolute; */
-        /* z-index: 0; */
         height: 100%;
         width: 50%;
         left: 50%;
         border-radius: 30px 0 0 30px;
     }
+
+    .menutopbutton > a {
+        width: 20%;
+        font-size: 18px;
+        padding: 1%;
+    }
+}
+
+@media (min-width:1200px) {
+
 }
 
 </style>

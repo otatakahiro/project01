@@ -62,6 +62,7 @@
                 <img src="/img/katsu.jpg" alt="">
             </article>
         </div>
+        <div id="access"></div>
     </section>
 </template>
 <script>
