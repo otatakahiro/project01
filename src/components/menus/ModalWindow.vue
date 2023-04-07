@@ -2,14 +2,16 @@
     <div id='overlay' v-on:click='clickEvent'>
         <div id="content" v-on:click='stopEvent' v-if='breakfast'>
             <img v-if='breakfast.menuImg' :src="breakfast.menuImg" :alt="breakfast.menuName">
-            <h3>{{breakfast.menuName}}</h3>
-            <p>${{breakfast.price}}</p>
-            <div class="details" v-if="breakfast.explanation1">
-                <p>{{breakfast.explanation1}}</p>
-                <p v-if="breakfast.explanation2">{{breakfast.explanation2}}</p>
-                <p v-if="breakfast.explanation3">{{breakfast.explanation3}}</p>
-            </div>
-            <button class='closemodal' @click='clickEvent'>close</button>
+            <div>
+                <h3>{{breakfast.menuName}}</h3>
+                <p>${{breakfast.price}}</p>
+                <div class="details" v-if="breakfast.explanation1">
+                    <p>{{breakfast.explanation1}}</p>
+                    <p v-if="breakfast.explanation2">{{breakfast.explanation2}}</p>
+                    <p v-if="breakfast.explanation3">{{breakfast.explanation3}}</p>
+                </div>
+                <button class='closemodal' @click='clickEvent'>close</button>
+                </div>
         </div>
 
 
@@ -85,14 +87,14 @@
 
         <div id="content" v-on:click='stopEvent' v-if='beverage'>
             <img v-if='beverage.menuImg' :src="beverage.menuImg" :alt="beverage.menuName">
-            <h3>{{beverage.menuName}}</h3>
-            <p>{{beverage.price}}</p>
-            <div class="details" v-if="beverage.explanation1">
-                <p>{{beverage.explanation1}}</p>
-                <p v-if="beverage.explanation2">{{beverage.explanation2}}</p>
-                <p v-if="beverage.explanation3">{{beverage.explanation3}}</p>
-            </div>
-            <button class='closemodal' @click='clickEvent'>close</button>
+                <h3>{{beverage.menuName}}</h3>
+                <p>{{beverage.price}}</p>
+                <div class="details" v-if="beverage.explanation1">
+                    <p>{{beverage.explanation1}}</p>
+                    <p v-if="beverage.explanation2">{{beverage.explanation2}}</p>
+                    <p v-if="beverage.explanation3">{{beverage.explanation3}}</p>
+                </div>
+                <button class='closemodal' @click='clickEvent'>close</button>
         </div>
     </div>
 
@@ -168,7 +170,14 @@ export default {
         flex-direction: column;
         align-items: center;
         row-gap: 2%;
-        
+    }
+
+    #content > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
     }
 
     #content::-webkit-scrollbar{    
@@ -217,11 +226,22 @@ export default {
 @media (min-width:1200px){
     img {
         width: 50%;
+    }
 
+    #content {
+        flex-direction: row;
+    }
+
+    #content > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
     }
 
     .details {
-        width: 70% !important;
+        width: 85% !important;
     }
 }
 </style>
