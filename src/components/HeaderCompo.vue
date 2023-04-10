@@ -40,7 +40,7 @@ export default {
         header h1 {
             color: white;
             /* background-color: rgba(96, 40, 30, .8); */
-            background-color: #D35C37;
+            background-color: #834f2f;
             width: fit-content;
             padding: 2% 1%;
             border-radius: 10px;

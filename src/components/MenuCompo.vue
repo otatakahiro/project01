@@ -6,7 +6,8 @@
             </article>
 
             <article class="mobile-order">
-                <button>Order</button>
+                <button>UberEats</button>
+                <button>DoorDash</button>
             </article>
 
             <article class="menu-title">
@@ -75,16 +76,16 @@ export default {
         border-bottom: 3px solid;
     }
     
-    .mobile-order > button {
+    /* .mobile-order > button {
         font-size: 25px;
         width: 40%;
         height: 60px;
         border-radius: 15px;
         background-color: #dfc6b5;
-        color: rgba(142, 94, 69, 1);
         font-weight: 600;
         margin: 30px;
-    }
+    } */
+
 
     .menu {
         display: flex;
@@ -93,8 +94,9 @@ export default {
         background-color: rgba(142, 94, 69, .6);
         padding-bottom: 60px;
         color: white;
-        row-gap: 10px;
+        row-gap: 30px;
     }
+        
 
     .title {
         width: 100%;
@@ -102,11 +104,32 @@ export default {
         flex-direction: column;
         align-items: center;
     }
-
     .mobile-order {
-        width: 100%;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .mobile-order > button{
+        font-size: 20px;
+        letter-spacing: 2px;
+        width: 45%;
+        height: 40px;
+        border-radius: 30px;
+        /* background: rgba(142, 94, 69, 1); */
+        background-color: #EB8A3E;
+        color: darkolivegreen;
+        font-weight: 600;
         text-align: center;
     }
+    /* button > img {
+        width: 30%;
+    } */
+
+    button:last-child{
+        color: crimson;
+    }
+
 
     .menu-title {
         width: 100%;

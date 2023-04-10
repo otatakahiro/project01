@@ -23,7 +23,7 @@ export default {
 
   footer {
         height: 250px;
-        background-color: #60281E;
+        background-color: #834f2f;
         font-size: 15px;
         display: flex;
         flex-direction: column;

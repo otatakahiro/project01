@@ -19,7 +19,7 @@
                     </tr>
                     <tr>
                         <th>Address</th>
-                        <td class="td">451 W Broadway, Vancouver, BC, V5Y 1R4</td>
+                        <td class="td">451 W Broadway, Vancouver,<br>BC, V5Y 1R4</td>
                     </tr>
                     <tr>
                         <th>Time</th>
@@ -66,9 +66,9 @@
 
 export default {
     name:'AccessCompo',
-    method:{
-        desktopsize(){
-            console.log(screen.width)
+    data(){
+        return {
+            
         }
     }
 }

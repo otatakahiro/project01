@@ -5,7 +5,7 @@
             <li v-for='(nav, index) in navs' :key='index'><a :href="nav.href">{{nav.text}}</a></li>
         </ul>
         <details>
-            <summary><font-awesome-icon icon="fa-solid fa-bars" /></summary>
+            <summary ><font-awesome-icon icon="fa-solid fa-bars" /></summary>
             <ul>
                 <li v-for='(nav, index) in navs' :key='index'><a :href="nav.href">{{nav.text}}</a></li>
             </ul>
@@ -17,7 +17,6 @@
 </section>
 </template>
 <script>
-
 export default {
     name:'NavVar',
     data() {
@@ -29,7 +28,8 @@ export default {
                 {text: 'Access', href: '#access'},
             ]
         }
-    }
+    },
+
 }
 </script>
 
@@ -67,7 +67,7 @@ export default {
         font-size: 28px;
         font-family: 'Rye',cursive;
         padding-left: 34px;
-        color: white;
+        color: #834f2f;
     }
 
     details {
@@ -79,7 +79,7 @@ export default {
     details > ul{
         background-color: rgba(256, 256, 256, .5);
         position: absolute;
-        top: -50px;
+        top: 44px;
         display: flex;
         flex-direction: column;
         text-align: left;

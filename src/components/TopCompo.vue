@@ -1,7 +1,10 @@
 <template>
     <section class="top">
         <article class="mobile-order">
-            <button href="#">Order</button>
+            <button href="#">Uber</button>
+            <!-- <button><img src="/img/ubereats.png" alt="uber"> 
+            </button> -->
+            <button href="#">DoorDash</button>
         </article>
         <article class="announcement">
             <ul>
@@ -56,22 +59,45 @@ export default {
     }
 
     .mobile-order {
-        width: 100%;
+        width: 90%;
         display: flex;
-        justify-content: center;
-        /* align-items: center; */
+        justify-content: space-around;
     }
+    /* button {
+        width: 100%;
+    } */
     
     button{
-        font-size: 28px;
-        width: 40%;
-        padding: 0 30px;
-        height: 60px;
-        border-radius: 15px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        width: 45%;
+        height: 40px;
+        border-radius: 30px;
         background: rgba(142, 94, 69, 1);
-        color: white;
+        background-color: #E45E00;
+        background-color: #FF5D20;
+        background-color: #ED551B;
+        background-color: #FD7E00;
+        background-color: #E7552C;
+        background-color: #D55448;
+        background-color: #FFA577;
+        background-color: #FF8D3F; 
+        background-color: #D35C37;
+        background-color: #F78B2D;
+        background-color: #FA8D62;
+        background-color: #D6C6B9;
+        background-color: #F47D4A;
+        background-color: #EB8A3E;
+        color: darkolivegreen;
         font-weight: 600;
         text-align: center;
+    }
+    /* button > img {
+        width: 30%;
+    } */
+
+    button:last-child{
+        color: crimson;
     }
 
     .announcement {
@@ -84,7 +110,8 @@ export default {
     
     .announcement li{
         border-bottom: 2px dashed rgba(142, 94, 69, 1);    
-        color: rgba(142, 94, 69, 1);
+        /* color: rgba(142, 94, 69, 1); */
+        color: black;
         /* color: white; */
         list-style: none;
         padding: 3px;
