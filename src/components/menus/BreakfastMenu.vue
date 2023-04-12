@@ -203,6 +203,7 @@ export default {
         flex-direction: column;
         align-items: center;
         row-gap: 10px;
+        padding-top: 10%;
     }
 
     .displaymenu > h3 {

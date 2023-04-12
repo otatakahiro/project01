@@ -7,8 +7,12 @@
             <button href="#">DoorDash</button>
         </article>
         <article class="announcement">
-            <ul>
-                <li v-for='(anouncement, index) in announcements' :key='index'>{{anouncement.news}}</li>
+            <h5>Hours</h5>
+            <ul class="for-open">
+                <li v-for='(anouncement, index) in openannouncements' :key='index'>{{anouncement.news}}</li>
+            </ul>
+            <ul class="for-close">
+                <li v-for='(anouncement,index) in closeannouncements' :key='index'>{{anouncement.news}}</li>
             </ul>
         </article>
 
@@ -27,12 +31,14 @@ export default {
     name:'TopCompo',
     data(){
         return {
-            announcements: [
+            openannouncements: [
                 {news:'Mon, Wed - Fri 8:00 AM - 6:00 PM'},
                 {news:'Sat - Sun 8:30 AM - 6:00 PM'},
-                {news:'Holiday 9:00 AM - 6:00 PM'},
+                {news:'Holiday 9:00 AM - 6:00 PM'}
+            ],
+            closeannouncements: [
                 {news:'We close on Tuesday'},
-                {news:"We close on X'MAS and New Year"},
+                {news:"We close on X'MAS and New Year"}
             ]
         }
     }
@@ -46,7 +52,12 @@ export default {
 } */
 
 @media (min-width: 300px) {
-    
+    h5 {
+        font-size: 18px;
+        color: black;
+        text-align: center;
+    }
+
     .top {
         display: flex;
         flex-direction: column;
@@ -102,23 +113,31 @@ export default {
 
     .announcement {
         width: 92%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
     }
 
-    .announcement > ul {
-        width: 100%;
+    .for-open,
+    .for-close {
+        display: flex;
+        flex-direction: column;
     }    
-    
-    .announcement li{
-        border-bottom: 2px dashed rgba(142, 94, 69, 1);    
-        /* color: rgba(142, 94, 69, 1); */
+
+    .for-open > li,
+    .for-close > li {
         color: black;
-        /* color: white; */
-        list-style: none;
-        padding: 3px;
-        font-size: 19px;
-        width: 100%;
+        list-style: square;
+        /* width: 100%; */
+        font-size: 15px;
+        text-align: left;
     }
     
+    /* .for-close > li {
+
+    }
+     */
     .introduction > img {
         width: 100%;
     }
