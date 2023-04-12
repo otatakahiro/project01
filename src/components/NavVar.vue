@@ -10,8 +10,10 @@
                 <li v-for='(nav, index) in navs' :key='index'><a :href="nav.href">{{nav.text}}</a></li>
             </ul>
         </details>
+
+
         <a href="#">
-        <h3>Marulilu Cafe</h3>
+            <h3>Marulilu Cafe</h3>
         </a>
     </nav>
 </section>
@@ -29,7 +31,6 @@ export default {
             ]
         }
     },
-
 }
 </script>
 
@@ -45,15 +46,17 @@ export default {
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: left;
+        /* justify-content: center; */
         /* background-color: #60281E; */
         /* background-color: #D35C37; */
         background-color: #97B8C2;
         color: white;
         position: absolute;
+        /* top: 60vh; */
         top: 90vh;
         z-index: 1;
     }
+
     nav > ul{
         display: none;
         width: 40.5%;   
@@ -61,19 +64,23 @@ export default {
     
     nav > a {
         text-decoration: none;   
+        margin-left: auto;
+        margin-right: auto;
     }
 
     nav > a > h3  {
         font-size: 28px;
         font-family: 'Rye',cursive;
-        padding-left: 34px;
         color: #834f2f;
+        font-weight: 400;
+        /* width: 100%; */
     }
 
     details {
-        position: relative;
+        position: absolute;
         display: flex;
         justify-content: left;
+        padding-left: 8%;
     }
 
     details > ul{
@@ -104,8 +111,8 @@ export default {
     summary {
         font-size: 28px;
         display: block;
-        position: relative;
-        padding-left: 40px;
+        /* position: absolute; */
+        
     }
 }
 

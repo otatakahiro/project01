@@ -29,7 +29,6 @@
         </section>
 </template>
 <script>
-// import { faTextHeight } from '@fortawesome/free-solid-svg-icons'
 
 export default {
     name:'MenuCompo',
@@ -52,7 +51,7 @@ export default {
             movetoHeight.scrollIntoView({
                 behavior:'smooth',
                 block:'start',
-                
+                transition:'5s'
             });
         }
     }
@@ -190,7 +189,7 @@ export default {
         font-size: 16px;
         padding: 2%;
         margin-left: auto;
-        background-color: #ED6D3D;
+        background-color: #97B8C2;
         color: antiquewhite;
         text-decoration: none;
         border-radius: 10px; 
