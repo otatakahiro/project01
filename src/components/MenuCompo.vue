@@ -6,8 +6,10 @@
             </article>
 
             <article class="mobile-order">
-                <button>UberEats</button>
-                <button>DoorDash</button>
+            <button href="#">
+                <p>ORDER</p>
+                <p>- Here -</p>
+            </button>
             </article>
 
             <article class="menu-title">
@@ -85,6 +87,21 @@ export default {
         margin: 30px;
     } */
 
+    button{
+        font-size: 20px;
+        letter-spacing: 2px;
+        width: 45%;
+        border-radius: 30px;
+        color: darkolivegreen;
+        font-weight: 600;
+        text-align: center;
+        padding: 3px;
+    }
+
+    button > p:last-child {
+        font-size: 17px;
+    }
+
 
     .menu {
         display: flex;
@@ -109,25 +126,22 @@ export default {
         justify-content: space-around;
     }
 
-    .mobile-order > button{
+    /* .mobile-order > button{
         font-size: 20px;
         letter-spacing: 2px;
         width: 45%;
         height: 40px;
         border-radius: 30px;
-        /* background: rgba(142, 94, 69, 1); */
+        background: rgba(142, 94, 69, 1);
         background-color: #EB8A3E;
         color: darkolivegreen;
         font-weight: 600;
         text-align: center;
     }
-    /* button > img {
-        width: 30%;
-    } */
 
     button:last-child{
         color: crimson;
-    }
+    } */
 
 
     .menu-title {

@@ -1,10 +1,10 @@
 <template>
     <section class="top">
         <article class="mobile-order">
-            <button href="#">Uber</button>
-            <!-- <button><img src="/img/ubereats.png" alt="uber"> 
-            </button> -->
-            <button href="#">DoorDash</button>
+            <button href="#">
+                <p>ORDER</p>
+                <p>- Here -</p>
+            </button>
         </article>
         <article class="announcement">
             <h5>Hours</h5>
@@ -74,11 +74,23 @@ export default {
         display: flex;
         justify-content: space-around;
     }
-    /* button {
-        width: 100%;
-    } */
-    
+
     button{
+        font-size: 20px;
+        letter-spacing: 2px;
+        width: 45%;
+        border-radius: 30px;
+        color: darkolivegreen;
+        font-weight: 600;
+        text-align: center;
+        padding: 3px;
+    }
+
+    button > p:last-child {
+        font-size: 17px;
+    }
+    
+    /* button{
         font-size: 20px;
         letter-spacing: 2px;
         width: 45%;
@@ -103,13 +115,10 @@ export default {
         font-weight: 600;
         text-align: center;
     }
-    /* button > img {
-        width: 30%;
-    } */
 
     button:last-child{
         color: crimson;
-    }
+    } */
 
     .announcement {
         width: 92%;
