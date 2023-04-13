@@ -221,20 +221,21 @@ export default {
         outline: none;
         display: block;
         transition: .5s;
+        line-height: 17px;
+        border-bottom: 2px dotted black;
     }
     
     .accordion:after {
-        content: '\02795';
-        font-size: 13px;
-        color: rgba(142, 94, 69,.5);
+        content: '\002B';
+        font-size: 30px;
+        color: black;
         float: right;
-        margin: auto;
     }
 
     .active:after {
-        content: '\2796';
+        content: '\00D7';
     }
-    .active, .accordion:hover {
+    .accordion:hover {
         background-color: #D6C6B9;
     }
 
@@ -248,7 +249,7 @@ export default {
         align-items: center;
         width: 95%;
         margin: auto;
-        outline: 1px dashed orange;
+        margin-top: 1px;
     }
 
     .displaymenu > article {
@@ -258,10 +259,11 @@ export default {
         width: 100%;
         background-color: antiquewhite;
         row-gap: 10px;
+        justify-content: center;
     }
 
     .gomodal {
-        width: 100%;
+        width: 95%;
         display: flex;
         flex-direction: column;
         color: black;

@@ -1,8 +1,8 @@
 <template>
 <article id="dish">
 
+    <button class="accordion" v-bind="accordion()">Donburi</button>
     <div class="displaymenu">      <!--FOR DONBURI -->
-        <h3>Donburi</h3>
         <article>
             <div class="gomodal" v-for="(dish, index) in donburifilter" @click='openModal(dish)' :key='index'>
                 <div class="details">
@@ -16,9 +16,8 @@
         </article>
     </div>
 
-
+    <button class="accordion" v-bind="accordion()">Yoshoku</button>
     <div class="displaymenu">      <!--FOR OTHER YOSHOKU -->
-        <h3>Other Yoshoku</h3>
         <article>
             <div class="gomodal" v-for="(dish, index) in yoshokufilter" @click='openModal(dish)' :key='index'>
                 <div class="details">
@@ -33,9 +32,8 @@
     </div>
 
 
-
+    <button class="accordion" v-bind="accordion()">Hamburger Steaks</button>
     <div class="displaymenu">      <!--FOR HAMBURGER STEAKS -->
-        <h3>Hamburger Steaks</h3>
         <article>
             <div class="gomodal" v-for="(dish, index) in steakfilter" @click='openModal(dish)' :key='index'>
                 <div class="details">
@@ -50,9 +48,8 @@
     </div>
 
 
-
+    <button class="accordion" v-bind="accordion()">Japanese Curry & Omu Rice</button>
     <div class="displaymenu">      <!--FOR CURRY & OMU RICE -->
-        <h3>Japanese Curry & Omu Rice</h3>
         <article class="rice">      <!--FOR WHITE RICE -->
             <p>with White Rice</p>
             <section class="inmenu">
@@ -162,10 +159,27 @@ export default {
     closeModal(){
         this.showContent = false,
         this.dishDetail = [{},{}]
+    },
+    accordion(){
+        var acc = document.getElementsByClassName('accordion');
+        var i;
+        for (i = 0; i < acc.length; i++){
+            acc[i].addEventListener('click',function() {
+                this.classList.toggle('active');
+                var displaymenu = this.nextElementSibling;
+                if (displaymenu.style.maxHeight) {
+                    displaymenu.style.maxHeight = null;
+                } else {
+                    displaymenu.style.maxHeight = displaymenu.scrollHeight
+                    + 'px';
+                }
+            })
+        }
     }
   },
   mounted(){
     this.loadJpnDishes();
+    this.accordion();
   }
 }
 </script>
@@ -173,13 +187,49 @@ export default {
 <style scoped>
 
 @media (min-width:300px) {
+    .accordion {
+        margin: auto;
+        font-family: 'Rye', cursive;
+        background-color: rgba(142, 94, 69,0);
+        font-size: 17px;
+        color: black;
+        cursor: pointer;
+        padding: 13px;
+        width: 95%;
+        text-align: left;
+        border: none;
+        outline: none;
+        display: block;
+        transition: .5s;
+        line-height: 17px;
+        border-bottom: 2px dotted black;
+    }
+    
+    .accordion:after {
+        content: '\002B';
+        font-size: 30px;
+        color: black;
+        float: right;
+    }
+
+    .active:after {
+        content: '\00D7';
+    }
+    .accordion:hover {
+        background-color: #D6C6B9;
+    }
  
     .displaymenu{
-        width: 100%;
+        background-color: #D6C6B9;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
         display: flex;
         flex-direction: column;
         align-items: center;
-        row-gap: 10px;
+        width: 95%;
+        margin: auto;
+        margin-top: 1px;
     }
 
     .displaymenu > h3 {
@@ -192,14 +242,13 @@ export default {
     }
 
     .displaymenu > article {
-        font-size: 16px;
+         font-size: 16px;
         display: flex;
         flex-wrap: wrap;
-        width: 85%;
-        outline: 2px dashed orange;
+        width: 100%;
         background-color: antiquewhite;
-        padding: 10px;
         row-gap: 10px;
+        justify-content: center;
     }
 
     .gomodal {
@@ -207,7 +256,7 @@ export default {
         display: flex;
         flex-direction: column;
         color: black;
-        row-gap: 5px;
+        padding: 5px;
     }
 
     .gomodal:hover {
