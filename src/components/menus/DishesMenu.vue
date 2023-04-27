@@ -232,17 +232,8 @@ export default {
         margin-top: 1px;
     }
 
-    .displaymenu > h3 {
-        text-align: center;
-        font-size: 25px;
-        width: 85%;
-        font-family: 'Rye', cursive;
-        color: black;
-        font-weight: 400;
-    }
-
     .displaymenu > article {
-         font-size: 16px;
+        font-size: 16px;
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -252,7 +243,7 @@ export default {
     }
 
     .gomodal {
-        width: 100%;
+        width: 95%;
         display: flex;
         flex-direction: column;
         color: black;

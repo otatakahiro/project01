@@ -6,8 +6,7 @@
             </article>
 
             <article class="mobile-order">
-                <button>UberEats</button>
-                <button>DoorDash</button>
+                <button>Order Here</button>
             </article>
 
             <article class="menu-title">

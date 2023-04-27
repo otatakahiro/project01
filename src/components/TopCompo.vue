@@ -1,12 +1,12 @@
 <template>
     <section class="top">
         <article class="mobile-order">
-            <button href="#">Uber</button>
+            <button href="#">Order Here</button>
             <!-- <button><img src="/img/ubereats.png" alt="uber"> 
             </button> -->
-            <button href="#">DoorDash</button>
+            <!-- <button href="#">DoorDash</button> -->
         </article>
-        <article class="announcement">
+        <!-- <article class="announcement">
             <h5>Hours</h5>
             <ul class="for-open">
                 <li v-for='(anouncement, index) in openannouncements' :key='index'>{{anouncement.news}}</li>
@@ -14,7 +14,7 @@
             <ul class="for-close">
                 <li v-for='(anouncement,index) in closeannouncements' :key='index'>{{anouncement.news}}</li>
             </ul>
-        </article>
+        </article> -->
 
         <article class="introduction">
             <img :src="require('/public/img/sign.jpg')" alt='malu'>

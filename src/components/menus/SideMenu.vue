@@ -1,8 +1,8 @@
 <template>
     <article id="side">
 
+        <button class="accordion" @click="accordion()">Japanese Side Menu</button>
         <div class="displaymenu">      <!--FOR SIDE MENU -->
-        <h3>Japanese Side Menu</h3>
             <article>
                 <div class="gomodal" v-for="(side, index) in japanesesidefilter" @click='openModal(side)' :key='index'>
                 <div class="details">
@@ -18,9 +18,8 @@
 
 
 
-
+        <button class="accordion" @click="accordion()">Daily Soup & Salad</button>
         <div class="displaymenu">      <!--FOR DAIL SOUP & SALAD -->
-        <h3>Daily Soup & Salad</h3>
             <article>
                 <div class="gomodal" v-for="(side, index) in dailysoupfilter" @click='openModal(side)' :key='index'>
                 <div class="details">
@@ -37,9 +36,8 @@
 
 
 
-
+        <button class="accordion" @click="accordion()">Other Side Menu</button>
         <div class="displaymenu">
-        <h3>Other Side Menu</h3>
             <article>
                 <div class="gomodal" v-for="(side, index) in othersidefilter" @click='openModal(side)' :key='index'>
                 <div class="details">
@@ -72,14 +70,14 @@ export default {
         }
     },
     computed:{
-        japanesesidefilter() {
-            return this.jpnsides.filter((jpnside)=>jpnside.category === 'jpnside');
+        japanesesidefilter(){
+            return this.jpnsides.filter((jpnside)=>jpnside.category === 'jpnside')
         },
-        dailysoupfilter() {
-            return this.jpnsides.filter((jpnside)=>jpnside.category === 'dailyside');
+        dailysoupfilter(){
+            return this.jpnsides.filter((jpnside)=>jpnside.category === 'dailyside')
         },
-        othersidefilter() {
-            return this.jpnsides.filter((jpnside)=>jpnside.category === 'otherside');
+        othersidefilter(){
+            return this.jpnsides.filter((jpnside)=>jpnside.category === 'otherside')
         },
     },
     methods:{
@@ -98,10 +96,28 @@ export default {
     closeModal(){
         this.showContent = false,
         this.sideDetail = [{},{}]
+    },
+    accordion() {
+        const acc = document.getElementsByClassName('accordion');
+        let i;
+        for (i = 0; i < acc.length; i++){
+            acc[i].addEventListener('click',function() {
+                this.classList.toggle('active');
+                let displaymenu = this.nextElementSibling;
+                console.log(displaymenu.style.maxHeight)
+                if (displaymenu.style.maxHeight) {
+                    displaymenu.style.maxHeight = null;
+                } else {
+                    displaymenu.style.maxHeight = displaymenu.scrollHeight
+                    + 'px';
+                }
+            })
+        }
     }
   },
   mounted(){
-    this.loadSide();
+    this.loadSide()
+    this.accordion()
   }
 }
 </script>
@@ -109,41 +125,68 @@ export default {
 <style scoped>
 
 @media (min-width:300px) {
- 
-    .displaymenu{
-        width: 100%;
+    .accordion {
+        margin: auto;
+        font-family: 'Rye', cursive;
+        background-color: rgba(142, 94, 69,0);
+        font-size: 17px;
+        color: black;
+        cursor: pointer;
+        padding: 13px;
+        width: 95%;
+        text-align: left;
+        border: none;
+        outline: none;
+        display: block;
+        transition: .5s;
+        line-height: 17px;
+        border-bottom: 2px dotted black;
+    }
+    
+    .accordion:after {
+        content: '\002B';
+        font-size: 30px;
+        color: black;
+        float: right;
+    }
+
+    .active:after {
+        content: '\00D7';
+    }
+
+    .accordion:hover {
+        background-color: #D6C6B9;
+    }
+
+    .displaymenu {
+        background-color: #D6C6B9;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
         display: flex;
         flex-direction: column;
         align-items: center;
-        row-gap: 10px;
-    }
-
-    .displaymenu > h3 {
-        text-align: center;
-        font-size: 25px;
-        width: 85%;
-        font-family: 'Rye', cursive;
-        color: black;
-        font-weight: 400;
+        width: 95%;
+        margin: auto;
+        margin-top: 1px;
     }
 
     .displaymenu > article {
         font-size: 16px;
         display: flex;
         flex-wrap: wrap;
-        width: 85%;
-        outline: 2px dashed orange;
+        width: 100%;
         background-color: antiquewhite;
-        padding: 10px;
         row-gap: 10px;
+        justify-content: center;
     }
 
     .gomodal {
-        width: 100%;
+        width: 95%;
         display: flex;
         flex-direction: column;
         color: black;
-        row-gap: 5px;
+        padding: 5px;
     }
 
     .gomodal:hover {

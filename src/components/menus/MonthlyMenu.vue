@@ -1,11 +1,8 @@
 <template>
-<section id="#monthly">
-    <article>
-        <img src="/img/pudd.jpg" alt="">
-    </article>
+<article id="monthly">
 
+    <button class="accordion" v-bind="accordion()">Meals</button>
     <div class="displaymenu">      <!--FOR MONTHLY MEAL -->
-        <h3>Monthly Meal</h3>
         <article>
             <div class="gomodal" v-for="(month, index) in monthlymealfilter" @click='openModal(month)' :key='index'>
             <div class="details">
@@ -21,9 +18,8 @@
 
 
 
-
+    <button class="accordion" v-bind="accordion()">Beverages</button>
     <div class="displaymenu">      <!--FOR MONTHLY DRINK -->
-        <h3>Monthly Drink</h3>
         <article>
             <div class="gomodal" v-for="(month, index) in monthlydrinkfilter" @click='openModal(month)' :key='index'>
             <div class="details">
@@ -40,9 +36,8 @@
 
 
 
-
+    <button class="accordion" v-bind="accordion()">Sweets</button>
     <div class="displaymenu">      <!--FOR MONTHLY SWEETS -->
-        <h3>Monthly Sweets</h3>
         <article>
             <div class="gomodal" v-for="(month, index) in monthlysweetfilter" @click='openModal(month)' :key='index'>
             <div class="details">
@@ -55,7 +50,7 @@
         <modal-window v-show='showContent' @from-child='closeModal' :month='monthDetail'></modal-window>
         </article>
     </div>
-</section>
+</article>
 </template>
 <script>
 import getJson from '@/services/getJson'
@@ -63,15 +58,15 @@ import ModalWindow from './ModalWindow.vue'
 
 export default {
     name:'MonthlyMenu',
+    components:{
+        ModalWindow
+    },
     data(){
         return {
             monthly: new Array(),
             showContent: false,
             monthDetail:[{},{}]
         }
-    },
-    components:{
-        ModalWindow
     },
     computed:{
         monthlymealfilter(){
@@ -100,10 +95,27 @@ export default {
         closeModal(){
             this.showContent = false,
             this.monthDetail = [{},{}]
+        },
+        accordion(){
+            var acc = document.getElementsByClassName('accordion');
+            var i;
+            for (i = 0; i < acc.length; i++){
+                acc[i].addEventListener('click',function() {
+                    this.classList.toggle('active');
+                    var displaymenu = this.nextElementSibling;
+                    if (displaymenu.style.maxHeight) {
+                        displaymenu.style.maxHeight = null;
+                    } else {
+                        displaymenu.style.maxHeight = displaymenu.scrollHeight
+                        + 'px';
+                    }
+                })
+            }
         }
     },
     mounted(){
         this.loadmonthly()
+        // this.accordion()
     }
 }
 </script>
@@ -111,45 +123,74 @@ export default {
 <style scoped>
 
 @media (min-width:300px){
-
-    section {
-        width: 100%;
+    .accordion {
+        margin: auto;
+        font-family: 'Rye', cursive;
+        background-color: rgba(142, 94, 69,0);
+        font-size: 17px;
+        color: black;
+        cursor: pointer;
+        padding: 13px;
+        width: 95%;
+        text-align: left;
+        border: none;
+        outline: none;
+        display: block;
+        transition: .5s;
+        line-height: 17px;
+        border-bottom: 2px dotted black;
     }
-    img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        object-position: 50% 30%;
-        vertical-align: bottom;
+    
+    .accordion:after {
+        content: '\002B';
+        font-size: 30px;
+        color: black;
+        float: right;
     }
 
-     .displaymenu{
-        width: 100%;
+    .active:after {
+        content: '\00D7';
+    }
+
+    .accordion:hover {
+        background-color: #D6C6B9;
+    }
+ 
+    .displaymenu{
+        background-color: #D6C6B9;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
         display: flex;
         flex-direction: column;
         align-items: center;
-        row-gap: 10px;
-    }
-
-    .displaymenu > h3 {
-        text-align: center;
-        font-size: 25px;
-        width: 85%;
-        font-family: 'Rye', cursive;
-        color: black;
-        font-weight: 400;
+        width: 95%;
+        margin: auto;
+        margin-top: 1px;
     }
 
     .displaymenu > article {
         font-size: 16px;
         display: flex;
         flex-wrap: wrap;
-        width: 85%;
-        outline: 2px dashed orange;
+        width: 100%;
         background-color: antiquewhite;
-        padding: 10px;
         row-gap: 10px;
+        justify-content: center;
     } 
+
+    .gomodal {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        color: black;
+        padding: 5px;
+    }
+
+    .gomodal:hover {
+        color: slategray;
+        cursor: pointer;
+    }
 
     .details {
         display: flex;
@@ -173,19 +214,6 @@ export default {
         align-items: center;
     }
 
-    .gomodal {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        color: black;
-        row-gap: 5px;
-    }
-
-    .gomodal:hover {
-        color: slategray;
-        cursor: pointer;
-    }
-
     .modalbutton{
         font-size: 14px;
         padding: 5px;
@@ -202,6 +230,7 @@ export default {
         color: white;    
     }
 }
+
 @media (min-width:800px) {
         .displaymenu > h3 {
         padding-top: 10px;

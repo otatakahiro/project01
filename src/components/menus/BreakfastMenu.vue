@@ -4,15 +4,15 @@
         <button class="accordion" v-bind="accordion()">Breakfast Plates</button>
         <div class="displaymenu">   <!--FOR BREAKFAST PLATES -->
             <article>
-                    <div class="gomodal" v-for="(breakfast, index) in breakfastplatefilter" @click='openModal(breakfast)' :key='index'>
-                        <div class="details">
-                            <p>{{breakfast.menuName}}</p>
-                            <p>${{breakfast.price}}
-                                <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                            </p>
-                        </div>
+                <div class="gomodal" v-for="(breakfast, index) in breakfastplatefilter" @click='openModal(breakfast)' :key='index'>
+                    <div class="details">
+                        <p>{{breakfast.menuName}}</p>
+                        <p>${{breakfast.price}}
+                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                        </p>
                     </div>
-                    <modal-window v-show='showContent' @from-child='closeModal' :breakfast='breakfastDetail'></modal-window>
+                </div>
+                <modal-window v-show='showContent' @from-child='closeModal' :breakfast='breakfastDetail'></modal-window>
             </article>
         </div>
 
@@ -163,44 +163,44 @@ export default {
         },
     },
     methods:{
-    loadBreakfast(){
-      getJson.load('breakfasts')
-      .then((res)=>{
-        this.breakfasts = res.data;
-        })
-      .catch((e)=>console.log(e))
-    },
-    openModal(breakfast){
-        this.showContent = true,
-        this.breakfastDetail = breakfast,
-        console.log(this.breakfastDetail)
-
-    },
-    closeModal(){
-        this.showContent = false,
-        this.breakfastDetail = [{},{}]
-    },
-    accordion() {
-        var acc = document.getElementsByClassName('accordion');
-        var i;
-        for (i = 0; i < acc.length; i++){
-            acc[i].addEventListener('click',function() {
-                this.classList.toggle('active');
-                var displaymenu = this.nextElementSibling;
-                if (displaymenu.style.maxHeight) {
-                    displaymenu.style.maxHeight = null;
-                } else {
-                    displaymenu.style.maxHeight = displaymenu.scrollHeight
-                    + 'px';
-                }
+        loadBreakfast(){
+        getJson.load('breakfasts')
+        .then((res)=>{
+            this.breakfasts = res.data;
             })
+        .catch((e)=>console.log(e))
+        },
+        openModal(breakfast){
+            this.showContent = true,
+            this.breakfastDetail = breakfast,
+            console.log(this.breakfastDetail)
+
+        },
+        closeModal(){
+            this.showContent = false,
+            this.breakfastDetail = [{},{}]
+        },
+        accordion() {
+            const acc = document.getElementsByClassName('accordion');
+            for (let i = 0; i < acc.length; i++){
+                acc[i].addEventListener('click',function() {
+                    this.classList.toggle('active');
+                    let displaymenu = this.nextElementSibling;
+                    console.log(displaymenu.style.maxHeight)
+                    if (displaymenu.style.maxHeight) {
+                        displaymenu.style.maxHeight = null;
+                    } else {
+                        displaymenu.style.maxHeight = displaymenu.scrollHeight
+                        + 'px';
+                    }
+                })
+            }
         }
+    },
+    mounted(){
+        this.loadBreakfast();
+        this.accordion();
     }
-  },
-  mounted(){
-    this.loadBreakfast();
-    this.accordion();
-  }
 }
 </script>
 
@@ -235,6 +235,7 @@ export default {
     .active:after {
         content: '\00D7';
     }
+
     .accordion:hover {
         background-color: #D6C6B9;
     }
@@ -315,7 +316,7 @@ export default {
 
 }
 
-/* @media (min-width:800px) {
+@media (min-width:800px) {
     .displaymenu > h3 {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -334,5 +335,5 @@ export default {
     .gomodal {
         width: 48%;
     }
-} */
+}
 </style>

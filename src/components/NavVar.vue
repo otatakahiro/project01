@@ -15,6 +15,8 @@
         <a href="#">
             <h3>Marulilu Cafe</h3>
         </a>
+
+        <a href="#"><font-awesome-icon icon="fa-solid fa-cart-shopping" /></a>
     </nav>
 </section>
 </template>
@@ -49,23 +51,22 @@ export default {
         /* justify-content: center; */
         /* background-color: #60281E; */
         /* background-color: #D35C37; */
+        justify-content: space-around;
         background-color: #97B8C2;
         color: white;
-        position: absolute;
-        /* top: 60vh; */
-        top: 90vh;
+        position: fixed;
         z-index: 1;
     }
 
     nav > ul{
         display: none;
-        width: 40.5%;   
+        /* width: 40.5%;    */
     }
     
     nav > a {
         text-decoration: none;   
-        margin-left: auto;
-        margin-right: auto;
+        /* margin-left: auto;
+        margin-right: auto; */
     }
 
     nav > a > h3  {
@@ -77,15 +78,15 @@ export default {
     }
 
     details {
-        position: absolute;
+        /* position: absolute; */
         display: flex;
         justify-content: left;
-        padding-left: 8%;
+        /* padding-left: 8%; */
     }
 
     details > ul{
         background-color: rgba(256, 256, 256, .5);
-        position: absolute;
+        /* position: absolute; */
         top: 44px;
         display: flex;
         flex-direction: column;

@@ -2,11 +2,22 @@
     <header>
         <section>
             <!-- <article> -->
-            <h1>Marulilu Cafe</h1>
+            <!-- <h1>Marulilu Cafe</h1> -->
             <!-- </article> -->
-            <p>Marulilu cafe is a very 喫茶店 (Kissa-ten) style cafe at Broadway, Vancouver.
+            <!-- <p>Marulilu cafe is a very 喫茶店 (Kissa-ten) style cafe at Broadway, Vancouver.
 In Japan, not only coffee/tea and some snacks but also some Japanese meals are provided.
-Especially, 洋食 (Yo-shoku) which means western style meals is enjoyed in 喫茶店for example Omu-rice and Curry-rice. Also you can enjoy some traditional/native-popular Japanese meals in Marulilu cafe; you have to know Japanese foods are not only sushi and tempura. Marulilu cafe is only one place to experience the real Japanese-style foods and drinks in Vancouver.</p>
+Especially, 洋食 (Yo-shoku) which means western style meals is enjoyed in 喫茶店for example Omu-rice and Curry-rice. Also you can enjoy some traditional/native-popular Japanese meals in Marulilu cafe; you have to know Japanese foods are not only sushi and tempura. Marulilu cafe is only one place to experience the real Japanese-style foods and drinks in Vancouver.</p> -->
+            <ul class="opentime">
+                <li>Mon, 8AM - 6PM</li>
+                <!-- <li>Tue, CLOSE</li> -->
+                <li>Wed, 8AM - 6PM</li>
+                <li>Thu, 8AM - 6PM</li>
+                <li>Fri, 8AM - 6PM</li>
+                <li>Sat, 8:30AM - 6PM</li>
+                <li>Sun, 8:30AM - 6PM</li>
+                <li>Holiday, 9AM - 6PM</li>
+                <!-- <li>X'MAS & New Year, CLOSE</li> -->
+            </ul>
         </section>
     </header>
 </template>
@@ -22,7 +33,7 @@ export default {
         
         header {
             /* height: 60vh; */
-            height: 90vh;
+            height: 100vh;
             background-image: url('/public/img/marulilu00.jpg');
             background-position: center;
             background-size: cover;
@@ -71,6 +82,22 @@ export default {
             border-radius: 10px;
             text-align: center;
             font-weight: 500;
+        }
+        .opentime {
+            color: white;
+            background-color: rgba(0,0,0,.3);
+            list-style: none;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+        }
+
+        .opentime > li {
+            padding-left: 30px;
         }
     }
 
