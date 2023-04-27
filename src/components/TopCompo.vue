@@ -1,17 +1,10 @@
 <template>
     <section class="top">
         <article class="mobile-order">
-<<<<<<< HEAD
-            <button href="#">
-                <p>ORDER</p>
-                <p>- Here -</p>
-            </button>
-=======
             <button href="#"><font-awesome-icon icon="fa-solid fa-cart-shopping" /> Order Here <font-awesome-icon icon="fa-solid fa-cart-shopping" /></button>
             <!-- <button><img src="/img/ubereats.png" alt="uber"> 
             </button> -->
             <!-- <button href="#">DoorDash</button> -->
->>>>>>> accordion
         </article>
         <!-- <article class="announcement">
             <h5>Hours</h5>
@@ -85,31 +78,10 @@ export default {
     button{
         font-size: 20px;
         letter-spacing: 2px;
-<<<<<<< HEAD
-        width: 45%;
-        border-radius: 30px;
-        color: darkolivegreen;
-        font-weight: 600;
-        text-align: center;
-        padding: 3px;
-    }
-
-    button > p:last-child {
-        font-size: 17px;
-    }
-    
-    /* button{
-        font-size: 20px;
-        letter-spacing: 2px;
-        width: 45%;
-        height: 40px;
-        border-radius: 30px;
-=======
         /* width: 45%; */
         padding: 5px;
         /* height: 40px; */
         border-radius: 10px;
->>>>>>> accordion
         background: rgba(142, 94, 69, 1);
         background-color: #E45E00;
         background-color: #FF5D20;
@@ -131,13 +103,6 @@ export default {
         text-align: center;
     }
 
-<<<<<<< HEAD
-    button:last-child{
-        color: crimson;
-    } */
-
-=======
->>>>>>> accordion
     .announcement {
         width: 92%;
         display: flex;
