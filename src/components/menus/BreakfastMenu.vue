@@ -1,26 +1,25 @@
 <template>
     <article id="breakfast">
 
+        <button class="accordion" @change="accordion()">Breakfast Plates</button>
         <div class="displaymenu">   <!--FOR BREAKFAST PLATES -->
-            <h3>Breakfast Plates</h3>
             <article>
-                    <div class="gomodal" v-for="(breakfast, index) in breakfastplatefilter" @click='openModal(breakfast)' :key='index'>
-                        <div class="details">
-                            <p>{{breakfast.menuName}}</p>
-                            <p>${{breakfast.price}}
-                                <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                            </p>
-                        </div>
+                <div class="gomodal" v-for="(breakfast, index) in breakfastplatefilter" @click='openModal(breakfast)' :key='index'>
+                    <div class="details">
+                        <p>{{breakfast.menuName}}</p>
+                        <p>${{breakfast.price}}
+                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                        </p>
                     </div>
-                    <modal-window v-show='showContent' @from-child='closeModal' :breakfast='breakfastDetail'></modal-window>
+                </div>
+                <modal-window v-show='showContent' @from-child='closeModal' :breakfast='breakfastDetail'></modal-window>
             </article>
         </div>
 
 
 
-
+        <button class="accordion">Japanese Style Breakfasts</button>
         <div class="displaymenu">    <!--FOR JAPANESE STYLE BREAKFASTS -->
-            <h3>Japanese Style Breakfasts</h3>
             <article>
                     <div class="gomodal" v-for="(breakfast, index) in jpnbreakfastfilter" @click='openModal(breakfast)' :key='index'>
                         <div class="details">
@@ -36,9 +35,8 @@
 
 
 
-
+        <button class="accordion" @change="accordion()">Bennies on English Muffin</button>
         <div class="displaymenu">    <!--FOR EGGS BENNIES-->
-            <h3>Eggs Bennies on English Muffin</h3>
             <article>
                 <div class="gomodal" v-for="(breakfast, index) in eggbennyfilter" @click='openModal(breakfast)' :key='index'>
                     <div class="details">
@@ -55,9 +53,8 @@
 
 
 
-
+        <button class="accordion" @change="accordion()">Breakfast Wraps</button>
         <div class="displaymenu">    <!--BREAKFAST WRAPS-->
-            <h3>Breakfast Wraps</h3>
             <article>
                 <div class="gomodal" v-for="(breakfast, index) in breakfastwrapfilter" @click='openModal(breakfast)' :key='index'>
                     <div class="details">
@@ -73,9 +70,8 @@
 
 
 
-
+        <button class="accordion" @change="accordion()">Waffle / Yogurt</button>
         <div class="displaymenu">    <!--FOR WAFFLE / YOGURT-->
-            <h3>Waffle / Yogurt</h3>
             <article>
                 <div class="gomodal" v-for="(breakfast, index) in waffleyogurtfilter" @click='openModal(breakfast)' :key='index'>
                     <div class="details">
@@ -91,9 +87,8 @@
 
         
 
-
+        <button class="accordion" @change="accordion()">Original Sandwiches / Wraps</button>
         <div class="displaymenu">    <!--FOR SANDWICHES / WRAPS-->
-            <h3>Original Sandwiches / Wraps</h3>
             <article>
                 <div class="gomodal" v-for="(breakfast, index) in sandwichewrapfilter" @click='openModal(breakfast)' :key='index'>
                     <div class="details">
@@ -110,9 +105,8 @@
 
 
 
-
+        <button class="accordion" @change="accordion()">Daily Soup & Salad</button>
         <div class="displaymenu">    <!--FOR DAILY SOUP AND SALAD-->
-            <h3>Daily Soup & Salad</h3>
             <article>
                 <div class="gomodal" v-for="(breakfast, index) in dailysoupfilter" @click='openModal(breakfast)' :key='index'>
                     <div class="details">
@@ -169,68 +163,112 @@ export default {
         },
     },
     methods:{
-    loadBreakfast(){
-      getJson.load('breakfasts')
-      .then((res)=>{
-        this.breakfasts = res.data;
-        })
-      .catch((e)=>console.log(e))
-    },
-    openModal(breakfast){
-        this.showContent = true,
-        this.breakfastDetail = breakfast,
-        console.log(this.breakfastDetail)
+        loadBreakfast(){
+        getJson.load('breakfasts')
+        .then((res)=>{
+            this.breakfasts = res.data;
+            })
+        .catch((e)=>console.log(e))
+        },
+        openModal(breakfast){
+            this.showContent = true,
+            this.breakfastDetail = breakfast,
+            console.log(this.breakfastDetail)
 
+        },
+        closeModal(){
+            this.showContent = false,
+            this.breakfastDetail = [{},{}]
+        },
+        accordion() {
+            const acc = document.getElementsByClassName('accordion');
+            for (let i = 0; i < acc.length; i++){
+                acc[i].addEventListener('click',function() {
+                    this.classList.toggle('active');
+                    let displaymenu = this.nextElementSibling;
+                    console.log(displaymenu.style.maxHeight)
+                    if (displaymenu.style.maxHeight) {
+                        displaymenu.style.maxHeight = null;
+                    } else {
+                        displaymenu.style.maxHeight = displaymenu.scrollHeight
+                        + 'px';
+                    }
+                })
+            }
+        }
     },
-    closeModal(){
-        this.showContent = false,
-        this.breakfastDetail = [{},{}]
-    },
-  },
-  mounted(){
-    this.loadBreakfast();
-  }
+    mounted(){
+        this.loadBreakfast();
+        this.accordion();
+    }
 }
 </script>
 
 <style scoped>
 
 @media (min-width:300px) {
+    .accordion {
+        margin: auto;
+        font-family: 'Rye', cursive;
+        background-color: rgba(142, 94, 69,0);
+        font-size: 17px;
+        color: black;
+        cursor: pointer;
+        padding: 13px;
+        width: 95%;
+        text-align: left;
+        border: none;
+        outline: none;
+        display: block;
+        transition: .5s;
+        line-height: 17px;
+        border-bottom: 2px dotted black;
+    }
+    
+    .accordion:after {
+        content: '\002B';
+        font-size: 30px;
+        color: black;
+        float: right;
+    }
 
-    .displaymenu{
-        width: 100%;
+    .active:after {
+        content: '\00D7';
+    }
+
+    .accordion:hover {
+        background-color: #D6C6B9;
+    }
+
+    .displaymenu {
+        background-color: #D6C6B9;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
         display: flex;
         flex-direction: column;
         align-items: center;
-        row-gap: 10px;
-        padding-top: 10%;
-    }
-
-    .displaymenu > h3 {
-        text-align: center;
-        font-size: 25px;
-        width: 85%;
-        font-family: 'Rye', cursive;
-        color: black;
-        font-weight: 400;
+        width: 95%;
+        margin: auto;
+        margin-top: 1px;
     }
 
     .displaymenu > article {
         font-size: 16px;
         display: flex;
         flex-wrap: wrap;
-        width: 85%;
-        outline: 2px dashed orange;
+        width: 100%;
         background-color: antiquewhite;
-        padding: 10px;
         row-gap: 10px;
+        justify-content: center;
     }
 
     .gomodal {
-        width: 100%;
+        width: 95%;
         display: flex;
         flex-direction: column;
         color: black;
+        padding: 5px;
     }
 
     .gomodal:hover {

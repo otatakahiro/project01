@@ -1,8 +1,8 @@
 <template>
     <article id="beverage">
 
-            <div class="displaymenu">     
-            <h3>Coffee / Espresso</h3>
+        <button class="accordion" @change="accordion()">Coffee / Espresso</button>
+        <div class="displaymenu">     
             <article>          <!--FOR COFFEE -->
                 <div class="gomodal" v-for="(beverage, index) in coffeefilter" @click='openModal(beverage)' :key='index'>
                     <div class="details">
@@ -31,9 +31,8 @@
         </div>
 
 
-
+        <button class="accordion" @change="accordion()">Tea</button>
         <div class="displaymenu">
-            <h3>Tea</h3>
             <article class="rice">      <!--FOR BLACK TEA-->
                 <p>Black Tea</p>
                 <section class="inmenu">
@@ -142,9 +141,8 @@
         </div>
 
 
-
+    <button class="accordion" @change="accordion()">Other</button>
         <div class="displaymenu">      <!--FOR OTHER BEVRAGES-->
-            <h3>Other Beverages</h3>
             <article>
                 <div class="gomodal" v-for="(beverage, index) in otherbeveragefilter" @click='openModal(beverage)' :key='index'>
                     <div class="details">
@@ -224,7 +222,7 @@ export default {
         },
         alcoholicfilter(){
             return this.beverages.filter((beverage)=>beverage.category === "alcoholic")
-        }
+        },
     },
     methods:{
         loadBeverage(){
@@ -242,10 +240,26 @@ export default {
         closeModal(){
             this.showContent = false,
             this.beverageDetail = [{},{}]
+        },
+        accordion(){
+            const acc = document.getElementsByClassName('accordion');
+            for (let i = 0; i < acc.length; i++){
+                acc[i].addEventListener('click',function() {
+                    this.classList.toggle('active');
+                    let displaymenu = this.nextElementSibling;
+                    if (displaymenu.style.maxHeight) {
+                        displaymenu.style.maxHeight = null;
+                    } else {
+                        displaymenu.style.maxHeight = displaymenu.scrollHeight
+                        + 'px';
+                    }
+                })
+            }
         }
     },
     mounted(){
-        this.loadBeverage();
+        this.loadBeverage()
+        this.accordion()
     }
 }
 </script>
@@ -253,41 +267,68 @@ export default {
 <style scoped>
 
 @media (min-width:300px) {
- 
+    .accordion {
+        margin: auto;
+        font-family: 'Rye', cursive;
+        background-color: rgba(142, 94, 69,0);
+        font-size: 17px;
+        color: black;
+        cursor: pointer;
+        padding: 13px;
+        width: 95%;
+        text-align: left;
+        border: none;
+        outline: none;
+        display: block;
+        transition: .5s;
+        line-height: 17px;
+        border-bottom: 2px dotted black;
+    }
+    
+    .accordion:after {
+        content: '\002B';
+        font-size: 30px;
+        color: black;
+        float: right;
+    }
+
+    .active:after {
+        content: '\00D7';
+    }
+
+    .accordion:hover {
+        background-color: #D6C6B9;
+    }
+
     .displaymenu{
-        width: 100%;
+        background-color: #D6C6B9;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
         display: flex;
         flex-direction: column;
         align-items: center;
-        row-gap: 10px;
-    }
-
-    .displaymenu > h3 {
-        text-align: center;
-        font-size: 25px;
-        width: 85%;
-        font-family: 'Rye', cursive;
-        color: black;
-        font-weight: 400;
+        width: 95%;
+        margin: auto;
+        margin-top: 1px;
     }
 
     .displaymenu > article {
         font-size: 16px;
         display: flex;
         flex-wrap: wrap;
-        width: 85%;
-        outline: 2px dashed orange;
+        width: 100%;
         background-color: antiquewhite;
-        padding: 10px;
         row-gap: 10px;
-    }
+        justify-content: center;
+    } 
 
     .gomodal {
-        width: 100%;
+        width: 95%;
         display: flex;
         flex-direction: column;
         color: black;
-        row-gap: 5px;
+        padding: 5px;
     }
 
     .gomodal:hover {

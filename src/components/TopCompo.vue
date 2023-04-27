@@ -1,12 +1,19 @@
 <template>
     <section class="top">
         <article class="mobile-order">
+<<<<<<< HEAD
             <button href="#">
                 <p>ORDER</p>
                 <p>- Here -</p>
             </button>
+=======
+            <button href="#"><font-awesome-icon icon="fa-solid fa-cart-shopping" /> Order Here <font-awesome-icon icon="fa-solid fa-cart-shopping" /></button>
+            <!-- <button><img src="/img/ubereats.png" alt="uber"> 
+            </button> -->
+            <!-- <button href="#">DoorDash</button> -->
+>>>>>>> accordion
         </article>
-        <article class="announcement">
+        <!-- <article class="announcement">
             <h5>Hours</h5>
             <ul class="for-open">
                 <li v-for='(anouncement, index) in openannouncements' :key='index'>{{anouncement.news}}</li>
@@ -14,7 +21,7 @@
             <ul class="for-close">
                 <li v-for='(anouncement,index) in closeannouncements' :key='index'>{{anouncement.news}}</li>
             </ul>
-        </article>
+        </article> -->
 
         <article class="introduction">
             <img :src="require('/public/img/sign.jpg')" alt='malu'>
@@ -78,6 +85,7 @@ export default {
     button{
         font-size: 20px;
         letter-spacing: 2px;
+<<<<<<< HEAD
         width: 45%;
         border-radius: 30px;
         color: darkolivegreen;
@@ -96,6 +104,12 @@ export default {
         width: 45%;
         height: 40px;
         border-radius: 30px;
+=======
+        /* width: 45%; */
+        padding: 5px;
+        /* height: 40px; */
+        border-radius: 10px;
+>>>>>>> accordion
         background: rgba(142, 94, 69, 1);
         background-color: #E45E00;
         background-color: #FF5D20;
@@ -111,15 +125,19 @@ export default {
         background-color: #D6C6B9;
         background-color: #F47D4A;
         background-color: #EB8A3E;
-        color: darkolivegreen;
+        background-color: #dfc6b5;
+        color: black;
         font-weight: 600;
         text-align: center;
     }
 
+<<<<<<< HEAD
     button:last-child{
         color: crimson;
     } */
 
+=======
+>>>>>>> accordion
     .announcement {
         width: 92%;
         display: flex;

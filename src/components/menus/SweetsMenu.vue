@@ -1,8 +1,8 @@
 <template>
     <article id="sweets">
 
+        <button class="accordion" @change="accordion()">2 Dolce Set</button>
         <div class="displaymenu">      <!--FOR DOLCE SET -->
-            <h3>2 Dolce Set</h3>
             <article>
                 <div class="gomodal" v-for="(sweet, index) in setfilter" @click='openModal(sweet)' :key='index'>
                     <div class="details">
@@ -20,9 +20,8 @@
 
 
 
-
+        <button class="accordion" @change="accordion()">Sweets & Desserts</button>
         <div class="displaymenu">      <!--FOR $3.99 -->
-            <h3>Sweets & Desserts</h3>
             <article>
                 <div class="gomodal" v-for="(sweet, index) in threefilter" @click='openModal(sweet)' :key='index'>
                     <div class="details">
@@ -132,10 +131,27 @@ export default {
         closeModal(){
             this.showContent = false,
             this.showDetail = [{},{}]
+        },
+        accordion(){
+            var acc = document.getElementsByClassName('accordion');
+            var i;
+            for (i = 0; i < acc.length; i++){
+                acc[i].addEventListener('click',function() {
+                    this.classList.toggle('active');
+                    var displaymenu = this.nextElementSibling;
+                    if (displaymenu.style.maxHeight) {
+                        displaymenu.style.maxHeight = null;
+                    } else {
+                        displaymenu.style.maxHeight = displaymenu.scrollHeight
+                        + 'px';
+                    }
+                })
+            }
         }
     },
     mounted(){
         this.loadSweets()
+        this.accordion()
     }
 }
 </script>
@@ -143,40 +159,68 @@ export default {
 <style scoped>
 @media (min-width:300px) {
  
+    .accordion {
+        margin: auto;
+        font-family: 'Rye', cursive;
+        background-color: rgba(142, 94, 69,0);
+        font-size: 17px;
+        color: black;
+        cursor: pointer;
+        padding: 13px;
+        width: 95%;
+        text-align: left;
+        border: none;
+        outline: none;
+        display: block;
+        transition: .5s;
+        line-height: 17px;
+        border-bottom: 2px dotted black;
+    }
+    
+    .accordion:after {
+        content: '\002B';
+        font-size: 30px;
+        color: black;
+        float: right;
+    }
+
+    .active:after {
+        content: '\00D7';
+    }
+
+    .accordion:hover {
+        background-color: #D6C6B9;
+    }
+ 
     .displaymenu{
-        width: 100%;
+        background-color: #D6C6B9;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
         display: flex;
         flex-direction: column;
         align-items: center;
-        row-gap: 10px;
-    }
-
-    .displaymenu > h3 {
-        font-size: 25px;
-        width: 85%;
-        font-family: 'Rye', cursive;
-        color: black;
-        font-weight: 400;
-        text-align: center;
+        width: 95%;
+        margin: auto;
+        margin-top: 1px;
     }
 
     .displaymenu > article {
         font-size: 16px;
         display: flex;
         flex-wrap: wrap;
-        width: 85%;
-        outline: 2px dashed orange;
+        width: 100%;
         background-color: antiquewhite;
-        padding: 10px;
         row-gap: 10px;
+        justify-content: center;
     }
 
     .gomodal {
-        width: 100%;
+        width: 95%;
         display: flex;
         flex-direction: column;
         color: black;
-        row-gap: 5px;
+        padding: 5px;
     }
 
     .gomodal:hover {
