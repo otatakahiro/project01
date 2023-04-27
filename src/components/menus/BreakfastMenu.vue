@@ -1,7 +1,7 @@
 <template>
     <article id="breakfast">
 
-        <button class="accordion" v-bind="accordion()">Breakfast Plates</button>
+        <button class="accordion" @change="accordion()">Breakfast Plates</button>
         <div class="displaymenu">   <!--FOR BREAKFAST PLATES -->
             <article>
                 <div class="gomodal" v-for="(breakfast, index) in breakfastplatefilter" @click='openModal(breakfast)' :key='index'>
@@ -35,7 +35,7 @@
 
 
 
-        <button class="accordion" v-bind="accordion()">Bennies on English Muffin</button>
+        <button class="accordion" @change="accordion()">Bennies on English Muffin</button>
         <div class="displaymenu">    <!--FOR EGGS BENNIES-->
             <article>
                 <div class="gomodal" v-for="(breakfast, index) in eggbennyfilter" @click='openModal(breakfast)' :key='index'>
@@ -53,7 +53,7 @@
 
 
 
-        <button class="accordion" v-bind="accordion()">Breakfast Wraps</button>
+        <button class="accordion" @change="accordion()">Breakfast Wraps</button>
         <div class="displaymenu">    <!--BREAKFAST WRAPS-->
             <article>
                 <div class="gomodal" v-for="(breakfast, index) in breakfastwrapfilter" @click='openModal(breakfast)' :key='index'>
@@ -70,7 +70,7 @@
 
 
 
-        <button class="accordion" v-bind="accordion()">Waffle / Yogurt</button>
+        <button class="accordion" @change="accordion()">Waffle / Yogurt</button>
         <div class="displaymenu">    <!--FOR WAFFLE / YOGURT-->
             <article>
                 <div class="gomodal" v-for="(breakfast, index) in waffleyogurtfilter" @click='openModal(breakfast)' :key='index'>
@@ -87,7 +87,7 @@
 
         
 
-        <button class="accordion" v-bind="accordion()">Original Sandwiches / Wraps</button>
+        <button class="accordion" @change="accordion()">Original Sandwiches / Wraps</button>
         <div class="displaymenu">    <!--FOR SANDWICHES / WRAPS-->
             <article>
                 <div class="gomodal" v-for="(breakfast, index) in sandwichewrapfilter" @click='openModal(breakfast)' :key='index'>
@@ -105,7 +105,7 @@
 
 
 
-        <button class="accordion" v-bind="accordion()">Daily Soup & Salad</button>
+        <button class="accordion" @change="accordion()">Daily Soup & Salad</button>
         <div class="displaymenu">    <!--FOR DAILY SOUP AND SALAD-->
             <article>
                 <div class="gomodal" v-for="(breakfast, index) in dailysoupfilter" @click='openModal(breakfast)' :key='index'>

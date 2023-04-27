@@ -1,7 +1,7 @@
 <template>
     <article id="sweets">
 
-        <button class="accordion" @click="accordion()">2 Dolce Set</button>
+        <button class="accordion" @change="accordion()">2 Dolce Set</button>
         <div class="displaymenu">      <!--FOR DOLCE SET -->
             <article>
                 <div class="gomodal" v-for="(sweet, index) in setfilter" @click='openModal(sweet)' :key='index'>
@@ -20,7 +20,7 @@
 
 
 
-        <button class="accordion" v-bind="accordion()">Sweets & Desserts</button>
+        <button class="accordion" @change="accordion()">Sweets & Desserts</button>
         <div class="displaymenu">      <!--FOR $3.99 -->
             <article>
                 <div class="gomodal" v-for="(sweet, index) in threefilter" @click='openModal(sweet)' :key='index'>

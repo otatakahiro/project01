@@ -1,7 +1,7 @@
 <template>
     <article id="beverage">
 
-        <button class="accordion" @click="accordion()">Coffee / Espresso</button>
+        <button class="accordion" @change="accordion()">Coffee / Espresso</button>
         <div class="displaymenu">     
             <article>          <!--FOR COFFEE -->
                 <div class="gomodal" v-for="(beverage, index) in coffeefilter" @click='openModal(beverage)' :key='index'>
@@ -31,7 +31,7 @@
         </div>
 
 
-        <button class="accordion" @click="accordion()">Tea</button>
+        <button class="accordion" @change="accordion()">Tea</button>
         <div class="displaymenu">
             <article class="rice">      <!--FOR BLACK TEA-->
                 <p>Black Tea</p>
@@ -141,7 +141,7 @@
         </div>
 
 
-    <button class="accordion" @click="accordion()">Other</button>
+    <button class="accordion" @change="accordion()">Other</button>
         <div class="displaymenu">      <!--FOR OTHER BEVRAGES-->
             <article>
                 <div class="gomodal" v-for="(beverage, index) in otherbeveragefilter" @click='openModal(beverage)' :key='index'>

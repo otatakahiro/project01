@@ -1,7 +1,7 @@
 <template>
     <article id="side">
 
-        <button class="accordion" @click="accordion()">Japanese Side Menu</button>
+        <button class="accordion" @change="accordion()">Japanese Side Menu</button>
         <div class="displaymenu">      <!--FOR SIDE MENU -->
             <article>
                 <div class="gomodal" v-for="(side, index) in japanesesidefilter" @click='openModal(side)' :key='index'>
@@ -18,7 +18,7 @@
 
 
 
-        <button class="accordion" @click="accordion()">Daily Soup & Salad</button>
+        <button class="accordion" @change="accordion()">Daily Soup & Salad</button>
         <div class="displaymenu">      <!--FOR DAIL SOUP & SALAD -->
             <article>
                 <div class="gomodal" v-for="(side, index) in dailysoupfilter" @click='openModal(side)' :key='index'>
@@ -36,7 +36,7 @@
 
 
 
-        <button class="accordion" @click="accordion()">Other Side Menu</button>
+        <button class="accordion" @change="accordion()">Other Side Menu</button>
         <div class="displaymenu">
             <article>
                 <div class="gomodal" v-for="(side, index) in othersidefilter" @click='openModal(side)' :key='index'>

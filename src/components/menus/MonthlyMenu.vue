@@ -1,7 +1,7 @@
 <template>
 <article id="monthly">
 
-    <button class="accordion" v-bind="accordion()">Meals</button>
+    <button class="accordion" @change="accordion()">Meals</button>
     <div class="displaymenu">      <!--FOR MONTHLY MEAL -->
         <article>
             <div class="gomodal" v-for="(month, index) in monthlymealfilter" @click='openModal(month)' :key='index'>
@@ -18,7 +18,7 @@
 
 
 
-    <button class="accordion" v-bind="accordion()">Beverages</button>
+    <button class="accordion" @change="accordion()">Beverages</button>
     <div class="displaymenu">      <!--FOR MONTHLY DRINK -->
         <article>
             <div class="gomodal" v-for="(month, index) in monthlydrinkfilter" @click='openModal(month)' :key='index'>
@@ -36,7 +36,7 @@
 
 
 
-    <button class="accordion" v-bind="accordion()">Sweets</button>
+    <button class="accordion" @change="accordion()">Sweets</button>
     <div class="displaymenu">      <!--FOR MONTHLY SWEETS -->
         <article>
             <div class="gomodal" v-for="(month, index) in monthlysweetfilter" @click='openModal(month)' :key='index'>
@@ -115,7 +115,7 @@ export default {
     },
     mounted(){
         this.loadmonthly()
-        // this.accordion()
+        this.accordion()
     }
 }
 </script>

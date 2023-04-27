@@ -1,7 +1,7 @@
 <template>
 <article id="dish">
 
-    <button class="accordion" v-bind="accordion()">Donburi</button>
+    <button class="accordion" @change="accordion()">Donburi</button>
     <div class="displaymenu">      <!--FOR DONBURI -->
         <article>
             <div class="gomodal" v-for="(dish, index) in donburifilter" @click='openModal(dish)' :key='index'>
@@ -16,7 +16,7 @@
         </article>
     </div>
 
-    <button class="accordion" v-bind="accordion()">Yoshoku</button>
+    <button class="accordion" @change="accordion()">Yoshoku</button>
     <div class="displaymenu">      <!--FOR OTHER YOSHOKU -->
         <article>
             <div class="gomodal" v-for="(dish, index) in yoshokufilter" @click='openModal(dish)' :key='index'>
@@ -32,7 +32,7 @@
     </div>
 
 
-    <button class="accordion" v-bind="accordion()">Hamburger Steaks</button>
+    <button class="accordion" @change="accordion()">Hamburger Steaks</button>
     <div class="displaymenu">      <!--FOR HAMBURGER STEAKS -->
         <article>
             <div class="gomodal" v-for="(dish, index) in steakfilter" @click='openModal(dish)' :key='index'>
@@ -48,7 +48,7 @@
     </div>
 
 
-    <button class="accordion" v-bind="accordion()">Japanese Curry & Omu Rice</button>
+    <button class="accordion" @change="accordion()">Japanese Curry & Omu Rice</button>
     <div class="displaymenu">      <!--FOR CURRY & OMU RICE -->
         <article class="rice">      <!--FOR WHITE RICE -->
             <p>with White Rice</p>
