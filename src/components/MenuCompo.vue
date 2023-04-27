@@ -6,14 +6,7 @@
             </article>
 
             <article class="mobile-order">
-<<<<<<< HEAD
-            <button href="#">
-                <p>ORDER</p>
-                <p>- Here -</p>
-            </button>
-=======
                 <button>Order Here</button>
->>>>>>> accordion
             </article>
 
             <article class="menu-title">
