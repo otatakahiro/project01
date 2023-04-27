@@ -19,27 +19,10 @@ Especially, 洋食 (Yo-shoku) which means western style meals is enjoyed in 喫�
 <script>
 export default {
     name:'TopCompo',
-    data(){
-        return {
-            openannouncements: [
-                {news:'Mon, Wed - Fri 8:00 AM - 6:00 PM'},
-                {news:'Sat - Sun 8:30 AM - 6:00 PM'},
-                {news:'Holiday 9:00 AM - 6:00 PM'}
-            ],
-            closeannouncements: [
-                {news:'We close on Tuesday'},
-                {news:"We close on X'MAS and New Year"}
-            ]
-        }
-    }
 }
 </script>
 
 <style scoped>
-/* *{
-    padding: 0;
-    margin: 0;
-} */
 
 @media (min-width: 300px) {
     *,
@@ -81,7 +64,6 @@ export default {
         color: #212529;
         border-radius: 10px;
     }
-
 
     a.btn-flat {
         overflow: hidden;

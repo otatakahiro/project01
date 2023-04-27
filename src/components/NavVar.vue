@@ -48,9 +48,6 @@ export default {
         width: 100%;
         display: flex;
         align-items: center;
-        /* justify-content: center; */
-        /* background-color: #60281E; */
-        /* background-color: #D35C37; */
         justify-content: space-around;
         background-color: #97B8C2;
         color: white;
@@ -60,13 +57,10 @@ export default {
 
     nav > ul{
         display: none;
-        /* width: 40.5%;    */
     }
     
     nav > a {
         text-decoration: none;   
-        /* margin-left: auto;
-        margin-right: auto; */
     }
 
     nav > a > h3  {
@@ -74,20 +68,16 @@ export default {
         font-family: 'Rye',cursive;
         color: #834f2f;
         font-weight: 400;
-        /* width: 100%; */
     }
 
     details {
-        /* position: absolute; */
         display: flex;
         justify-content: left;
-        /* padding-left: 8%; */
     }
 
     details > ul{
         background-color: rgba(256, 256, 256, .5);
         position: absolute;
-        top: 44px;
         display: flex;
         flex-direction: column;
         text-align: left;
@@ -112,7 +102,6 @@ export default {
     summary {
         font-size: 28px;
         display: block;
-        /* position: absolute; */
     }
 
     .order {

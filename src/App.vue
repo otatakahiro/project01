@@ -5,7 +5,6 @@
 
 <script>
 import MainMenu from './components/MainMenu.vue'
-// import getJson from './services/getJson.js'
 export default {
   name: 'App',
   components: {

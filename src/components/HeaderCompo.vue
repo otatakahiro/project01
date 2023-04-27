@@ -1,6 +1,7 @@
 <template>
     <header>
         <section>
+            <img src="/marulilu_favicon.jpg" alt="">
             <!-- <article> -->
             <!-- <h1>Marulilu Cafe</h1> -->
             <!-- </article> -->
@@ -48,10 +49,19 @@ export default {
             height: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: top;
             align-items: center;
             row-gap: 20px;
             width: 100%;
+        }
+
+        header img {
+            width: 40%;
+            /* position: fixed; */
+            border-radius: 50%;
+            margin-bottom: auto;
+            margin-top: 40px;
+            z-index: 2;
         }
         /* header > section > article {
             width: 100%;
@@ -90,7 +100,7 @@ export default {
             position: absolute;
             bottom: 0;
             left: 0;
-            font-size: 18px;
+            font-size: 24px;
             display: flex;
             flex-direction: column;
             row-gap: 5px;
