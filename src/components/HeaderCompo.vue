@@ -85,7 +85,7 @@ export default {
         }
         .opentime {
             color: white;
-            background-color: rgba(0,0,0,.3);
+            /* background-color: rgba(0,0,0,.3); */
             list-style: none;
             position: absolute;
             bottom: 0;

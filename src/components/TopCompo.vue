@@ -1,7 +1,7 @@
 <template>
     <section class="top">
         <article class="mobile-order">
-            <button href="#">Order Here</button>
+            <button href="#"><font-awesome-icon icon="fa-solid fa-cart-shopping" /> Order Here <font-awesome-icon icon="fa-solid fa-cart-shopping" /></button>
             <!-- <button><img src="/img/ubereats.png" alt="uber"> 
             </button> -->
             <!-- <button href="#">DoorDash</button> -->
@@ -81,9 +81,10 @@ export default {
     button{
         font-size: 20px;
         letter-spacing: 2px;
-        width: 45%;
-        height: 40px;
-        border-radius: 30px;
+        /* width: 45%; */
+        padding: 5px;
+        /* height: 40px; */
+        border-radius: 10px;
         background: rgba(142, 94, 69, 1);
         background-color: #E45E00;
         background-color: #FF5D20;
@@ -99,17 +100,14 @@ export default {
         background-color: #D6C6B9;
         background-color: #F47D4A;
         background-color: #EB8A3E;
-        color: darkolivegreen;
+        background-color: #dfc6b5;
+        color: black;
         font-weight: 600;
         text-align: center;
     }
     /* button > img {
         width: 30%;
     } */
-
-    button:last-child{
-        color: crimson;
-    }
 
     .announcement {
         width: 92%;

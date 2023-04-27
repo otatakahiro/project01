@@ -16,7 +16,7 @@
             <h3>Marulilu Cafe</h3>
         </a>
 
-        <a href="#"><font-awesome-icon icon="fa-solid fa-cart-shopping" /></a>
+        <a class="order" href="#"><font-awesome-icon icon="fa-solid fa-cart-shopping" /></a>
     </nav>
 </section>
 </template>
@@ -86,7 +86,7 @@ export default {
 
     details > ul{
         background-color: rgba(256, 256, 256, .5);
-        /* position: absolute; */
+        position: absolute;
         top: 44px;
         display: flex;
         flex-direction: column;
@@ -113,7 +113,11 @@ export default {
         font-size: 28px;
         display: block;
         /* position: absolute; */
-        
+    }
+
+    .order {
+        font-size: 20px;
+        color: white;
     }
 }
 
