@@ -1,20 +1,10 @@
 <template>
     <section class="top">
         <article class="mobile-order">
-            <button href="#"><font-awesome-icon icon="fa-solid fa-cart-shopping" /> Order Here <font-awesome-icon icon="fa-solid fa-cart-shopping" /></button>
-            <!-- <button><img src="/img/ubereats.png" alt="uber"> 
-            </button> -->
-            <!-- <button href="#">DoorDash</button> -->
+            <a href="#" class="btn btn-flat">
+                <span><font-awesome-icon icon="fa-solid fa-cart-shopping" /> Order Here <font-awesome-icon icon="fa-solid fa-cart-shopping" /></span>
+            </a>
         </article>
-        <!-- <article class="announcement">
-            <h5>Hours</h5>
-            <ul class="for-open">
-                <li v-for='(anouncement, index) in openannouncements' :key='index'>{{anouncement.news}}</li>
-            </ul>
-            <ul class="for-close">
-                <li v-for='(anouncement,index) in closeannouncements' :key='index'>{{anouncement.news}}</li>
-            </ul>
-        </article> -->
 
         <article class="introduction">
             <img :src="require('/public/img/sign.jpg')" alt='malu'>
@@ -52,10 +42,76 @@ export default {
 } */
 
 @media (min-width: 300px) {
+    *,
+    *:before,
+    *:after {
+        -webkit-box-sizing: inherit;
+        box-sizing: inherit;
+    }
+
+    html {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
     h5 {
         font-size: 18px;
         color: black;
         text-align: center;
+    }
+
+    .btn,
+    a.btn,
+    button.btn {
+        font-size: 20px;
+        font-weight: 700;
+        position: relative;
+        display: inline-block;
+        padding: 5px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        text-align: center;
+        vertical-align: middle;
+        text-decoration: none;
+        color: #212529;
+        border-radius: 10px;
+    }
+
+
+    a.btn-flat {
+        overflow: hidden;
+        padding: 10px;
+        color: #fff;
+        border-radius: 10px;
+        background: #000;
+    }
+
+    a.btn-flat span {
+        position: relative;
+    }
+
+    a.btn-flat:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        -webkit-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        -webkit-transform: translateX(-96%);
+        transform: translateX(-96%);
+        background: rgba(142, 94, 69, 1);
+    }
+
+    a.btn-flat:hover:before {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
     }
 
     .top {
@@ -83,20 +139,7 @@ export default {
         /* height: 40px; */
         border-radius: 10px;
         background: rgba(142, 94, 69, 1);
-        background-color: #E45E00;
-        background-color: #FF5D20;
-        background-color: #ED551B;
-        background-color: #FD7E00;
-        background-color: #E7552C;
-        background-color: #D55448;
-        background-color: #FFA577;
-        background-color: #FF8D3F; 
-        background-color: #D35C37;
-        background-color: #F78B2D;
-        background-color: #FA8D62;
-        background-color: #D6C6B9;
-        background-color: #F47D4A;
-        background-color: #EB8A3E;
+
         background-color: #dfc6b5;
         color: black;
         font-weight: 600;

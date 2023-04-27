@@ -6,7 +6,9 @@
             </article>
 
             <article class="mobile-order">
-                <button>Order Here</button>
+                <a href="#" class="btn btn-flat">
+                    <span><font-awesome-icon icon="fa-solid fa-cart-shopping" /> Order Here <font-awesome-icon icon="fa-solid fa-cart-shopping" /></span>
+                </a>
             </article>
 
             <article class="menu-title">
@@ -61,6 +63,19 @@ export default {
 
 @media (min-width: 300px){
 
+    *,
+    *:before,
+    *:after {
+        -webkit-box-sizing: inherit;
+        box-sizing: inherit;
+    }
+
+    html {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+
     h3 {
         text-align: center;
         font-size: 30px;
@@ -72,31 +87,60 @@ export default {
     h6 {
         width: 60%;
         border-bottom: 3px solid;
-    }
-    
-    /* .mobile-order > button {
-        font-size: 25px;
-        width: 40%;
-        height: 60px;
-        border-radius: 15px;
-        background-color: #dfc6b5;
-        font-weight: 600;
-        margin: 30px;
-    } */
+    }    
 
-    button{
+        .btn,
+    a.btn,
+    button.btn {
         font-size: 20px;
-        letter-spacing: 2px;
-        width: 45%;
-        border-radius: 30px;
-        color: darkolivegreen;
-        font-weight: 600;
+        font-weight: 700;
+        position: relative;
+        display: inline-block;
+        padding: 5px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
         text-align: center;
-        padding: 3px;
+        vertical-align: middle;
+        text-decoration: none;
+        color: #212529;
+        border-radius: 10px;
     }
 
-    button > p:last-child {
-        font-size: 17px;
+
+    a.btn-flat {
+        overflow: hidden;
+        padding: 10px;
+        color: #fff;
+        border-radius: 10px;
+        background: #000;
+    }
+
+    a.btn-flat span {
+        position: relative;
+    }
+
+    a.btn-flat:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        -webkit-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        -webkit-transform: translateX(-96%);
+        transform: translateX(-96%);
+        background: #D6C6B9;
+    }
+
+    a.btn-flat:hover:before {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
     }
 
 
