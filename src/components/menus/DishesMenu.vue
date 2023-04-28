@@ -1,5 +1,6 @@
 <template>
 <article id="dish">
+    <h2>JAPANESE DISHES</h2>
 
     <button class="accordion" @change="accordion()">Donburi</button>
     <div class="displaymenu">      <!--FOR DONBURI -->
@@ -187,6 +188,13 @@ export default {
 <style scoped>
 
 @media (min-width:300px) {
+    
+    h2 {
+        font-family: 'Rye', cursive;
+        text-align: center;
+        font-weight: 400;
+    }
+
     .accordion {
         margin: auto;
         font-family: 'Rye', cursive;

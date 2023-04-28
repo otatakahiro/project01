@@ -15,11 +15,12 @@
 
                 <div>
                     <router-link class="router-link" v-for='(menu,index) in menus' :key='index' :to='menu.path' @click='move'>
-                        <img :src="menu.src" :alt="menu.src">{{menu.title}}
+                        <img :src="menu.src" :alt="menu.src">
+                        <span class="tospace"></span>
+                        <h5 class="menu-link">{{menu.title}}</h5>
                     </router-link>
-                    <router-view id="moveto"></router-view>
+                    <router-view></router-view>
                 </div>
-                <img src="/img/katsu.jpg" alt="">
             </article>
 
             <article class="menutopbutton">
@@ -48,11 +49,15 @@ export default {
     },
     methods:{
         move(){
+            const moving = document.getElementsByClassName("tospace")[5];
+            const moveTo = "moveto";
+            moving.setAttribute("id",moveTo);
             let movetoHeight = document.getElementById('moveto');
+            console.log(movetoHeight)
             movetoHeight.scrollIntoView({
                 behavior:'smooth',
                 block:'start',
-                transition:'5s'
+                transition:'5s',
             });
         }
     }
@@ -75,7 +80,6 @@ export default {
         box-sizing: border-box;
     }
 
-
     h3 {
         text-align: center;
         font-size: 30px;
@@ -89,7 +93,7 @@ export default {
         border-bottom: 3px solid;
     }    
 
-        .btn,
+    .btn,
     a.btn,
     button.btn {
         font-size: 20px;
@@ -143,7 +147,6 @@ export default {
         transform: translateX(0%);
     }
 
-
     .menu {
         display: flex;
         flex-direction: column;
@@ -167,24 +170,6 @@ export default {
         justify-content: space-around;
     }
 
-    /* .mobile-order > button{
-        font-size: 20px;
-        letter-spacing: 2px;
-        width: 45%;
-        height: 40px;
-        border-radius: 30px;
-        background: rgba(142, 94, 69, 1);
-        background-color: #EB8A3E;
-        color: darkolivegreen;
-        font-weight: 600;
-        text-align: center;
-    }
-
-    button:last-child{
-        color: crimson;
-    } */
-
-
     .menu-title {
         width: 100%;
         display: flex;
@@ -201,8 +186,6 @@ export default {
     }
 
     .router-link{
-        font-size: 17px;
-        font-family: 'Rye',cursive;
         color: white;
         text-decoration: none;
         text-align: center;
@@ -212,6 +195,7 @@ export default {
         align-items: center;
         width: 50%;
         height: 50%;
+        position: relative;
     }
 
     .router-link:hover{
@@ -222,6 +206,17 @@ export default {
     .menu-title img {
         width: 80%;
         height: 75%;
+    }
+
+    .tospace {
+        position: absolute;
+        top: 78%;
+    }
+
+    .router-link h5 {
+        font-size: 16px;
+        font-family: 'Rye',cursive;
+        font-weight: 400;
     }
 
     .menu-img {
@@ -264,10 +259,6 @@ export default {
     
     h3 {
         font-size: 45px;
-    }
-
-    #moveto {
-        padding-top: 70px;
     }
 
     .menu-title > div {

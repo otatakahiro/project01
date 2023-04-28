@@ -1,5 +1,6 @@
 <template>
     <article id="breakfast">
+        <h2>ALL DAY BREAKFAST</h2>
 
         <button class="accordion" @change="accordion()">Breakfast Plates</button>
         <div class="displaymenu">   <!--FOR BREAKFAST PLATES -->
@@ -207,6 +208,13 @@ export default {
 <style scoped>
 
 @media (min-width:300px) {
+
+    h2 {
+        font-family: 'Rye', cursive;
+        text-align: center;
+        font-weight: 400;
+    }
+
     .accordion {
         margin: auto;
         font-family: 'Rye', cursive;

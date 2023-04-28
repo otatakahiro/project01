@@ -1,6 +1,8 @@
 <template>
 <article id="monthly">
 
+    <h2>MONTHLY</h2>
+
     <button class="accordion" @change="accordion()">Meals</button>
     <div class="displaymenu">      <!--FOR MONTHLY MEAL -->
         <article>
@@ -123,6 +125,13 @@ export default {
 <style scoped>
 
 @media (min-width:300px){
+
+    h2 {
+        font-family: 'Rye', cursive;
+        text-align: center;
+        font-weight: 400;
+    }
+
     .accordion {
         margin: auto;
         font-family: 'Rye', cursive;

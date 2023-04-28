@@ -1,5 +1,6 @@
 <template>
     <article id="sweets">
+        <h2>SWEETS & DESSERTS</h2>
 
         <button class="accordion" @change="accordion()">2 Dolce Set</button>
         <div class="displaymenu">      <!--FOR DOLCE SET -->
@@ -158,7 +159,13 @@ export default {
 
 <style scoped>
 @media (min-width:300px) {
- 
+
+    h2 {
+        font-family: 'Rye', cursive;
+        text-align: center;
+        font-weight: 400;
+    }
+
     .accordion {
         margin: auto;
         font-family: 'Rye', cursive;
