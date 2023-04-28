@@ -149,7 +149,7 @@ export default {
         flex-direction: column;
         align-items: center;
         background-color: rgba(142, 94, 69, .6);
-        padding-bottom: 60px;
+        padding-bottom: 50px;
         color: white;
         row-gap: 30px;
     }

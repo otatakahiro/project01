@@ -8,10 +8,10 @@
       <section class="menu-transition">
         <h3>MAIN MENU</h3>
         <article>
-          <a href="#">Top</a>
-          <a href="#">Menu</a>
-          <a href="#">News</a>
-          <a href="#">Access</a>
+          <a href="#top">Top</a>
+          <a href="#menu">Menu</a>
+          <a href="#news">News</a>
+          <a href="#access">Access</a>
         </article>
       </section>
 
