@@ -1,7 +1,20 @@
 <template>
     <footer>
+      <section>
         <h2>Marulilu Café</h2>
         <h2>Tel: (604)568-4211</h2>
+      </section>
+
+      <section class="menu-transition">
+        <h3>MAIN MENU</h3>
+        <article>
+          <a href="#">Top</a>
+          <a href="#">Menu</a>
+          <a href="#">News</a>
+          <a href="#">Access</a>
+        </article>
+      </section>
+
         <section>
             <a href="https://www.instagram.com/marulilucafe/" class="insta_btn">
                 <span class="insta">
@@ -22,23 +35,63 @@ export default {
 @media (min-width: 300px){
 
   footer {
-        height: 250px;
+        height: 60vh;
         background-color: #834f2f;
         font-size: 15px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        padding-left: 10%;
+        justify-content: space-around;
         color: white;
-        row-gap: 2%;
-    }
+  }
+
+  footer > section {
+    border-bottom: 1px solid white;
+    padding: 15px;
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 5px;
+  }
+
+  footer > section:last-child {
+    border: none;
+  }
+
+  h2:last-child {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 20px;
+  } 
+
+.menu-transition > article{
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-transition a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: .5s;
+}
+
+.menu-transition a:hover {
+  color: sandybrown;
+}
 
 .insta_btn {
   display: inline-block;
-  text-align: center;/*中央揃え*/
+  text-align: left;/*中央揃え*/
   color: #2e6ca5;/*文字色*/
-  font-size: 25px;/*文字サイズ*/
+  font-size: 26px;/*文字サイズ*/
   text-decoration: none;/*下線消す*/
+}
+
+.insta {
+  text-align: center;
 }
 
 .insta_btn:hover {/*ホバー時*/
@@ -55,7 +108,6 @@ export default {
   background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
   overflow: hidden;/*はみ出た部分を隠す*/
   border-radius: 15px;/*角丸に*/
-
 }
 
 .insta_btn .insta:before{/*グラデーションを重ねるため*/
@@ -73,8 +125,8 @@ export default {
   color: #FFF;/*白に*/
   position: relative;/*z-indexを使うため*/
   z-index: 2;/*グラデーションより前に*/
-  top: 3px;
-  font-size: 45px;/*アイコンサイズ*/
+  top: 2.5px;
+  font-size: 44px;/*アイコンサイズ*/
   line-height: 50px;/*高さと合わせる*/
 }
 }
