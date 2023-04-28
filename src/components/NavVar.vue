@@ -82,6 +82,8 @@ export default {
         flex-direction: column;
         text-align: left;
         width: 150px;
+        left: 0px;
+        top: 50px;
     }
 
     details li{
