@@ -24,7 +24,7 @@
             </article>
 
             <article class="menutopbutton">
-                <a type="button" href="#moveto">Menu Top<font-awesome-icon icon="fa-solid fa-angles-up" /></a>
+                <a type="button" href="#moveto" class="menutop" @click='move'>Menu Top<font-awesome-icon icon="fa-solid fa-angles-up" /></a>
             </article>
 
             <div id="news"></div>
@@ -48,7 +48,7 @@ export default {
         }
     },
     methods:{
-        move(){
+        move() {
             const moving = document.getElementsByClassName("tospace")[5];
             const moveTo = "moveto";
             moving.setAttribute("id",moveTo);
@@ -182,7 +182,7 @@ export default {
         width: 98%;
         display: flex;
         flex-wrap: wrap;
-        row-gap: 10px;
+        row-gap: 30px;
     }
 
     .router-link{
@@ -220,10 +220,6 @@ export default {
     }
 
     .menu-img {
-        display: none;
-    }
-
-    .menu-title > img {
         display: none;
     }
 
