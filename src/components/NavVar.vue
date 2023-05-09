@@ -113,24 +113,25 @@ export default {
 }
 
 @media (min-width:800px){
+
     nav {
-        position: fixed;
-        top: 0;
-        height: 75px;
+        height: 100px;
         flex-direction: row-reverse;
-        justify-content: space-around;
         z-index: 2;
+    }
+
+    nav > a > h3 {
+        font-size: 35px;
     }
 
     nav > ul {
         display: flex;
-        width: 50%;
-        justify-content: space-around;
+        width: 40%;
+        justify-content: space-between;
     }
 
     nav > ul > li {
         list-style: none;
-
     }
 
     nav > ul a {
@@ -143,7 +144,7 @@ export default {
         color: orange;
     }
 
-    summary {
+    details{
         display: none;
     }
 
@@ -151,6 +152,9 @@ export default {
         padding-left: 0px;
     }
 
+    .order {
+        font-size: 30px;
+    }
 
 }
 </style>

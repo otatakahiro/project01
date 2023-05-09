@@ -257,13 +257,20 @@ export default {
         font-size: 45px;
     }
 
+    .btn,
+    a.btn,
+    button.btn {
+        font-size: 23px;
+        padding: 15px;
+    }
+
     .menu-title > div {
         width: 100%;
         justify-content: space-evenly;
+        row-gap: 25px;
     }
 
     .menu-title a{
-        font-size: 20px;
         z-index: 1;
         width: 30%;
     }
@@ -272,12 +279,11 @@ export default {
         width: 100%;
     }
 
-    .menu-title > img {
-        height: 100%;
-        width: 50%;
-        left: 50%;
-        border-radius: 30px 0 0 30px;
+    .router-link h5 {
+        font-size: 20px;
     }
+
+
 
     .menutopbutton > a {
         width: 20%;

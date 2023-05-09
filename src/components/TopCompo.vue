@@ -8,9 +8,7 @@
 
         <article class="introduction">
             <img :src="require('/public/img/sign.jpg')" alt='malu'>
-            <p>Marulilu cafe is a very 喫茶店 (Kissa-ten) style cafe at Broadway, Vancouver.
-In Japan, not only coffee/tea and some snacks but also some Japanese meals are provided.
-Especially, 洋食 (Yo-shoku) which means western style meals is enjoyed in 喫茶店for example Omu-rice and Curry-rice. Also you can enjoy some traditional/native-popular Japanese meals in Marulilu cafe; you have to know Japanese foods are not only sushi and tempura. Marulilu cafe is only one place to experience the real Japanese-style foods and drinks in Vancouver.</p>
+            <p>Marulilu cafe is a Japanese style cafe at West Broadway, Vancouver. We provid coffee, tea and Japanese meals popular in Japan like Omu-Rice and Curry-Rice. You will defenetly have great time at Marulilu cafe!! We are looking forward to see you !! Enjoy !</p>
         </article>
         <div id="menu"></div>
     </section>
@@ -102,9 +100,7 @@ export default {
         align-items: center;
         row-gap: 40px;
         padding: 40px 0 40px 0;
-        /* background: #BF9A77; */
         color: #D6C6B9;
-        /* background-color: #D6C6B9; */
     }
 
     .mobile-order {
@@ -146,15 +142,9 @@ export default {
     .for-close > li {
         color: black;
         list-style: square;
-        /* width: 100%; */
         font-size: 15px;
         text-align: left;
     }
-    
-    /* .for-close > li {
-
-    }
-     */
     .introduction > img {
         width: 100%;
     }
@@ -165,6 +155,13 @@ export default {
 
 @media (min-width:800px){
         
+    .btn,
+    a.btn,
+    button.btn{
+        font-size: 23px;
+        padding: 15px;
+    }
+
     .announcement li{
         font-size: 18px;
     }
@@ -174,14 +171,12 @@ export default {
         flex-direction: column;
         row-gap: 20px;
         width: 100%;
-        /* position: relative; */
     }
 
     .introduction > img {
         height: 40%;
         width: 100%;
         border-radius: 0 30px 30px 0;
-        /*  横からアニメーション*/
     }
 
     .introduction > p{
@@ -191,7 +186,6 @@ export default {
         color: rgba(142, 94, 69, 1);
         padding: 5%;
         border-radius: 30px 0 0 30px;
-        /*  横からアニメーション*/
     }
 }
 

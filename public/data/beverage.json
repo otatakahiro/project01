@@ -57,7 +57,7 @@
 
 {"menuId":24,"menuName":"English Breakfast","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Very tick Fullbody Blend Tea for Breakfast","explanation2":"A good much with Milk","online":true},
 
-{"menuId":25,"menuName":"Darjeeling(FTGFOP1)","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Tea of the Year. Very Aromatic Vlack Tea","explanation2":"","online":true},
+{"menuId":25,"menuName":"Darjeeling(FTGFOP1)","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Tea of the Year. Very Aromatic Black Tea","explanation2":"","online":true},
 
 {"menuId":26,"menuName":"Russia Caravan","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"In the typical Rich & Smoky aroma of Popoff Russian Tea","explanation2":"","online":true},
 
@@ -76,7 +76,7 @@
 
 
 
-{"menuId":33,"menuName":"Jasmin Green","price":"Per pot 2.99","category":"greentea","menuImg":"","explanation1":"Green Tea flavored in a natural way with Jasmin Blossomes","explanation2":"","online":true},
+{"menuId":33,"menuName":"Jasmin Green","price":"Per pot 2.99","category":"greentea","menuImg":"","explanation1":"Green Tea flavored in a natural way with Jasmin Blossoms","explanation2":"","online":true},
 
 {"menuId":34,"menuName":"Mint Green","price":"Per pot 2.99","category":"greentea","menuImg":"","explanation1":"Green Tea Blended with Peppermint","explanation2":"","online":true},
 
@@ -88,7 +88,7 @@
 
 {"menuId":38,"menuName":"Hoji-Cha(Roasted Green Tea)","price":"Per pot 2.99","category":"greentea","menuImg":"","explanation1":"Roasted Pure Green Tea","explanation2":"","online":true},
 
-{"menuId":39,"menuName":"Matcha Green Tea","price":"Per pot 2.99","category":"greentea","menuImg":"","explanation1":"Very fine grind Sen-Cha in Millstone","explanation2":"Served with Special Cup","online":true},
+{"menuId":39,"menuName":"Matcha Green Tea","price":"Served with Special Cup $4.25","category":"greentea","menuImg":"","explanation1":"Very fine grind Sen-Cha in Millstone","explanation2":"Served with Special Cup","online":true},
 
 
 
@@ -105,13 +105,13 @@
 
 {"menuId":44,"menuName":"Raspberry/Vanilla Rooibos","price":"Per pot 2.99","category":"rooibostea","menuImg":"","explanation1":"Pure Rooibos flavored with Vanilla and Raspberry Bits.","explanation2":"","online":true},
 
-{"menuId":45,"menuName":"Candied Almond Rooibos","price":"Per pot 2.99","category":"rooibostea","menuImg":"","explanation1":"Pure Rooibos flavored with Candied Almond and Sugar-harts.","explanation2":"","online":true},
+{"menuId":45,"menuName":"Candied Almond Rooibos","price":"Per pot 2.99","category":"rooibostea","menuImg":"","explanation1":"Pure Rooibos flavored with Candied Almonds and Sugar-harts.","explanation2":"","online":true},
 
-{"menuId":46,"menuName":"Provance Rooibos","price":"Per pot 2.99","category":"rooibostea","menuImg":"","explanation1":"Pure Rooibos w/Lavender, Berries, Rosehip, Raisin, Black Currant, Red Currant, Blueberry, Rose Leaf and Rose Petal","explanation2":"","online":true},
+{"menuId":46,"menuName":"Provence Rooibos","price":"Per pot 2.99","category":"rooibostea","menuImg":"","explanation1":"Pure Rooibos w/Lavender, Berries, Rosehip, Raisin, Black Currant, Red Currant, Blueberry, Rose Leaf, and Rose Petal","explanation2":"","online":true},
 
 {"menuId":47,"menuName":"Cream Blulee","price":"Per pot 2.99","category":"rooibostea","menuImg":"","explanation1":"Pure Rooibos w/Carob Bits, Sweet Blakberry Leaf, Puffed Rice, Sunflower Petal, Tonka Bean, Vanilla Bits and Amaranth","explanation2":"","online":true},
 
-{"menuId":48,"menuName":"Chai Massai","price":"Per pot 2.99","category":"rooibostea","menuImg":"","explanation1":"Pure Rooibos w/Cinnamon, Cardamom, Citrus Peels, Ginger Bits, Pepper, Star Anisseed and Clove","explanation2":"","online":true},
+{"menuId":48,"menuName":"Chai Massai","price":"Per pot 2.99","category":"rooibostea","menuImg":"","explanation1":"Pure Rooibos w/Cinnamon, Cardamom, Citrus Peels, Ginger Bits, Pepper, Star Anise and Clove","explanation2":"","online":true},
 
 {"menuId":49,"menuName":"Chocolate-Coconut","price":"Per pot 2.99","category":"rooibostea","menuImg":"","explanation1":"Flavoured Rooibos with Chocolate ^ Coconut taste, Rooibos, Choco Flakes, COcoa Kernels, Coconut Chips, Carob Bits","explanation2":"","online":true},
 
@@ -119,7 +119,7 @@
 
 
 
-{"menuId":51,"menuName":"Organic Peppermint","price":"Per pot 2.99","category":"herbaltea","menuImg":"","explanation1":"Greentea flavored in a natural way with Jasmin Blossomes","explanation2":"","online":true},
+{"menuId":51,"menuName":"Organic Peppermint","price":"Per pot 2.99","category":"herbaltea","menuImg":"","explanation1":"Green tea flavored in a natural way with Jasmin Blossoms","explanation2":"","online":true},
 
 {"menuId":52,"menuName":"Chamomile Flowers","price":"Per pot 2.99","category":"herbaltea","menuImg":"","explanation1":"Dried Chamomile Flowers","explanation2":"","online":true},
 

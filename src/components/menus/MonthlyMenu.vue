@@ -127,16 +127,23 @@ export default {
 @media (min-width:300px){
 
     h2 {
+        background-color: orange;
         font-family: 'Rye', cursive;
         text-align: center;
         font-weight: 400;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+
+    #monthly {
+        width: 100%;
     }
 
     .accordion {
         margin: auto;
         font-family: 'Rye', cursive;
         background-color: rgba(142, 94, 69,0);
-        font-size: 17px;
+        font-size: 18px;
         color: black;
         cursor: pointer;
         padding: 13px;
@@ -164,8 +171,8 @@ export default {
     .accordion:hover {
         background-color: #D6C6B9;
     }
- 
-    .displaymenu{
+
+    .displaymenu {
         background-color: #D6C6B9;
         max-height: 0;
         overflow: hidden;
@@ -179,14 +186,13 @@ export default {
     }
 
     .displaymenu > article {
-        font-size: 16px;
         display: flex;
         flex-wrap: wrap;
         width: 100%;
         background-color: antiquewhite;
         row-gap: 10px;
         justify-content: center;
-    } 
+    }
 
     .gomodal {
         width: 95%;
@@ -208,6 +214,7 @@ export default {
         width: 100%;
         border-bottom: 2px solid black;
         row-gap: 5px;
+        font-size: 17px;
     }
 
     .details > p:first-child {
@@ -217,7 +224,7 @@ export default {
     .details > p:last-child {
         display: flex;
         column-gap: 3%;
-        width:100%;
+        width: 100%;
         justify-content: right;
         padding-bottom: 1%;
         align-items: center;
@@ -241,25 +248,23 @@ export default {
 }
 
 @media (min-width:800px) {
-        .displaymenu > h3 {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-size:35px;
+
+    h2 {
+        font-size: 30px;
     }
 
-    .displaymenu > article {
-        font-size: 18px;
+    .accordion {
+        font-size: 23px;
+        padding: 20px;
+    }
+
+    .details {
+        font-size: 20px;
     }
 }
 
 @media (min-width:1200px) {
-    .displaymenu > article {
-        column-gap: 4%;
-    }
 
-    .gomodal {
-        width: 48%;
-    }
 }
 
 

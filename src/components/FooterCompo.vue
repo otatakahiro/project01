@@ -135,6 +135,11 @@ export default {
   footer {
     height: 400px;
     font-size: 25px;
+    letter-spacing: 2px;
+  }
+
+  footer > section {
+    width: 40%;
   }
 
   .insta_btn .insta {

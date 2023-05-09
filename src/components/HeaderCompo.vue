@@ -4,15 +4,15 @@
             <img src="/marulilu_favicon.jpg" alt="">
             <ul class="opentime">
                 <li>Mon, 8AM - 6PM</li>
-                <!-- <li>Tue, CLOSE</li> -->
                 <li>Wed, 8AM - 6PM</li>
                 <li>Thu, 8AM - 6PM</li>
                 <li>Fri, 8AM - 6PM</li>
                 <li>Sat, 8:30AM - 6PM</li>
                 <li>Sun, 8:30AM - 6PM</li>
                 <li>Holiday, 9AM - 6PM</li>
-                <!-- <li>X'MAS & New Year, CLOSE</li> -->
+                <li><a href="#access">More Info</a></li>
             </ul>
+            
         </section>
     </header>
 </template>
@@ -37,7 +37,6 @@ export default {
             width: 100%;
         }
         header > section{
-            /* background-color: rgba(237, 109, 61, 0.2); */
             background-color: rgba(0,0,0,.2);
             height: 100%;
             display: flex;
@@ -52,7 +51,7 @@ export default {
             width: 40%;
             border-radius: 50%;
             margin-bottom: auto;
-            margin-top: 40px;
+            margin-top: 90px;
             z-index: 2;
         }
 
@@ -77,6 +76,22 @@ export default {
             text-align: center;
             font-weight: 500;
         }
+
+        a {
+            font-size: 20px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 3px 8px;
+            text-decoration: none;
+            color: black;
+            transition: 1s;
+        }
+
+        a:hover {
+            background: black;
+            color: white;
+        }
+
         .opentime {
             color: white;
             /* background-color: rgba(0,0,0,.3); */
@@ -88,25 +103,30 @@ export default {
             display: flex;
             flex-direction: column;
             row-gap: 5px;
+            padding-bottom: 20px;
         }
 
         .opentime > li {
             padding-left: 30px;
         }
+        
+        .opentime > li:last-child {
+            text-align: center;
+        }
     }
 
     @media (min-width:800px){
-        header {
-            position: none;
-            margin: 0;
+        header img {
+            width: 30%;
         }
 
-        header h1 {
-            font-size: 70px;
-            border-radius: 30px;
+        a {
+            padding: 5px 10px;
         }
-        header p {
-            display: none;
+
+        .opentime {
+            font-size: 28px;
+            letter-spacing: 2px;
         }
     }
 

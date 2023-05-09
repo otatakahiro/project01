@@ -1,13 +1,13 @@
 [
 {"menuId":0,"menuName":"","price":0,"category":"","menuImg":"","explanation1":"","explanation2":"","online":true},
 
-{"menuId":1,"menuName":"Tonkatsu","price":6.99,"category":"jpnside","menuImg":"","explanation1":"Breaded Deefpried Pork Cutlet comes with Tonkatsu Sauce","explanation2":"Add Side Tartar plas $1.25","online":true},
+{"menuId":1,"menuName":"Tonkatsu","price":6.99,"category":"jpnside","menuImg":"","explanation1":"Breaded Deep-fried Pork Cutlet comes with Tonkatsu Sauce","explanation2":"Add Side Tartar plas $1.25","online":true},
 
-{"menuId":2,"menuName":"Mini Aji Fry","price":2.75,"category":"jpnside","menuImg":"","explanation1":"Breaded Deepfried Mackerel comes with Tonkatsu Sauce","explanation2":"Add Side Tartar plas $1.25","online":true},
+{"menuId":2,"menuName":"Mini Aji Fry","price":2.75,"category":"jpnside","menuImg":"","explanation1":"Breaded Deep-fried Mackerel comes with Tonkatsu Sauce","explanation2":"Add Side Tartar plas $1.25","online":true},
 
 {"menuId":3,"menuName":"Karaage","price":7.50,"category":"jpnside","menuImg":"","explanation1":"Floured Deepfried Chicken Thigh","explanation2":"","online":true},
 
-{"menuId":4,"menuName":"Takoyaki","price":7.50,"category":"jpnside","menuImg":"","explanation1":"Octopus ball, topping with Takoyaki Sauce, Mayo, Ao-Nori, Red Ginger and shaved Bonito","explanation2":"","online":true},
+{"menuId":4,"menuName":"Takoyaki","price":7.50,"category":"jpnside","menuImg":"","explanation1":"Octopus ball, topped with Takoyaki Sauce, Mayo, Ao-Nori, Red Ginger, and shaved Bonito","explanation2":"","online":true},
 
 {"menuId":5,"menuName":"Hamburger Stake w/Tomato Sauce","price":5.99,"category":"jpnside","menuImg":"","explanation1":"1 Hamburger Stake served with Tomato Bisque Sauce","explanation2":"","online":true},
 

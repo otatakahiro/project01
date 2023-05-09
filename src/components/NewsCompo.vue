@@ -191,7 +191,7 @@ export default {
     }
 
     ul {
-        font-size: 19px;
+        font-size: 18px;
         width: 100%;
     }
 

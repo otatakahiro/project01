@@ -88,7 +88,7 @@
 
         
 
-        <button class="accordion" @change="accordion()">Original Sandwiches / Wraps</button>
+        <button class="accordion" @change="accordion()">Sandwiches / Wraps</button>
         <div class="displaymenu">    <!--FOR SANDWICHES / WRAPS-->
             <article>
                 <div class="gomodal" v-for="(breakfast, index) in sandwichewrapfilter" @click='openModal(breakfast)' :key='index'>
@@ -210,16 +210,19 @@ export default {
 @media (min-width:300px) {
 
     h2 {
+        background-color: orange;
         font-family: 'Rye', cursive;
         text-align: center;
         font-weight: 400;
+        padding: 5px;
+        margin-bottom: 20px;
     }
 
     .accordion {
         margin: auto;
         font-family: 'Rye', cursive;
         background-color: rgba(142, 94, 69,0);
-        font-size: 17px;
+        font-size: 18px;
         color: black;
         cursor: pointer;
         padding: 13px;
@@ -262,7 +265,6 @@ export default {
     }
 
     .displaymenu > article {
-        font-size: 16px;
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -291,6 +293,7 @@ export default {
         width: 100%;
         border-bottom: 2px solid black;
         row-gap: 5px;
+        font-size: 17px;
     }
 
     .details > p:first-child {
@@ -300,7 +303,7 @@ export default {
     .details > p:last-child {
         display: flex;
         column-gap: 3%;
-        width:100%;
+        width: 100%;
         justify-content: right;
         padding-bottom: 1%;
         align-items: center;
@@ -325,13 +328,18 @@ export default {
 }
 
 @media (min-width:800px) {
-    .displaymenu > h3 {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-size:35px;
+
+    h2 {
+        font-size: 30px;
     }
-    .displaymenu > article {
-        font-size: 18px;
+
+    .accordion {
+        font-size: 23px;
+        padding: 20px;
+    }
+
+    .details {
+        font-size: 20px;
     }
 }
 
