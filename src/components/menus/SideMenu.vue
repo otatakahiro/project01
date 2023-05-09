@@ -262,7 +262,9 @@ export default {
 
 @media (min-width:1200px) {
     .displaymenu > article {
-        column-gap: 4%;
+        column-gap: 1%;
+        row-gap: 20px;
+        justify-content: space-between;
     }
 
     .gomodal {

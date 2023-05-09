@@ -219,10 +219,6 @@ export default {
         font-weight: 400;
     }
 
-    .menu-img {
-        display: none;
-    }
-
     .menutopbutton {
         width: 90%;
     }
@@ -293,7 +289,14 @@ export default {
 }
 
 @media (min-width:1200px) {
+    .menu-title a{
+        z-index: 1;
+        width: 30%;
+    }
 
+    .menu-title a > img {
+        width: 85%;
+    }
 }
 
 </style>

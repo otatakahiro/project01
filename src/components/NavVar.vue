@@ -115,7 +115,7 @@ export default {
 @media (min-width:800px){
 
     nav {
-        height: 100px;
+        height: 90px;
         flex-direction: row-reverse;
         z-index: 2;
     }
@@ -155,6 +155,11 @@ export default {
     .order {
         font-size: 30px;
     }
+}
 
+@media (min-width:1200px) {
+    nav {
+        height: 70px;
+    }
 }
 </style>

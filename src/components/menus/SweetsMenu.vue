@@ -22,64 +22,46 @@
 
 
         <button class="accordion" @change="accordion()">Sweets & Desserts</button>
-        <div class="displaymenu">      <!--FOR $3.99 -->
+        <div class="displaymenu">      
             <article>
                 <div class="gomodal" v-for="(sweet, index) in threefilter" @click='openModal(sweet)' :key='index'>
-                    <div class="details">
+                    <div class="details">   <!--FOR $3.99 -->
                         <p>{{sweet.menuName}}</p>
                         <p>${{sweet.price}}
                             <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
                         </p>
                     </div>
                 </div>
-                <modal-window v-show='showContent' @from-child='closeModal' :sweet='sweetDetail'></modal-window>
-            </article>
-
-
-
-            <article>      <!--FOR $4.99 -->
-            <div class="gomodal" v-for="(sweet, index) in fourfilter" @click='openModal(sweet)' :key='index'>
-                    <div class="details">
+                <div class="gomodal" v-for="(sweet, index) in fourfilter" @click='openModal(sweet)' :key='index'>
+                    <div class="details">   <!--FOR $4.99 -->
                         <p>{{sweet.menuName}}</p>
                         <p>${{sweet.price}}
                             <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
                         </p>
                     </div>
                 </div>
-                <modal-window v-show='showContent' @from-child='closeModal' :sweet='sweetDetail'></modal-window>
-            </article>
-
-
-
-
-
-            <article>      <!--FOR $6.99 -->
                 <div class="gomodal" v-for="(sweet, index) in sixfilter" @click='openModal(sweet)' :key='index'>
-                    <div class="details">
+                    <div class="details">   <!--FOR $6.99 -->
                         <p>{{sweet.menuName}}</p>
                         <p>${{sweet.price}}
                             <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
                         </p>
                     </div>
                 </div>
-                <modal-window v-show='showContent' @from-child='closeModal' :sweet='sweetDetail'></modal-window>
-            </article>
-
-
-
-
-            
-            <article>      <!--FOR AFFOGATO -->
                 <div class="gomodal" v-for="(sweet, index) in foursixfilter" @click='openModal(sweet)' :key='index'>
-                    <div class="details">
+                    <div class="details">   <!--FOR $4.99 & $6.99 -->
                         <p>{{sweet.menuName}}</p>
-                        <p>${{sweet.price}}
+                        <p>{{sweet.price}}
                             <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
                         </p>
                     </div>
                 </div>
                 <modal-window v-show='showContent' @from-child='closeModal' :sweet='sweetDetail'></modal-window>
             </article>
+
+
+
+
         </div>
     </article>
 </template>
@@ -295,7 +277,9 @@ export default {
 
 @media (min-width:1200px) {
     .displaymenu > article {
-        column-gap: 4%;
+        column-gap: 1%;
+        row-gap: 20px;
+        justify-content: space-between;
     }
 
     .gomodal {

@@ -18,7 +18,9 @@
 
 
 
-            <article>         <!--FOR ESPRESSO -->
+            <article class="rice">
+                <p>Espresso</p>      <!--FOR ESPRESSO -->
+                <section class="inmenu">
                 <div class="gomodal" v-for="(beverage, index) in espressofilter" @click='openModal(beverage)' :key='index'>
                     <div class="details">
                         <p>{{beverage.menuName}}</p>
@@ -28,6 +30,7 @@
                     </div>
                 </div>
                 <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
+                </section>
             </article>
         </div>
 
@@ -390,6 +393,7 @@ export default {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 10px;
     }
     .rice > p {
         text-align: center;
@@ -397,6 +401,7 @@ export default {
         color: black;
         font-family: 'Rye',cursive;
         font-weight: 400;
+        border-bottom: 2px solid black;
     }
 
     .inmenu {
@@ -423,18 +428,24 @@ export default {
 
 @media (min-width:1200px) {
     .displaymenu > article {
-        column-gap: 4%;
+        column-gap: 1%;
+        row-gap: 20px;
+        justify-content: space-between;
     }
 
     .gomodal {
         width: 48%;
+    }
+    
+    .rice {
+        padding: 20px;
     }
 
     .inmenu {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        column-gap: 4%;
+        column-gap: 1%;
     }
 
     .inmenu > p {

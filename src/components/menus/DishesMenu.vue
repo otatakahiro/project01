@@ -309,12 +309,14 @@ export default {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 10px;
     }
     .rice > p {
         text-align: center;
         width: 70%;
         color: black;
         font-family: 'Rye', cursive;
+        border-bottom: 2px solid black;
     }
 
     .inmenu {
@@ -340,23 +342,32 @@ export default {
 }
 
 @media (min-width:1200px) {
+
     .displaymenu > article {
-        column-gap: 4%;
+        column-gap: 1%;
+        row-gap: 20px;
+        justify-content: space-between;
+    }
+
+    .rice {
+        padding: 20px;
     }
 
     .gomodal {
         width: 48%;
+        
     }
 
     .inmenu {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        column-gap: 4%;
+        column-gap: 1%;
     }
 
     .inmenu > p {
         width: 100%;
     }
 }
+
 </style>

@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style scoped>
-    @media (min-width: 300px){
+@media (min-width: 300px){
         
         header {
             height: 100vh;
@@ -113,9 +113,9 @@ export default {
         .opentime > li:last-child {
             text-align: center;
         }
-    }
+}
 
-    @media (min-width:800px){
+@media (min-width:800px){
         header img {
             width: 30%;
         }
@@ -128,6 +128,28 @@ export default {
             font-size: 28px;
             letter-spacing: 2px;
         }
+}
+
+@media (min-width:1200px) {
+    header img {
+        width: 15%;
     }
+
+    .opentime {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 25px;
+        justify-content: center;
+    }
+
+    .opentime > li {
+        border-bottom: 5px dotted orange;
+    }
+
+    .opentime > li:last-child {
+        border-bottom: none;
+    }
+    
+}
 
 </style>
