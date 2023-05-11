@@ -234,6 +234,7 @@ export default {
         transition: .5s;
         line-height: 17px;
         border-bottom: 2px dotted black;
+        text-align: center;
     }
     
     .accordion:after {

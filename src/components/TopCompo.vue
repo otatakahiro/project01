@@ -169,14 +169,16 @@ export default {
     .introduction {
         display: flex;
         flex-direction: column;
+        align-items: center;
         row-gap: 20px;
         width: 100%;
     }
 
     .introduction > img {
         height: 40%;
-        width: 100%;
-        border-radius: 0 30px 30px 0;
+        width: 90%;
+        border-radius: 50px;
+
     }
 
     .introduction > p{
@@ -185,7 +187,6 @@ export default {
         background-color: rgba(256, 256, 256, .4);
         color: rgba(142, 94, 69, 1);
         padding: 5%;
-        border-radius: 30px 0 0 30px;
     }
 }
 

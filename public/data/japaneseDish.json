@@ -1,27 +1,27 @@
 [
 {"menuIj_dish":0,"menuName":"","price":0,"category":"","menuImg":"","explanation1":"","explanation2":"","online":true},
 
-{"menuId":1,"menuName":"Wild Smoked Salmon Avocado Salad Don","price":14.99,"category":"donburi","menuImg":"","explanation1":"Wild Smoked Salmon, Fresh Avocado, Spring Mix and Nori on top of Rice","explanation2":"","online":true},
+{"menuId":1,"menuName":"Wild Smoked Salmon Avocado Salad Don","price":14.99,"category":"donburi","menuImg":"./img/salmonavo.jpg","explanation1":"Wild Smoked Salmon, Fresh Avocado, Spring Mix and Nori on top of Rice","explanation2":"","online":true},
 
-{"menuId":2,"menuName":"Katsu-Don","price":12.99,"category":"donburi","menuImg":"","explanation1":"Breaded Deep-fried Pork Cutlet is Cooked w/Egg, Onion, and Sweet Soy-sauce on top of Rice","explanation2":"","online":true},
+{"menuId":2,"menuName":"Katsu-Don","price":12.99,"category":"donburi","menuImg":"./img/katsu.jpg","explanation1":"Breaded Deep-fried Pork Cutlet is Cooked w/Egg, Onion, and Sweet Soy-sauce on top of Rice","explanation2":"","online":true},
 
 {"menuId":3,"menuName":"Sauce Katsu-Don","price":12.99,"category":"donburi","menuImg":"","explanation1":"Breaded Deep-fried Pork Cutlet on top of Rice with Shredded Cabbage, Tonkatsu Sauce, and Mayo","explanation2":"with Miso Soup Plus $1.50, with Oshinko Set (Oshinko, Miso Soup, and Salad) Plus $5.00","online":true},
 
 {"menuId":4,"menuName":"Kinoko-Don(Mushrooms)","price":12.99,"category":"donburi","menuImg":"","explanation1":"Shimeji Mushrooms, Enoki Mushroom, and Shitake Mushrooms are Cooked w/Egg, Onion, and Sweet Soy-sauce on top of Rice","explanation2":"with Miso Soup Plus $1.50, with Oshinko Set(Oshinko, Miso Soup, and Salad) Plus $5.00","online":true},
 
-{"menuId":5,"menuName":"Oyako w/Kinoko-Don","price":13.99,"category":"donburi","menuImg":"","explanation1":"Chicken Breast, Enoki Mushroom, Shimeji Mushroom, and Shitake Mushrooms are cooked w/Egg, Onion, and Sweet Soy sauce on top of Rice","explanation2":"with Miso Soup Plus $1.50, with Oshinko Set(Oshinko, Miso Soup, and Salad) Plus $5.00","online":true},
+{"menuId":5,"menuName":"Oyako w/Kinoko-Don","price":13.99,"category":"donburi","menuImg":"./img/oyakodon.jpg","explanation1":"Chicken Breast, Enoki Mushroom, Shimeji Mushroom, and Shitake Mushrooms are cooked w/Egg, Onion, and Sweet Soy sauce on top of Rice","explanation2":"with Miso Soup Plus $1.50, with Oshinko Set(Oshinko, Miso Soup, and Salad) Plus $5.00","online":true},
 
 {"menuId":6,"menuName":"Mabo Tofu-Don","price":13.99,"category":"donburi","menuImg":"","explanation1":"Tofu & Grind beef are cooked with special spicy sauce on top of Rice","explanation2":"with Miso Soup Plus $1.50, with Oshinko Set(Oshinko, Miso SOup, and Salad) Plus $5.00","online":true},
 
 {"menuId":7,"menuName":"Sukiyaki-Don","price":14.99,"category":"donburi","menuImg":"","explanation1":"Sliced Beef, Green Onion, Shitake Mushroom, Shirataki, and Tofu are cooked w/Sweet Soysauce on top of Rice","explanation2":"with Miso Soup Plus $1.50, with Oshinko Set(Oshinko, Miso Soup, and Salad) Plus $5.00","online":true},
 
-{"menuId":8,"menuName":"Mentaiko Udon","price":12.99,"category":"yoshoku","menuImg":"","explanation1":"Dress with Butter and Spicy Cod Roe and come w/Mini Salad(Dress w/Sesame Dressing)","explanation2":"Add Daily Soup & Salad Plus $8.00","online":true},
+{"menuId":8,"menuName":"Mentaiko Udon","price":12.99,"category":"yoshoku","menuImg":"./img/udon.jpg","explanation1":"Dress with Butter and Spicy Cod Roe and come w/Mini Salad(Dress w/Sesame Dressing)","explanation2":"Add Daily Soup & Salad Plus $8.00","online":true},
 
-{"menuId":9,"menuName":"Tomato Bisque Udon","price":12.99,"category":"yoshoku","menuImg":"","explanation1":"Dress with SP Tomato & Pepper Bisque Sauce and come w/Mini Salad(Dress w/Sesame Dressing)","explanation2":"Add Daily Soup & Salad Plus $8.00","online":true},
+{"menuId":9,"menuName":"Tomato Bisque Udon","price":12.99,"category":"yoshoku","menuImg":"./img/udontomato.jpg","explanation1":"Dress with SP Tomato & Pepper Bisque Sauce and come w/Mini Salad(Dress w/Sesame Dressing)","explanation2":"Add Daily Soup & Salad Plus $8.00","online":true},
 
 {"menuId":10,"menuName":"Taco Rice","price":11.99,"category":"yoshoku","menuImg":"","explanation1":"Spicy Grind Beef, Cheddar, Mozzarella, Diced Tomato, and Lettuce on Rice","explanation2":"w/ Poached Egg or Sunny Side up Egg Plus $1.00","explanation3":"Add Daily Soup & Salad Plus $8.00","online":true},
 
-{"menuId":11,"menuName":"Wild Salmon Miso Risotto with Aji Fry","price":15.99,"category":"yoshoku","menuImg":"","explanation1":"","explanation2":"Add Daily Soup & Salad Plus $8.00","online":true},
+{"menuId":11,"menuName":"Wild Salmon Miso Risotto with Aji Fry","price":15.99,"category":"yoshoku","menuImg":"./img/risotto.jpg","explanation1":"","explanation2":"Add Daily Soup & Salad Plus $8.00","online":true},
 
 {"menuId":12,"menuName":"Hamburger Steak with Tomato Bisque Sauce","price":18.99,"category":"steak","menuImg":"","explanation1":"Tomato Bisque Sauce on 2 Hamburger Stakes Comes with White Rice, Tossed Salad with Sesame Dressing","explanation2":"","online":true},
 

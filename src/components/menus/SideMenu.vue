@@ -144,7 +144,7 @@ export default {
         cursor: pointer;
         padding: 13px;
         width: 95%;
-        text-align: left;
+        text-align: center;
         border: none;
         outline: none;
         display: block;
