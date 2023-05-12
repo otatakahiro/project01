@@ -37,12 +37,12 @@ export default {
     data() {
         return {
             menus: [
-                {title: 'ALL-DAY BREAKFASTS', href: 'breakfast', src:'img/katsu.jpg', path:'/breakfast',name:'Breakfast Menu'},
-                {title: 'JAPANESE DISH & YOSHOKU', href: 'dish', src:'img/katsu.jpg', path:'/jpndish',name:'Jpn Dish Menu'},
+                {title: 'ALL-DAY BREAKFASTS', href: 'breakfast', src:'img/doublebenny.jpg', path:'/breakfast',name:'Breakfast Menu'},
+                {title: 'JAPANESE DISH & YOSHOKU', href: 'dish', src:'img/omu.jpg', path:'/jpndish',name:'Jpn Dish Menu'},
                 {title: 'JAPANESE SIDE MENU', href: 'side', src:'img/katsu.jpg', path:'/jpnside',name:'Jpn Side Menu'},
                 {title: 'MONTHLY SPECIAL', href: 'monthly', src:'img/katsu.jpg', path:'/monthly',name:'Monthly Menu'},
-                {title: 'SWEET & DESSERTS', href: 'sweets', src:'img/katsu.jpg', path:'/sweets',name:'Sweets Menu'},
-                {title: 'BEVERAGES', href: 'beverage', src:'img/katsu.jpg', path:'/beverages',name:'Beverages Menu'},
+                {title: 'SWEET & DESSERTS', href: 'sweets', src:'img/pudd.jpg', path:'/sweets',name:'Sweets Menu'},
+                {title: 'BEVERAGES', href: 'beverage', src:'img/matcharate.jpg', path:'/beverages',name:'Beverages Menu'},
             ],
             curretPath:'',
         }
@@ -205,7 +205,6 @@ export default {
 
     .menu-title img {
         width: 80%;
-        height: 75%;
     }
 
     .tospace {
@@ -242,9 +241,6 @@ export default {
         background-color: antiquewhite;
     }
 
-    .picture2{
-        background-image: url('/public/img/udon.jpg');
-    }
 }
 
 @media (min-width: 800px) {

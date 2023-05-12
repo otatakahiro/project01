@@ -127,7 +127,7 @@ export default {
 @media (min-width:300px) {
 
     h2 {
-        background-color: orange;
+        background-color: #97B8C2;
         font-family: 'Rye', cursive;
         text-align: center;
         font-weight: 400;

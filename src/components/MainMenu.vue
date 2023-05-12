@@ -3,7 +3,7 @@
     <NavVar></NavVar>
     <HeaderCompo id="top"></HeaderCompo>
     <MainCompo></MainCompo>
-    <FooterCompo></FooterCompo> 
+    <FooterCompo></FooterCompo>
   </body>
 </template>
 <script>

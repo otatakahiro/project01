@@ -7,7 +7,7 @@
         </article>
 
         <article class="introduction">
-            <img :src="require('/public/img/sign.jpg')" alt='malu'>
+            <img :src="require('/public/img/sign.jpg')" alt='malu' />
             <p>Marulilu cafe is a Japanese style cafe at West Broadway, Vancouver. We provid coffee, tea and Japanese meals popular in Japan like Omu-Rice and Curry-Rice. You will defenetly have great time at Marulilu cafe!! We are looking forward to see you !! Enjoy !</p>
         </article>
         <div id="menu"></div>
