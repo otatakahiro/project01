@@ -17,9 +17,9 @@
 
 {"menuId":8,"menuName":"Mini Breakfast Plate D with Waffle","price":9.99,"category":"breakfast_plate","menuImg":"./img/bplatea.jpg","explanation1":"1 Organic Egg,  Gluten Free Hashbrowns. You can choice of Gluten Free Vanilla Yogurt, w/Granola or House Salad","explanation2":"How would you like your eggs? \n Scrumble (Add Chedder Or Mozzarella Plus $1.00),\n Sunny Side Up, Over Easy, Over Medium, Over Hard, Poached, Baste.","explanation3":"Our Dressing Selection \n Italian, Toasted Sesame, Raspberry Vinaigrette, Extra Virgin Olive Oil, Vinegar","online":true},
 
-{"menuId":9,"menuName":"Japanese Style Breakfast","price":10.99,"category":"japanese_breakfast","menuImg":"./img/jbre.jpg","explanation1":"Grilled Wild Salmon, Japanese Plain Omelet, Rice, Miso Soup","explanation2":"Choice of Natto or Tofu","explanation3":"Add Nori(Seaweed) 2packs for $1.00,\nSample Natto(1 spoon) $1.00,\nOshinko $1.75","online":true},
+{"menuId":9,"menuName":"Japanese Style Breakfast","price":10.99,"category":"japanese_breakfast","menuImg":"./img/jpbreakfast.jpg","explanation1":"Grilled Wild Salmon, Japanese Plain Omelet, Rice, Miso Soup","explanation2":"Choice of Natto or Tofu","explanation3":"Add Nori(Seaweed) 2packs for $1.00,\nSample Natto(1 spoon) $1.00,\nOshinko $1.75","online":true},
 
-{"menuId":10,"menuName":"Japanese Style Breakfast - All on it","price":15.99,"category":"japanese_breakfast","menuImg":"./img/jbre.jpg","explanation1":"Grilled Wild Salmon, Japanese Plain Omelet, Rice, Miso Soup, Natto, Tofu, Oshinko and Nori","explanation2":"","online":true},
+{"menuId":10,"menuName":"Japanese Style Breakfast - All on it","price":15.99,"category":"japanese_breakfast","menuImg":"./img/jpbreakfastAll.jpg","explanation1":"Grilled Wild Salmon, Japanese Plain Omelet, Rice, Miso Soup, Natto, Tofu, Oshinko and Nori","explanation2":"","online":true},
 
 {"menuId":11,"menuName":"Double Benny","price":16.99,"category":"egg_benny","menuImg":"./img/doublebenny.jpg","explanation1":"Choice of Bacon, Wild Alaskan Smoked Salmon, or Fresh Tomato & Spring Mix","explanation2":"Add 1 Hashbrown Plus $1.00,\n Add 2 Hashbrowns Plus $1.75,\nAdd Tomato Plus $1.75,\n Add Guacamole Plus $2.25","explanation3":"Switch to on Tomato, or On Hashbrown Plus $1.00,\nSwitch to on Gluten Free Bun Plus $1.75","online":true},
 

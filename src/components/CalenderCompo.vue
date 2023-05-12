@@ -1,5 +1,5 @@
 <template>
-    <div id='calendar'>
+    <div id='calendar' :class={visible:mounted}>
 
     </div>
 </template>
@@ -15,8 +15,10 @@ export default {
     mounted() {
         this.mounted = true;
         window.onload = () => {
-                const weeks = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+            
+            const weeks = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
             const date = new Date();
+            
             const year = date.getFullYear();
             const month = date.getMonth() + 1;
             const startDate = new Date(year, month - 1, 1); // 月の最初の日を取得
@@ -50,8 +52,20 @@ export default {
                         calendarHtml += '<td id="is-disabled">' + num + '</td>';
                         dayCount++;
                     } else {
-                        calendarHtml += '<td id="day-td">' + dayCount + '</td>';
+                        if(dayCount == date.getDate()){
+                            calendarHtml += '<td id="today-td">' + dayCount + '</td>';
+
+                        }else{
+
+                            calendarHtml += '<td id="day-td">' + dayCount + '</td>';
+                        }
                         dayCount++;
+
+                        if(date.getMonth() == 12 && date.getDate == 25){
+                            calendarHtml += '<td id="today-td">' + dayCount + '</td>';
+                        }else if(date.getMonth() == 1 && date.getDate == 1){
+                            calendarHtml += '<td id="today-td">' + dayCount + '</td>';
+                        }
                     }
 
                 }
@@ -59,15 +73,20 @@ export default {
             }
             calendarHtml += '</table>';
 
+
             document.querySelector('#calendar').innerHTML = calendarHtml;
-        };
+        }
+
+        
     }
 }
 </script>
 
 <style>
+
 #h1forCalender {
     font-size: 18px;
+    padding-bottom: 30px;
 }
 
 #tableforCalender {
@@ -81,11 +100,13 @@ export default {
     text-align: center;
 }
 
-#day-td:first-child {
+#day-td:first-child,
+#weeks:first-child {
     color: red;
 }
 
-#day-td:last-child {
+#day-td:last-child,
+#weeks:last-child {
     color: royalblue;
 }
 
@@ -104,5 +125,9 @@ export default {
 #is-disabled {
     background-color: rgba(142, 94, 69, 1);
     color: gainsboro;
+}
+
+#today-td{
+  background-color: red;
 }
 </style>

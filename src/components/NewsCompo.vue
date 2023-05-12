@@ -14,9 +14,10 @@
                 </div>
             </article>
             <article class="another">
-                <img src="/img/jbre.jpg" alt="">
+                <img src="/img/jpbreakfastAll.jpg" alt="">
             </article>
         </div>
+        <div id="access"></div>
     </section>
 </template>
 <script>
@@ -145,6 +146,7 @@ export default {
     }
     .another > img{
         width: 100%;
+        border-radius: 30px;
     }
 }
 

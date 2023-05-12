@@ -143,7 +143,7 @@ export default {
     }
 
     .opentime > li {
-        border-bottom: 5px dotted orange;
+        border-bottom: 5px double orange;
     }
 
     .opentime > li:last-child {

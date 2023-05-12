@@ -205,6 +205,7 @@ export default {
 
     .menu-title img {
         width: 80%;
+        border-radius: 30px;
     }
 
     .tospace {
