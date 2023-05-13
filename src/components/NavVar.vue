@@ -16,7 +16,7 @@
             <h3>Marulilu Cafe</h3>
         </a>
 
-        <a class="order" href="#"><font-awesome-icon icon="fa-solid fa-cart-shopping" /></a>
+        <!-- <a class="order" href="#"><font-awesome-icon icon="fa-solid fa-cart-shopping" /></a> -->
     </nav>
 </section>
 </template>

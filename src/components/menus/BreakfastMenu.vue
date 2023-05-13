@@ -35,9 +35,9 @@
         </div>
 
 
-
-        <button class="accordion" @change="accordion()">Bennies on English Muffin</button>
-        <div class="displaymenu">    <!--FOR EGGS BENNIES-->
+<!--FOR EGGS BENNIES-->
+        <!-- <button class="accordion" @change="accordion()">Bennies on English Muffin</button>
+        <div class="displaymenu">    
             <article>
                 <div class="gomodal" v-for="(breakfast, index) in eggbennyfilter" @click='openModal(breakfast)' :key='index'>
                     <div class="details">
@@ -50,7 +50,7 @@
                 <modal-window v-show='showContent' @from-child='closeModal' :breakfast='breakfastDetail'></modal-window>
             </article>
         </div>
-
+ -->
 
 
 
@@ -147,9 +147,9 @@ export default {
         jpnbreakfastfilter() {
             return this.breakfasts.filter((breakfast)=>breakfast.category === 'japanese_breakfast')
         },
-        eggbennyfilter() {
-            return this.breakfasts.filter((breakfast)=>breakfast.category === 'egg_benny')
-        },
+        // eggbennyfilter() {
+        //     return this.breakfasts.filter((breakfast)=>breakfast.category === 'egg_benny')
+        // },
         breakfastwrapfilter() {
             return this.breakfasts.filter((breakfast)=>breakfast.category === 'breakfast_wrap')
         },

@@ -5,11 +5,11 @@
             <h6></h6>
             </article>
 
-            <article class="mobile-order">
+            <!-- <article class="mobile-order">
                 <a href="#" class="btn btn-flat">
                     <span><font-awesome-icon icon="fa-solid fa-cart-shopping" /> Order Here <font-awesome-icon icon="fa-solid fa-cart-shopping" /></span>
                 </a>
-            </article>
+            </article> -->
 
             <article class="menu-title">
 
@@ -37,7 +37,7 @@ export default {
     data() {
         return {
             menus: [
-                {title: 'ALL-DAY BREAKFASTS', href: 'breakfast', src:'img/doublebenny.jpg', path:'/breakfast',name:'Breakfast Menu'},
+                {title: 'ALL-DAY BREAKFASTS', href: 'breakfast', src:'img/jpbreakfastAll.jpg', path:'/breakfast',name:'Breakfast Menu'},
                 {title: 'JAPANESE DISH & YOSHOKU', href: 'dish', src:'img/omu.jpg', path:'/jpndish',name:'Jpn Dish Menu'},
                 {title: 'JAPANESE SIDE MENU', href: 'side', src:'img/katsu.jpg', path:'/jpnside',name:'Jpn Side Menu'},
                 {title: 'MONTHLY SPECIAL', href: 'monthly', src:'img/katsu.jpg', path:'/monthly',name:'Monthly Menu'},

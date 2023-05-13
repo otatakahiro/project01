@@ -11,7 +11,7 @@
 
 {"menuId":5,"menuName":"Hamburger Stake w/Tomato Sauce","price":5.99,"category":"jpnside","menuImg":"","explanation1":"1 Hamburger Stake served with Tomato Bisque Sauce","explanation2":"","online":true},
 
-{"menuId":6,"menuName":"Hamburger Stake w/Cheese Sauce","price":7.99,"category":"jpnside","menuImg":"","explanation1":"1 Hamburger Stake served with Cheese Jalapeno Sauce","explanation2":"","online":true},
+{"menuId":6,"menuName":"Hamburger Stake w/Cheese Sauce","price":7.99,"category":"jpnsidebun","menuImg":"","explanation1":"1 Hamburger Stake served with Cheese Jalapeno Sauce","explanation2":"","online":true},
 
 {"menuId":7,"menuName":"Daikon no Nikomi","price":5.75,"category":"jpnside","menuImg":"","explanation1":"","explanation2":"","online":true},
 
@@ -29,11 +29,9 @@
 
 {"menuId":13,"menuName":"Daily Meat Soup or Veggie Soup w/Toast","price":5.00,"category":"dailyside","menuImg":"","explanation1":"","explanation2":"","online":true},
 
-{"menuId":14,"menuName":"Daily Meat Soup or Veggie Soup w/Toast","price":5.00,"category":"dailyside","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":15,"menuName":"House Salad","price":4.75,"category":"dailyside","menuImg":"","explanation1":"Our Dressing Selection \n Italian, Toasted Sesame, Raspberry Vinaigrette, Extra Virgin Olive Oil, Vinegar","explanation2":"","online":true},
 
-{"menuId":15,"menuName":"House Salad","price":4.75,"category":"dailyside","menuImg":"","explanation1":"Please choose your Dressing","explanation2":"","online":true},
-
-{"menuId":16,"menuName":"Soup & Salad Set","price":9.25,"category":"dailyside","menuImg":"","explanation1":"Comes with Toast","explanation2":"Please choose your Dressing","online":true},
+{"menuId":16,"menuName":"Soup & Salad Set","price":9.25,"category":"dailyside","menuImg":"","explanation1":"Comes with Toast","explanation2":"Our Dressing Selection \n Italian, Toasted Sesame, Raspberry Vinaigrette, Extra Virgin Olive Oil, Vinegar","online":true},
 
 {"menuId":17,"menuName":"Grilled Salmon Salad","price":10.99,"category":"dailyside","menuImg":"","explanation1":"Served with Raspberry Vinaigrette","explanation2":"","online":true},
 
@@ -41,9 +39,9 @@
 
 
 
-{"menuId":18,"menuName":"Hashbrown / 1pc","price":1.25,"category":"otherside","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":18,"menuName":"Hashbrown / 1pec","price":1.25,"category":"otherside","menuImg":"","explanation1":"","explanation2":"","online":true},
 
-{"menuId":19,"menuName":"Bacon / 1strips","price":1.25,"category":"otherside","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":19,"menuName":"Bacon / 1strip","price":1.25,"category":"otherside","menuImg":"","explanation1":"","explanation2":"","online":true},
 
 {"menuId":20,"menuName":"Sausage / 1pec","price":1.25,"category":"otherside","menuImg":"","explanation1":"","explanation2":"","online":true},
 

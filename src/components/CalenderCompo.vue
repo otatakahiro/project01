@@ -17,11 +17,15 @@ export default {
         window.onload = () => {
             
             const weeks = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+            const month_english_list = ['January','February','March','April','May','June','July','August','September','Octorber','November','December'];
             const date = new Date();
             
             const year = date.getFullYear();
-            const month = date.getMonth() + 1;
-            const startDate = new Date(year, month - 1, 1); // 月の最初の日を取得
+            const month = date.getMonth();
+            const month_for_date = date.getMonth() + 1;
+            const month_english = month_english_list[month];
+            console.log(month_english)
+            const startDate = new Date(year, month_for_date - 1, 1); // 月の最初の日を取得
             const endDate = new Date(year, month,  0); // 月の最後の日を取得
             const endDayCount = endDate.getDate(); // 月の末日
             const lastMonthEndDate = new Date(year, month - 1, 0); // 前月の最後の日の情報
@@ -30,7 +34,7 @@ export default {
             let dayCount = 1; // 日にちのカウント
             let calendarHtml = ''; // HTMLを組み立てる変数
 
-            calendarHtml += '<h1 id="h1forCalender">' + year  + '/' + month + '</h1>';
+            calendarHtml += '<h1 id="h1forCalender">' + year  + '/' + month_english + '</h1>';
             calendarHtml += '<table id="tableforCalender" width="100%">';
 
             // 曜日の行を作成
@@ -52,20 +56,14 @@ export default {
                         calendarHtml += '<td id="is-disabled">' + num + '</td>';
                         dayCount++;
                     } else {
-                        if(dayCount == date.getDate()){
-                            calendarHtml += '<td id="today-td">' + dayCount + '</td>';
-
-                        }else{
-
-                            calendarHtml += '<td id="day-td">' + dayCount + '</td>';
-                        }
+                        calendarHtml += '<td id="day-td">' + dayCount + '</td>';
                         dayCount++;
 
-                        if(date.getMonth() == 12 && date.getDate == 25){
-                            calendarHtml += '<td id="today-td">' + dayCount + '</td>';
-                        }else if(date.getMonth() == 1 && date.getDate == 1){
-                            calendarHtml += '<td id="today-td">' + dayCount + '</td>';
-                        }
+                        // if(date.getMonth() == 12 && date.getDate == 25){
+                        //     calendarHtml += '<td id="day-td" class="today">' + dayCount + '</td>';
+                        // }else if(date.getMonth() == 1 && date.getDate == 1){
+                        //     calendarHtml += '<td id="today-td">' + dayCount + '</td>';
+                        // }
                     }
 
                 }
@@ -85,7 +83,7 @@ export default {
 <style>
 
 #h1forCalender {
-    font-size: 18px;
+    font-size: 25px;
     padding-bottom: 30px;
 }
 
@@ -98,6 +96,13 @@ export default {
     border: 1px solid #ddd;
     padding: 5px;
     text-align: center;
+}
+
+#weeks {
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    background-color: #ddd;
 }
 
 #day-td:first-child,
@@ -119,7 +124,7 @@ export default {
 }
 
 #weeks:nth-child(3) {
-    background-color: #dfc6b5;
+    background-color: #ddd;
 }
 
 #is-disabled {
@@ -127,7 +132,4 @@ export default {
     color: gainsboro;
 }
 
-#today-td{
-  background-color: red;
-}
 </style>

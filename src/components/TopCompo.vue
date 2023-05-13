@@ -1,14 +1,14 @@
 <template>
     <section class="top">
-        <article class="mobile-order">
+        <!-- <article class="mobile-order">
             <a href="#" class="btn btn-flat">
                 <span><font-awesome-icon icon="fa-solid fa-cart-shopping" /> Order Here <font-awesome-icon icon="fa-solid fa-cart-shopping" /></span>
             </a>
-        </article>
+        </article> -->
 
         <article class="introduction">
             <img :src="require('/public/img/sign.jpg')" alt='malu' />
-            <p>Marulilu cafe is a Japanese style cafe at West Broadway, Vancouver. We provid coffee, tea and Japanese meals popular in Japan like Omu-Rice and Curry-Rice. You will defenetly have great time at Marulilu cafe!! We are looking forward to see you !! Enjoy !</p>
+            <p>Marulilu cafe is a Japanese style cafe at West Broadway, Vancouver. We provid coffee, tea and Japanese meals popular in Japan like Omu-Rice and Curry-Rice. You will defenetly have great time at Marulilu cafe. We are looking forward to see you !! Enjoy !!</p>
         </article>
         <div id="menu"></div>
     </section>
@@ -145,11 +145,24 @@ export default {
         font-size: 15px;
         text-align: left;
     }
-    .introduction > img {
+
+    .introduction {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        align-items: center;
+    }
+    .introduction > img {
+        width: 90%;
+        border-radius: 30px;
     }
     .introduction p{
-        display: none;
+        background-color: rgba(256, 256, 256, .4);
+        color: rgba(142, 94, 69, 1);
+        width: 80%;
+        border-radius: 30px;
+        padding: 2% 5%;
     }
 }
 
@@ -182,7 +195,6 @@ export default {
     }
 
     .introduction > p{
-        display: unset;
         font-size: 19px;
         background-color: rgba(256, 256, 256, .4);
         color: rgba(142, 94, 69, 1);
