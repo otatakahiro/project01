@@ -53,6 +53,7 @@ export default {
         color: white;
         position: fixed;
         z-index: 1;
+        border-bottom: 1px solid black;
     }
 
     nav > ul{

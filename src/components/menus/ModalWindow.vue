@@ -2,6 +2,7 @@
     <div id='overlay' v-on:click='clickEvent'>
         <div id="content" v-on:click='stopEvent' v-if='breakfast'>
             <img v-if='breakfast.menuImg' :src="breakfast.menuImg" :alt="breakfast.menuName">
+            <img v-else v-bind:src="noneImage(breakfast)" id="noImage">
             <div>
                 <h3>{{breakfast.menuName}}</h3>
                 <p>${{breakfast.price}}</p>
@@ -19,6 +20,7 @@
 
         <div id="content" v-on:click='stopEvent' v-if='dish'>
             <img v-if='dish.menuImg' :src="dish.menuImg" :alt="dish.menuName">
+            <img v-else v-bind:src="noneImage(dish)">
             <div>
                 <h3>{{dish.menuName}}</h3>
                 <p>${{dish.price}}</p>
@@ -37,6 +39,7 @@
 
         <div id="content" v-on:click='stopEvent' v-if='side'>
             <img v-if='side.menuImg' :src="side.menuImg" :alt="side.menuName">
+            <img v-else v-bind:src="noneImage(side)">
             <div>
                 <h3>{{side.menuName}}</h3>
                 <p>${{side.price}}</p>
@@ -52,9 +55,10 @@
 
 
 
-
+<!-- 
         <div id="content" v-on:click='stopEvent' v-if='month'>
             <img v-if='month.menuImg' :src="month.menuImg" :alt="month.menuName">
+            <img v-else v-bind:src="noneImage()">
             <div>
                 <h3>{{month.menuName}}</h3>
                 <p>${{month.price}}</p>
@@ -66,7 +70,7 @@
                 <button class='closemodal' @click='clickEvent'>close</button>
             </div>
         </div>
-
+ -->
 
 
 
@@ -75,6 +79,7 @@
 
         <div id="content" v-on:click='stopEvent' v-if='sweet'>
             <img v-if='sweet.menuImg' :src="sweet.menuImg" :alt="sweet.menuName">
+            <img v-else v-bind:src="noneImage(sweet)">
             <div>
                 <h3>{{sweet.menuName}}</h3>
                 <p>${{sweet.price}}</p>
@@ -94,7 +99,8 @@
 
 
         <div id="content" v-on:click='stopEvent' v-if='beverage'>
-                <img v-if='beverage.menuImg' :src="beverage.menuImg" :alt="beverage.menuName">
+                <img v-if='beverage.menuImg' :src="beverage.menuImg" :alt="beverage.menuName" id="menuImage">
+                <img v-else v-bind:src="noneImage(beverage)">
                 <div>
                     <h3>{{beverage.menuName}}</h3>
                     <p>{{beverage.price}}</p>
@@ -108,22 +114,26 @@
         </div>
     </div>
 
-
-    <!-- <div id='overlay' v-on:click='clickEvent' >
-    </div> -->
 </template>
 
 <script>
 
 export default {
     name:'ModalWindow',
+    data() {
+        return {
+            noneImageList: ["img/noimage/noimage1.jpg","img/noimage/noimage2.jpg","img/noimage/noimage3.jpg","img/noimage/noimage4.jpg"],
+            src: null,
+            flag: false
+        }
+    },
     props:{
-        breakfast: Object,
-        dish: Object,
-        side: Object,
-        month: Object,
-        sweet: Object,
-        beverage: Object
+            breakfast: Object,
+            dish: Object,
+            side: Object,
+            month: Object,
+            sweet: Object,
+            beverage: Object
     },
     methods: {
         clickEvent() {
@@ -131,7 +141,16 @@ export default {
         },
         stopEvent() {
             this.$emit('from-child');
+        },
+        noneImage(menuCategory) {
+                if(!menuCategory.menuImg){
+                    this.flag = true;
+                    const select = Math.floor(Math.random() * this.noneImageList.length);
+                    console.log(this.noneImageList[select])
+                    return this.noneImageList[select]
+                }
         }
+        
     }
 }
 
@@ -195,6 +214,7 @@ export default {
         display: none;
     }
 
+
     .details {
         display: flex;
         flex-direction: column;
@@ -242,6 +262,7 @@ export default {
     #content {
         flex-direction: row;
         justify-content: flex-end;
+        column-gap: 5%;
     }
 
     #content > div {
@@ -254,8 +275,12 @@ export default {
         float: right;
     }
 
+    #noImage {
+        width: 40%;
+    }
     .details {
         width: 85% !important;
     }
+
 }
 </style>

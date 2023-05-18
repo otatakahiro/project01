@@ -238,8 +238,7 @@ export default {
         },
         openModal(beverage){
             this.showContent = true,
-            this.beverageDetail = beverage,
-            console.log(this.beverageDetail)
+            this.beverageDetail = beverage
         },
         closeModal(){
             this.showContent = false,

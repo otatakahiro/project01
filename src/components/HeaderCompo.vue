@@ -1,7 +1,7 @@
 <template>
     <header>
         <section>
-            <img src="/marulilu_favicon.jpg" alt="">
+            <img src="/marulilu_favicon.jpg" alt="icon">
             <ul class="opentime">
                 <li>Mon, 8AM - 6PM</li>
                 <li>Wed, 8AM - 6PM</li>
@@ -48,7 +48,7 @@ export default {
         }
 
         header img {
-            width: 40%;
+            width: 30%;
             border-radius: 50%;
             margin-bottom: auto;
             margin-top: 90px;

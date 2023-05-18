@@ -5,7 +5,7 @@
         <button class="accordion" @change="accordion()">Breakfast Plates</button>
         <div class="displaymenu">   <!--FOR BREAKFAST PLATES -->
             <article>
-                <div class="gomodal" v-for="(breakfast, index) in breakfastplatefilter" @click='openModal(breakfast)' :key='index'>
+                <div class="gomodal" v-for="(breakfast, index) in breakfastplatefilter" @click='openModal(breakfast)' :key='index' :breakfast='breakfast'>
                     <div class="details">
                         <p>{{breakfast.menuName}}</p>
                         <p>${{breakfast.price}}
@@ -137,7 +137,9 @@ export default {
         return {
             breakfasts: new Array(),
             showContent: false,
-            breakfastDetail: [{},{}]
+            breakfastDetail: [{},{}],
+            noneImageList: ["img/noimage/noimage1.jpg","img/noimage/noimage2.jpg","img/noimage/noimage3.jpg","img/noimage/noimage4.jpg"],
+            src:null
         }
     },
     computed:{
@@ -161,7 +163,7 @@ export default {
         },
         dailysoupfilter() {
             return this.breakfasts.filter((breakfast)=>breakfast.category === 'daily_soup/salad')
-        },
+        }
     },
     methods:{
         loadBreakfast(){
@@ -172,10 +174,8 @@ export default {
         .catch((e)=>console.log(e))
         },
         openModal(breakfast){
-            this.showContent = true,
-            this.breakfastDetail = breakfast,
-            console.log(this.breakfastDetail)
-
+            this.showContent = true
+            this.breakfastDetail = breakfast
         },
         closeModal(){
             this.showContent = false,
@@ -187,7 +187,6 @@ export default {
                 acc[i].addEventListener('click',function() {
                     this.classList.toggle('active');
                     let displaymenu = this.nextElementSibling;
-                    console.log(displaymenu.style.maxHeight)
                     if (displaymenu.style.maxHeight) {
                         displaymenu.style.maxHeight = null;
                     } else {

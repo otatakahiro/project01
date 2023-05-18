@@ -34,7 +34,7 @@ export default {
             let dayCount = 1; // 日にちのカウント
             let calendarHtml = ''; // HTMLを組み立てる変数
 
-            calendarHtml += '<h1 id="h1forCalender">' + year  + '/' + month_english + '</h1>';
+            calendarHtml += '<h1 id="h1forCalender">' + date.getDate()  + '/' + month_english + '/' + year + '</h1>';
             calendarHtml += '<table id="tableforCalender" width="100%">';
 
             // 曜日の行を作成
