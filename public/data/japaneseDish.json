@@ -11,7 +11,7 @@
 
 {"menuId":5,"menuName":"Oyako w/Kinoko-Don","price":13.99,"category":"donburi","menuImg":"./img/oyakodon.jpg","explanation1":"Chicken Breast, Enoki Mushroom, Shimeji Mushroom, and Shitake Mushrooms are cooked w/Egg, Onion, and Sweet Soy-sauce on top of Rice","explanation2":"with Miso Soup Plus $1.50,\n with Oshinko Set(Oshinko, Miso Soup, and Salad) Plus $5.00","online":true},
 
-{"menuId":6,"menuName":"Mabo Tofu-Don","price":13.99,"category":"donburi","menuImg":"","explanation1":"Tofu & Grind beef are cooked with SP spicy sauce on top of Rice","explanation2":"with Miso Soup Plus $1.50,\n with Oshinko Set(Oshinko, Miso SOup, and Salad) Plus $5.00","online":true},
+{"menuId":6,"menuName":"Mabo Tofu-Don","price":13.99,"category":"donburi","menuImg":"","explanation1":"Tofu & Grind beef are cooked with SP spicy sauce on top of Rice","explanation2":"with Miso Soup Plus $1.50,\n with Oshinko Set(Oshinko, Miso Soup, and Salad) Plus $5.00","online":true},
 
 {"menuId":7,"menuName":"Sukiyaki-Don","price":14.99,"category":"donburi","menuImg":"","explanation1":"Sliced Beef, Green Onion, Shitake Mushroom, Shirataki, and Tofu are cooked w/Sweet Soy-sauce on top of Rice","explanation2":"with Miso Soup Plus $1.50,\n with Oshinko Set(Oshinko, Miso Soup, and Salad) Plus $5.00","online":true},
 
@@ -53,17 +53,17 @@
 
 
 
-{"menuId":24,"menuName":"Japanese Style Beef Curry","price":9.99,"category":"white_rice","menuImg":"","explanation1":"Comes with White Rice and Fukushinzuke(Sepcial Pickles for Japanese Curry)","explanation2":"","online":true},
+{"menuId":24,"menuName":"Japanese Style Beef Curry","price":9.99,"category":"white_rice","menuImg":"","explanation1":"Comes with White Rice and Fukushinzuke(Special Pickles for Japanese Curry)","explanation2":"","online":true},
 
-{"menuId":25,"menuName":"Japanese Style Beef Curry with Pork Cutlet","price":15.99,"category":"white_rice","menuImg":"","explanation1":"Comes with White Rice and Fukushinzuke(Sepcial Pickles for Japanese Curry)","explanation2":"","online":true},
+{"menuId":25,"menuName":"Japanese Style Beef Curry with Pork Cutlet","price":15.99,"category":"white_rice","menuImg":"","explanation1":"Comes with White Rice and Fukushinzuke(Special Pickles for Japanese Curry)","explanation2":"","online":true},
 
-{"menuId":26,"menuName":"Japanese Style Beef Curry with Karaage","price":16.99,"category":"white_rice","menuImg":"","explanation1":"Comes with White Rice and Fukushinzuke(Sepcial Pickles for Japanese Curry)","explanation2":"","online":true},
+{"menuId":26,"menuName":"Japanese Style Beef Curry with Karaage","price":16.99,"category":"white_rice","menuImg":"","explanation1":"Comes with White Rice and Fukushinzuke(Special Pickles for Japanese Curry)","explanation2":"","online":true},
 
-{"menuId":27,"menuName":"Omu Curry Rice","price":12.99,"category":"white_rice","menuImg":"","explanation1":"White Rice is covered with Thin Omelet and comes with Fukushinzuke(Sepcial Pickles for Japanese Curry)","explanation2":"","online":true},
+{"menuId":27,"menuName":"Omu Curry Rice","price":12.99,"category":"white_rice","menuImg":"","explanation1":"White Rice is covered with Thin Omelet and comes with Fukushinzuke(Special Pickles for Japanese Curry)","explanation2":"","online":true},
 
-{"menuId":28,"menuName":"Omu Curry Rice with Pork Cutlet","price":18.99,"category":"white_rice","menuImg":"","explanation1":"White Rice is covered with Thin Omelet and comes with Fukushinzuke(Sepcial Pickles for Japanese Curry)","explanation2":"","online":true},
+{"menuId":28,"menuName":"Omu Curry Rice with Pork Cutlet","price":18.99,"category":"white_rice","menuImg":"","explanation1":"White Rice is covered with Thin Omelet and comes with Fukushinzuke(Special Pickles for Japanese Curry)","explanation2":"","online":true},
 
-{"menuId":29,"menuName":"Omu Curry Rice with Karaage","price":19.99,"category":"white_rice","menuImg":"","explanation1":"White Rice is covered with Thin Omelet and comes with Fukushinzuke(Sepcial Pickles for Japanese Curry)","explanation2":"","online":true},
+{"menuId":29,"menuName":"Omu Curry Rice with Karaage","price":19.99,"category":"white_rice","menuImg":"","explanation1":"White Rice is covered with Thin Omelet and comes with Fukushinzuke(Special Pickles for Japanese Curry)","explanation2":"","online":true},
 
 {"menuId":30,"menuName":"Omu-Hayashi Rice","price":13.99,"category":"white_rice","menuImg":"","explanation1":"White Rice is covered with Thin Omelet. Demi-glace Sauce w/Hashed Beef, Onion, and Mushroom","explanation2":"","online":true},
 
@@ -73,17 +73,17 @@
 
 {"menuId":33,"menuName":"Garlic Omurice w/Hayashi Sauce","price":14.99,"category":"garlic_rice","menuImg":"","explanation1":"Garlic Rice is coverd with Thin Omelet. Demi-glace Sauce w/Hashed Beef, Onion, and Mushroom","explanation2":"","online":true},
 
-{"menuId":34,"menuName":"Japanese Style Beef Curry w/Garlic Rice","price":10.99,"category":"garlic_rice","menuImg":"","explanation1":"Comes with Garlic Rice and Fukushinzuke(Sepcial Pickles for Japanese Curry)","explanation2":"","online":true},
+{"menuId":34,"menuName":"Japanese Style Beef Curry w/Garlic Rice","price":10.99,"category":"garlic_rice","menuImg":"","explanation1":"Comes with Garlic Rice and Fukushinzuke(Special Pickles for Japanese Curry)","explanation2":"","online":true},
 
-{"menuId":35,"menuName":"Japanese Style Beef Curry w/Garlic Rice add Pork Cutlet","price":16.99,"category":"garlic_rice","menuImg":"","explanation1":"Comes with Garlic Rice and Fukushinzuke(Sepcial Pickles for Japanese Curry)","explanation2":"","online":true},
+{"menuId":35,"menuName":"Japanese Style Beef Curry w/Garlic Rice add Pork Cutlet","price":16.99,"category":"garlic_rice","menuImg":"","explanation1":"Comes with Garlic Rice and Fukushinzuke(Special Pickles for Japanese Curry)","explanation2":"","online":true},
 
-{"menuId":36,"menuName":"Japanese Style Beef Curry w/Garlic Rice add Karaage","price":17.99,"category":"garlic_rice","menuImg":"","explanation1":"Comes with Garlic Rice and Fukushinzuke(Sepcial Pickles for Japanese Curry)","explanation2":"","online":true},
+{"menuId":36,"menuName":"Japanese Style Beef Curry w/Garlic Rice add Karaage","price":17.99,"category":"garlic_rice","menuImg":"","explanation1":"Comes with Garlic Rice and Fukushinzuke(Special Pickles for Japanese Curry)","explanation2":"","online":true},
 
-{"menuId":37,"menuName":"Omu Curry with Garlic Rice","price":13.99,"category":"garlic_rice","menuImg":"","explanation1":"Garlic Rice is covered with Thin Omelet and comes with Fukushinzuke(Sepcial Pickles for Japanese Curry)","explanation2":"","online":true},
+{"menuId":37,"menuName":"Omu Curry with Garlic Rice","price":13.99,"category":"garlic_rice","menuImg":"","explanation1":"Garlic Rice is covered with Thin Omelet and comes with Fukushinzuke(Special Pickles for Japanese Curry)","explanation2":"","online":true},
 
-{"menuId":38,"menuName":"Omu Curry with Garlic Rice add Pork Cutlet","price":19.99,"category":"garlic_rice","menuImg":"","explanation1":"Garlic Rice is covered with Thin Omelet and comes with Fukushinzuke(Sepcial Pickles for Japanese Curry).","explanation2":"","online":true},
+{"menuId":38,"menuName":"Omu Curry with Garlic Rice add Pork Cutlet","price":19.99,"category":"garlic_rice","menuImg":"","explanation1":"Garlic Rice is covered with Thin Omelet and comes with Fukushinzuke(Special Pickles for Japanese Curry).","explanation2":"","online":true},
 
-{"menuId":39,"menuName":"Omu Curry with Garlic Rice add Karaage","price":20.99,"category":"garlic_rice","menuImg":"","explanation1":"Garlic Rice is covered with Thin Omelet and comes with Fukushinzuke(Sepcial Pickles for Japanese Curry).","explanation2":"","online":true},
+{"menuId":39,"menuName":"Omu Curry with Garlic Rice add Karaage","price":20.99,"category":"garlic_rice","menuImg":"","explanation1":"Garlic Rice is covered with Thin Omelet and comes with Fukushinzuke(Special Pickles for Japanese Curry).","explanation2":"","online":true},
 
 {"menuId":40,"menuName":"Omu-Rice","price":9.99,"category":"ketchup_rice","menuImg":"","explanation1":"Ketchup Rice is cooked with Bacon, Onion, and Mixed Veggie. Thin Omelet Cover on the Rice.","explanation2":"","online":true},
 

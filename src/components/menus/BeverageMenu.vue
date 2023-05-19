@@ -1,7 +1,7 @@
 <template>
     <article id="beverage">
         <h2>BEVERAGE</h2>
-
+        
         <button class="accordion" @change="accordion()">Coffee / Espresso</button>
         <div class="displaymenu">     
             <article>          <!--FOR COFFEE -->
@@ -15,8 +15,6 @@
                 </div>
                 <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
             </article>
-
-
 
             <article class="rice">
                 <p>Espresso</p>      <!--FOR ESPRESSO -->
@@ -37,102 +35,11 @@
 
         <button class="accordion" @change="accordion()">Tea</button>
         <div class="displaymenu">
-            <article class="rice">      <!--FOR BLACK TEA-->
-                <p>Black Tea</p>
+            <article v-for="(teaMenu, index) in teaMenus" :key='index' class="rice">      <!--FOR TEA-->
+                <p>{{teaMenu.label}}</p>
                 <section class="inmenu">
-                <div class="gomodal" v-for="(beverage, index) in beverageFilter('blacktea')" @click='openModal(beverage)' :key='index'>
+                <div class="gomodal" v-for="(beverage, index) in beverageFilter(teaMenu.category)" @click='openModal(beverage)' :key='index'>
                     <div class="details">
-                        <p>{{beverage.menuName}}</p>
-                        <p>{{beverage.price}}
-                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                        </p>
-                    </div>
-                </div>
-                <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
-                </section>
-            </article>
-
-
-
-            <article class="rice">      <!--FOR GREEN TEA-->
-                <p>Green Tea</p>
-                <section class="inmenu">
-                <div class="gomodal" v-for="(beverage, index) in beverageFilter('greentea')"  @click='openModal(beverage)' :key='index'>
-                    <div class="details">
-                        <p>{{beverage.menuName}}</p>
-                        <p>{{beverage.price}}
-                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                        </p>
-                    </div>
-                </div>
-                <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
-                </section>
-            </article>
-
-
-
-
-            <article class="rice">      <!--FOR CHINESE TEA-->
-                <p>Chinese Tea</p>
-                <section class="inmenu">
-                <div class="gomodal" v-for="(beverage, index) in beverageFilter('chinesetea')" @click='openModal(beverage)' :key='index'>
-                    <div class="details">
-                        <p>{{beverage.menuName}}</p>
-                        <p>{{beverage.price}}
-                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                        </p>
-                    </div>
-                </div>
-                <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
-                </section>
-            </article>
-
-
-
-
-            <article class="rice">      <!--FOR ROOIBOS TEA-->
-                <p>Rooibos Tea</p>
-                <section class="inmenu">
-                <div class="gomodal" v-for="(beverage, index) in beverageFilter('rooibostea')" @click='openModal(beverage)' :key='index'>
-                    <div class="details">
-                        <p>{{beverage.menuName}}</p>
-                        <p>{{beverage.price}}
-                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                        </p>
-                    </div>
-                </div>
-                <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
-                </section>
-            </article>
-
-
-
-
-
-            <article class="rice">      <!--FOR HERBAL TEA-->
-                <p>Herbal Tea</p>
-                <section class="inmenu">
-                <div class="gomodal" v-for="(beverage, index) in beverageFilter('herbaltea')" @click='openModal(beverage)' :key='index'>
-                    <div class="details">
-                        <p>{{beverage.menuName}}</p>
-                        <p>{{beverage.price}}
-                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                        </p>
-                    </div>
-                </div>
-                <modal-window v-show='showContent' @from-child='closeModal' :beverage='beverageDetail'></modal-window>
-                </section>
-            </article>
-
-
-
-
-
-            <article class="rice">      <!--FOR TISANE TEA-->
-                <p>Tisane Tea</p>
-                <section class="inmenu">
-                <div class="gomodal" v-for="(beverage, index) in beverageFilter('tisanetea')" @click='openModal(beverage)' :key='index'>
-                <div class="details">
                         <p>{{beverage.menuName}}</p>
                         <p>{{beverage.price}}
                             <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
@@ -193,7 +100,15 @@ export default {
         return {
             beverages: new Array(),
             showContent: false,
-            beverageDetail: [{},{}]
+            beverageDetail: [{},{}],
+            teaMenus: [
+                {label:'Black Tea',category:'blacktea'},
+                {label:'Green Tea',category:'greentea'},
+                {label:'Chinese Tea',category:'chinesetea'},
+                {label:'Rooibos Tea',category:'rooibostea'},
+                {label:'Herbal Tea',category:'herbaltea'},
+                {label:'Tisane Tea',category:'tisanetea'}
+            ]
         }
     },
     methods:{

@@ -79,18 +79,20 @@
 
 
         <div id="content" v-on:click='stopEvent' v-if='beverage'>
+            <div>
                 <img v-if='beverage.menuImg' :src="beverage.menuImg" :alt="beverage.menuName" id="menuImage">
                 <img v-else v-bind:src="noneImage(beverage)" id="noImage">
-                <div>
-                    <h3>{{beverage.menuName}}</h3>
-                    <p>{{beverage.price}}</p>
-                    <div class="details" v-if="beverage.explanation1">
-                        <p>{{beverage.explanation1}}</p>
-                        <p v-if="beverage.explanation2">{{beverage.explanation2}}</p>
-                        <p v-if="beverage.explanation3">{{beverage.explanation3}}</p>
-                    </div>
-                    <button class='closemodal' @click='clickEvent'>CLOSE</button>
+            </div>
+            <div>
+                <h3>{{beverage.menuName}}</h3>
+                <p>{{beverage.price}}</p>
+                <div class="details" v-if="beverage.explanation1">
+                    <p>{{beverage.explanation1}}</p>
+                    <p v-if="beverage.explanation2">{{beverage.explanation2}}</p>
+                    <p v-if="beverage.explanation3">{{beverage.explanation3}}</p>
                 </div>
+                <button class='closemodal' @click='clickEvent'>CLOSE</button>
+            </div>
         </div>
     </div>
 
@@ -245,18 +247,15 @@ export default {
 
     #content {
         flex-direction: row;
-        justify-content: flex-end;
         column-gap: 5%;
+        align-items: center;
+        height: 80vh;
+        overflow-y: scroll;
     }
 
     #content > div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        row-gap: 15px;
+        margin: auto;
         width: 50%;
-        float: right;
     }
 
     #noImage {
@@ -264,7 +263,7 @@ export default {
     }
 
     .details {
-        width: 85% !important;
+        width: 85%;
     }
 
 }

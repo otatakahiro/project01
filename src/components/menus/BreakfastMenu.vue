@@ -2,11 +2,11 @@
     <article id="breakfast">
         <h2>ALL DAY BREAKFAST</h2>
 
-        <section v-for="(breakfastmenu,index) in breakfastmenus" :key='index'>
-            <button class="accordion" @change="accordion()">{{breakfastmenu.label}}</button>
+        <section v-for="(breakfastMenu,index) in breakfastMenus" :key='index'>
+            <button class="accordion" @change="accordion()">{{breakfastMenu.label}}</button>
             <div class="displaymenu">   <!--FOR BREAKFAST PLATES -->
                 <article>
-                    <div class="gomodal" v-for="(breakfast, index) in breakfastilter(breakfastmenu.category)" @click='openModal(breakfast)' :key='index' :breakfast='breakfast'>
+                    <div class="gomodal" v-for="(breakfast, index) in breakfastilter(breakfastMenu.category)" @click='openModal(breakfast)' :key='index' :breakfast='breakfast'>
                         <div class="details">
                             <p>{{breakfast.menuName}}</p>
                             <p>${{breakfast.price}}
@@ -36,7 +36,7 @@ export default {
             breakfasts: new Array(),
             showContent: false,
             breakfastDetail: [{},{}],
-            breakfastmenus: [
+            breakfastMenus: [
                 {label:'Breakfast Plates',category:'breakfast_plate'},
                 {label:'Japanese Breakfasts',category:'japanese_breakfast'},
                 {label:'Breakfast Wraps',category:'breakfast_wrap'},

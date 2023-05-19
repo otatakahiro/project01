@@ -2,97 +2,31 @@
 <article id="dish">
     <h2>JAPANESE DISHES</h2>
 
-    <button class="accordion" @change="accordion()">Donburi</button>
-    <div class="displaymenu">      <!--FOR DONBURI -->
-        <article>
-            <div class="gomodal" v-for="(dish, index) in dishFilter('donburi')" @click='openModal(dish)' :key='index'>
-                <div class="details">
-                    <p>{{dish.menuName}}</p>
-                    <p>${{dish.price}}
-                        <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                    </p>
+    <section v-for="(dishMenu,index) in dishMenus" :key="index">
+        <button class="accordion" @change="accordion()">{{dishMenu.label}}</button>
+        <div class="displaymenu">      <!--FOR DONBURI -->
+            <article>
+                <div class="gomodal" v-for="(dish, index) in dishFilter(dishMenu.category)" @click='openModal(dish)' :key='index'>
+                    <div class="details">
+                        <p>{{dish.menuName}}</p>
+                        <p>${{dish.price}}
+                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <modal-window v-show='showContent' @from-child='closeModal' :dish='dishDetail'></modal-window>
-        </article>
-    </div>
+                <modal-window v-show='showContent' @from-child='closeModal' :dish='dishDetail'></modal-window>
+            </article>
+        </div>
+    </section>
 
-    <button class="accordion" @change="accordion()">Yoshoku</button>
-    <div class="displaymenu">      <!--FOR OTHER YOSHOKU -->
-        <article>
-            <div class="gomodal" v-for="(dish, index) in dishFilter('yoshoku')" @click='openModal(dish)' :key='index'>
-                <div class="details">
-                    <p>{{dish.menuName}}</p>
-                    <p>${{dish.price}}
-                        <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                    </p>
-                </div>
-            </div>
-            <modal-window v-show='showContent' @from-child='closeModal' :dish='dishDetail'></modal-window>
-        </article>
-    </div>
-
-
-    <button class="accordion" @change="accordion()">Hamburger Steaks</button>
-    <div class="displaymenu">      <!--FOR HAMBURGER STEAKS -->
-        <article>
-            <div class="gomodal" v-for="(dish, index) in dishFilter('steak')" @click='openModal(dish)' :key='index'>
-                <div class="details">
-                    <p>{{dish.menuName}}</p>
-                    <p>${{dish.price}}
-                        <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                    </p>
-                </div>
-            </div>
-            <modal-window v-show='showContent' @from-child='closeModal' :dish='dishDetail'></modal-window>
-        </article>
-    </div>
-
+    
 
     <button class="accordion" @change="accordion()">Japanese Curry & Omu Rice</button>
     <div class="displaymenu">      <!--FOR CURRY & OMU RICE -->
-        <article class="rice">      <!--FOR WHITE RICE -->
-            <p>with White Rice</p>
+        <article v-for="(curryMenu, index) in curryMenus" :key="index" class="rice">      <!--FOR WHITE RICE -->
+            <p>{{curryMenu.label}}</p>
             <section class="inmenu">
-            <div class="gomodal" v-for="(dish, index) in dishFilter('white_rice')" @click='openModal(dish)' :key='index'>
-                <div class="details">
-                    <p>{{dish.menuName}}</p>
-                    <p>${{dish.price}}
-                        <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                    </p>
-                </div>
-            </div>
-            <modal-window v-show='showContent' @from-child='closeModal' :dish='dishDetail'></modal-window>
-            </section>
-        </article>
-
-
-
-        <article class="rice">      <!--FOR GARLIC RICE -->
-            <p>with Garlic Rice</p>
-            <section class="inmenu">
-            <div class="gomodal" v-for="(dish, index) in dishFilter('garlic_rice')" 
-            @click='openModal(dish)' :key='index'>
-                <div class="details">
-                    <p>{{dish.menuName}}</p>
-                    <p>${{dish.price}}
-                        <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                    </p>
-                </div>
-            </div>
-            <modal-window v-show='showContent' @from-child='closeModal' :dish='dishDetail'></modal-window>
-            </section>
-        </article>
-
-
-
-
-
-        <article class="rice">      <!--FOR KETCHUP RICE -->
-            <p>with Ketchup Rice</p>
-            <section class="inmenu">
-            <div class="gomodal" v-for="(dish, index) in dishFilter('ketchup_rice')" 
-            @click='openModal(dish)' :key='index'>
+            <div class="gomodal" v-for="(dish, index) in dishFilter(curryMenu.category)" @click='openModal(dish)' :key='index'>
                 <div class="details">
                     <p>{{dish.menuName}}</p>
                     <p>${{dish.price}}
@@ -121,7 +55,17 @@ export default {
         return {
             jpndishes: new Array(),
             showContent: false,
-            dishDetail:[{},{}]
+            dishDetail:[{},{}],
+            dishMenus:[
+                {label:'Donburi',category:'donburi'},
+                {label:'Yoshoku',category:'yoshoku'},
+                {label:'Hamburger Steaks',category:'steak'}
+            ],
+            curryMenus:[
+                {label:'with White Rice', category:'white_rice'},
+                {label:'with Garlic Rice', category:'garlic_rice'},
+                {label:'with Ketchup Rice', category:'ketchup_rice'},
+            ]
         }
     },
     methods:{

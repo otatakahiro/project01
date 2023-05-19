@@ -1,55 +1,24 @@
 <template>
     <article id="side">
         <h2>JAPANESE SIDES</h2>
-        <button class="accordion" @change="accordion()">Japanese Side Menu</button>
-        <div class="displaymenu">      <!--FOR SIDE MENU -->
-            <article>
-                <div class="gomodal" v-for="(side, index) in sideFilter('jpnside')" @click='openModal(side)' :key='index'>
-                <div class="details">
-                    <p>{{side.menuName}}</p>
-                    <p>${{side.price}}
-                        <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                    </p>
+
+        <section v-for="(sideMenu, index) in sideMenus" :key="index">
+            <button class="accordion" @change="accordion()">{{sideMenu.label}}</button>
+            <div class="displaymenu">      <!--FOR SIDE MENU -->
+                <article>
+                    <div class="gomodal" v-for="(side, index) in sideFilter(sideMenu.category)" @click='openModal(side)' :key='index'>
+                    <div class="details">
+                        <p>{{side.menuName}}</p>
+                        <p>${{side.price}}
+                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                        </p>
+                    </div>
                 </div>
+                <modal-window v-show='showContent' @from-child='closeModal' :side='sideDetail'></modal-window>
+                </article>
             </div>
-            <modal-window v-show='showContent' @from-child='closeModal' :side='sideDetail'></modal-window>
-            </article>
-        </div>
+        </section>
 
-
-
-        <button class="accordion" @change="accordion()">Daily Soup & Salad</button>
-        <div class="displaymenu">      <!--FOR DAIL SOUP & SALAD -->
-            <article>
-                <div class="gomodal" v-for="(side, index) in sideFilter('dailyside')" @click='openModal(side)' :key='index'>
-                <div class="details">
-                    <p>{{side.menuName}}</p>
-                    <p>${{side.price}}
-                        <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                    </p>
-                </div>
-            </div>
-            <modal-window v-show='showContent' @from-child='closeModal' :side='sideDetail'></modal-window>
-            </article>
-        </div>
-
-
-
-
-        <button class="accordion" @change="accordion()">Other Side Menu</button>
-        <div class="displaymenu">
-            <article>
-                <div class="gomodal" v-for="(side, index) in sideFilter('otherside')" @click='openModal(side)' :key='index'>
-                <div class="details">
-                    <p>{{side.menuName}}</p>
-                    <p>${{side.price}}
-                        <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                    </p>
-                </div>
-            </div>
-            <modal-window v-show='showContent' @from-child='closeModal' :side='sideDetail'></modal-window>
-            </article>
-        </div>
     </article>
 </template>
 <script>
@@ -66,7 +35,12 @@ export default {
         return {
             jpnsides: new Array(),
             showContent: false,
-            sideDetail:[{},{}]
+            sideDetail:[{},{}],
+            sideMenus: [
+                {label:'Japanese Side Menu',category:'jpnside'},
+                {label:'Daily Soup & Salad',category:'dailyside'},
+                {label:'Other Side Menu',category:'otherside'}
+            ]
         }
     },
     methods:{
