@@ -5,7 +5,7 @@
         <button class="accordion" @change="accordion()">2 Dolce Set</button>
         <div class="displaymenu">      <!--FOR DOLCE SET -->
             <article>
-                <div class="gomodal" v-for="(sweet, index) in setfilter" @click='openModal(sweet)' :key='index'>
+                <div class="gomodal" v-for="(sweet, index) in sweetFilter('set')" @click='openModal(sweet)' :key='index'>
                     <div class="details">
                         <p>{{sweet.menuName}}</p>
                         <p>${{sweet.price}}
@@ -24,7 +24,7 @@
         <button class="accordion" @change="accordion()">Sweets & Desserts</button>
         <div class="displaymenu">      
             <article>
-                <div class="gomodal" v-for="(sweet, index) in threefilter" @click='openModal(sweet)' :key='index'>
+                <div class="gomodal" v-for="(sweet, index) in sweetFilter('s_3doller')" @click='openModal(sweet)' :key='index'>
                     <div class="details">   <!--FOR $3.99 -->
                         <p>{{sweet.menuName}}</p>
                         <p>${{sweet.price}}
@@ -32,7 +32,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="gomodal" v-for="(sweet, index) in fourfilter" @click='openModal(sweet)' :key='index'>
+                <div class="gomodal" v-for="(sweet, index) in sweetFilter('s_4doller')" @click='openModal(sweet)' :key='index'>
                     <div class="details">   <!--FOR $4.99 -->
                         <p>{{sweet.menuName}}</p>
                         <p>${{sweet.price}}
@@ -40,7 +40,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="gomodal" v-for="(sweet, index) in sixfilter" @click='openModal(sweet)' :key='index'>
+                <div class="gomodal" v-for="(sweet, index) in sweetFilter('s_6doller')" @click='openModal(sweet)' :key='index'>
                     <div class="details">   <!--FOR $6.99 -->
                         <p>{{sweet.menuName}}</p>
                         <p>${{sweet.price}}
@@ -48,7 +48,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="gomodal" v-for="(sweet, index) in foursixfilter" @click='openModal(sweet)' :key='index'>
+                <div class="gomodal" v-for="(sweet, index) in sweetFilter('s_46doller')" @click='openModal(sweet)' :key='index'>
                     <div class="details">   <!--FOR $4.99 & $6.99 -->
                         <p>{{sweet.menuName}}</p>
                         <p>{{sweet.price}}
@@ -80,23 +80,6 @@ export default {
             showContent: false,
             sweetDetail:[{},{}]
         }
-    },
-    computed:{
-        setfilter(){
-            return this.sweets.filter((sweet)=>sweet.category === "set")
-        },
-        threefilter(){
-            return this.sweets.filter((sweet)=>sweet.category === "s_3doller")
-        },
-        fourfilter(){
-            return this.sweets.filter((sweet)=>sweet.category === "s_4doller")
-        },
-        sixfilter(){
-            return this.sweets.filter((sweet)=>sweet.category === "s_6doller")
-        },
-        foursixfilter(){
-            return this.sweets.filter((sweet)=>sweet.category === "s_46doller")
-        },
     },
     methods:{
         loadSweets(){
@@ -130,7 +113,10 @@ export default {
                     }
                 })
             }
-        }
+        },
+        sweetFilter(sweetCategory){
+            return this.sweets.filter((sweet)=>sweet.category === sweetCategory)
+        },
     },
     mounted(){
         this.loadSweets()

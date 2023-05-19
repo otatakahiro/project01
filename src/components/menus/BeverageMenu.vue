@@ -5,7 +5,7 @@
         <button class="accordion" @change="accordion()">Coffee / Espresso</button>
         <div class="displaymenu">     
             <article>          <!--FOR COFFEE -->
-                <div class="gomodal" v-for="(beverage, index) in coffeefilter" @click='openModal(beverage)' :key='index'>
+                <div class="gomodal" v-for="(beverage, index) in beverageFilter('coffee')" @click='openModal(beverage)' :key='index'>
                     <div class="details">
                         <p>{{beverage.menuName}}</p>
                         <p>{{beverage.price}}
@@ -21,7 +21,7 @@
             <article class="rice">
                 <p>Espresso</p>      <!--FOR ESPRESSO -->
                 <section class="inmenu">
-                <div class="gomodal" v-for="(beverage, index) in espressofilter" @click='openModal(beverage)' :key='index'>
+                <div class="gomodal" v-for="(beverage, index) in beverageFilter('espresso')" @click='openModal(beverage)' :key='index'>
                     <div class="details">
                         <p>{{beverage.menuName}}</p>
                         <p>{{beverage.price}}
@@ -40,7 +40,7 @@
             <article class="rice">      <!--FOR BLACK TEA-->
                 <p>Black Tea</p>
                 <section class="inmenu">
-                <div class="gomodal" v-for="(beverage, index) in blackteafilter" @click='openModal(beverage)' :key='index'>
+                <div class="gomodal" v-for="(beverage, index) in beverageFilter('blacktea')" @click='openModal(beverage)' :key='index'>
                     <div class="details">
                         <p>{{beverage.menuName}}</p>
                         <p>{{beverage.price}}
@@ -57,7 +57,7 @@
             <article class="rice">      <!--FOR GREEN TEA-->
                 <p>Green Tea</p>
                 <section class="inmenu">
-                <div class="gomodal" v-for="(beverage, index) in greenteafilter"  @click='openModal(beverage)' :key='index'>
+                <div class="gomodal" v-for="(beverage, index) in beverageFilter('greentea')"  @click='openModal(beverage)' :key='index'>
                     <div class="details">
                         <p>{{beverage.menuName}}</p>
                         <p>{{beverage.price}}
@@ -75,7 +75,7 @@
             <article class="rice">      <!--FOR CHINESE TEA-->
                 <p>Chinese Tea</p>
                 <section class="inmenu">
-                <div class="gomodal" v-for="(beverage, index) in chineseteafilter" @click='openModal(beverage)' :key='index'>
+                <div class="gomodal" v-for="(beverage, index) in beverageFilter('chinesetea')" @click='openModal(beverage)' :key='index'>
                     <div class="details">
                         <p>{{beverage.menuName}}</p>
                         <p>{{beverage.price}}
@@ -93,7 +93,7 @@
             <article class="rice">      <!--FOR ROOIBOS TEA-->
                 <p>Rooibos Tea</p>
                 <section class="inmenu">
-                <div class="gomodal" v-for="(beverage, index) in rooibosteafilter" @click='openModal(beverage)' :key='index'>
+                <div class="gomodal" v-for="(beverage, index) in beverageFilter('rooibostea')" @click='openModal(beverage)' :key='index'>
                     <div class="details">
                         <p>{{beverage.menuName}}</p>
                         <p>{{beverage.price}}
@@ -112,7 +112,7 @@
             <article class="rice">      <!--FOR HERBAL TEA-->
                 <p>Herbal Tea</p>
                 <section class="inmenu">
-                <div class="gomodal" v-for="(beverage, index) in herbalteafilter" @click='openModal(beverage)' :key='index'>
+                <div class="gomodal" v-for="(beverage, index) in beverageFilter('herbaltea')" @click='openModal(beverage)' :key='index'>
                     <div class="details">
                         <p>{{beverage.menuName}}</p>
                         <p>{{beverage.price}}
@@ -131,7 +131,7 @@
             <article class="rice">      <!--FOR TISANE TEA-->
                 <p>Tisane Tea</p>
                 <section class="inmenu">
-                <div class="gomodal" v-for="(beverage, index) in tisaneteafilter" @click='openModal(beverage)' :key='index'>
+                <div class="gomodal" v-for="(beverage, index) in beverageFilter('tisanetea')" @click='openModal(beverage)' :key='index'>
                 <div class="details">
                         <p>{{beverage.menuName}}</p>
                         <p>{{beverage.price}}
@@ -148,7 +148,7 @@
     <button class="accordion" @change="accordion()">Other</button>
         <div class="displaymenu">      <!--FOR OTHER BEVRAGES-->
             <article>
-                <div class="gomodal" v-for="(beverage, index) in otherbeveragefilter" @click='openModal(beverage)' :key='index'>
+                <div class="gomodal" v-for="(beverage, index) in beverageFilter('other_beverage')" @click='openModal(beverage)' :key='index'>
                     <div class="details">
                         <p>{{beverage.menuName}}</p>
                         <p>{{beverage.price}}
@@ -167,7 +167,7 @@
         <div class="displaymenu">      <!--FOR ALCOHOLIC-->
             <h3>Alcoholic</h3>
             <article>
-                <div class="gomodal" v-for="(beverage, index) in alcoholicfilter" @click='openModal(beverage)' :key='index'>
+                <div class="gomodal" v-for="(beverage, index) in beverageFilter('alcoholic')" @click='openModal(beverage)' :key='index'>
                     <div class="details">
                         <p>{{beverage.menuName}}</p>
                         <p>{{beverage.price}}
@@ -195,38 +195,6 @@ export default {
             showContent: false,
             beverageDetail: [{},{}]
         }
-    },
-    computed:{
-        coffeefilter(){
-            return this.beverages.filter((beverage)=>beverage.category === 'coffee')
-        },
-        espressofilter(){
-            return this.beverages.filter((beverage)=>beverage.category === 'espresso')
-        },
-        blackteafilter(){
-            return this.beverages.filter((beverage)=>beverage.category === 'blacktea')
-        },
-        greenteafilter(){
-            return this.beverages.filter((beverage)=>beverage.category === 'greentea')
-        },
-        chineseteafilter(){
-            return this.beverages.filter((beverage)=>beverage.category === 'chinesetea')
-        },
-        rooibosteafilter(){
-            return this.beverages.filter((beverage)=>beverage.category === 'rooibostea')
-        },
-        herbalteafilter(){
-            return this.beverages.filter((beverage)=>beverage.category === 'herbaltea')
-        },
-        tisaneteafilter(){
-            return this.beverages.filter((beverage)=>beverage.category === 'tisanetea')
-        },
-        otherbeveragefilter(){
-            return this.beverages.filter((beverage)=>beverage.category === 'other_beverage')
-        },
-        alcoholicfilter(){
-            return this.beverages.filter((beverage)=>beverage.category === "alcoholic")
-        },
     },
     methods:{
         loadBeverage(){
@@ -258,6 +226,9 @@ export default {
                     }
                 })
             }
+        },
+        beverageFilter(beverageCategory){
+            return this.beverages.filter((beverage)=>beverage.category === beverageCategory)
         }
     },
     mounted(){

@@ -18,7 +18,7 @@
 
 {"menuId":7,"menuName":"Original Mousse","price":4.99,"category":"s_4doller","menuImg":"","explanation1":"Raspberry, Matcha, Belgium Chocolate","explanation2":"","online":true},
 
-{"menuId":7,"menuName":"Apple Crumble w/Vanilla Ice Cream","price":4.99,"category":"s_4doller","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":7,"menuName":"Apple Crumble w/Vanilla Ice Cream","price":4.99,"category":"s_4doller","menuImg":"./img/apple_crumbul.jpg","explanation1":"","explanation2":"","online":true},
 
 {"menuId":8,"menuName":"Very Berries Crumble w/Vanilla Ice Cream","price":4.99,"category":"s_4doller","menuImg":"","explanation1":"","explanation2":"","online":true},
 

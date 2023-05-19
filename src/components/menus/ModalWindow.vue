@@ -11,7 +11,7 @@
                     <p v-if="breakfast.explanation2">{{breakfast.explanation2}}</p>
                     <p v-if="breakfast.explanation3">{{breakfast.explanation3}}</p>
                 </div>
-                <button class='closemodal' @click='clickEvent'>close</button>
+                <button class='closemodal' @click='clickEvent'>CLOSE</button>
             </div>
         </div>
 
@@ -20,7 +20,7 @@
 
         <div id="content" v-on:click='stopEvent' v-if='dish'>
             <img v-if='dish.menuImg' :src="dish.menuImg" :alt="dish.menuName">
-            <img v-else v-bind:src="noneImage(dish)">
+            <img v-else v-bind:src="noneImage(dish)" id="noImage">
             <div>
                 <h3>{{dish.menuName}}</h3>
                 <p>${{dish.price}}</p>
@@ -29,7 +29,7 @@
                     <p v-if="dish.explanation2">{{dish.explanation2}}</p>
                     <p v-if="dish.explanation3">{{dish.explanation3}}</p>
                 </div>
-                <button class='closemodal' @click='clickEvent'>close</button>
+                <button class='closemodal' @click='clickEvent'>CLOSE</button>
             </div>
         </div>
 
@@ -39,7 +39,7 @@
 
         <div id="content" v-on:click='stopEvent' v-if='side'>
             <img v-if='side.menuImg' :src="side.menuImg" :alt="side.menuName">
-            <img v-else v-bind:src="noneImage(side)">
+            <img v-else v-bind:src="noneImage(side)" id="noImage">
             <div>
                 <h3>{{side.menuName}}</h3>
                 <p>${{side.price}}</p>
@@ -48,29 +48,9 @@
                     <p v-if="side.explanation2">{{side.explanation2}}</p>
                     <p v-if="side.explanation3">{{side.explanation3}}</p>
                 </div>
-                <button class='closemodal' @click='clickEvent'>close</button>
+                <button class='closemodal' @click='clickEvent'>CLOSE</button>
             </div>
         </div>
-
-
-
-
-<!-- 
-        <div id="content" v-on:click='stopEvent' v-if='month'>
-            <img v-if='month.menuImg' :src="month.menuImg" :alt="month.menuName">
-            <img v-else v-bind:src="noneImage()">
-            <div>
-                <h3>{{month.menuName}}</h3>
-                <p>${{month.price}}</p>
-                <div class="details" v-if="month.explanation1">
-                    <p>{{month.explanation1}}</p>
-                    <p v-if="month.explanation2">{{month.explanation2}}</p>
-                    <p v-if="month.explanation3">{{month.explanation3}}</p>
-                </div>
-                <button class='closemodal' @click='clickEvent'>close</button>
-            </div>
-        </div>
- -->
 
 
 
@@ -79,7 +59,7 @@
 
         <div id="content" v-on:click='stopEvent' v-if='sweet'>
             <img v-if='sweet.menuImg' :src="sweet.menuImg" :alt="sweet.menuName">
-            <img v-else v-bind:src="noneImage(sweet)">
+            <img v-else v-bind:src="noneImage(sweet)" id="noImage">
             <div>
                 <h3>{{sweet.menuName}}</h3>
                 <p>${{sweet.price}}</p>
@@ -88,7 +68,7 @@
                     <p v-if="sweet.explanation2">{{sweet.explanation2}}</p>
                     <p v-if="sweet.explanation3">{{sweet.explanation3}}</p>
                 </div>
-                <button class='closemodal' @click='clickEvent'>close</button>
+                <button class='closemodal' @click='clickEvent'>CLOSE</button>
             </div>
         </div>
 
@@ -100,7 +80,7 @@
 
         <div id="content" v-on:click='stopEvent' v-if='beverage'>
                 <img v-if='beverage.menuImg' :src="beverage.menuImg" :alt="beverage.menuName" id="menuImage">
-                <img v-else v-bind:src="noneImage(beverage)">
+                <img v-else v-bind:src="noneImage(beverage)" id="noImage">
                 <div>
                     <h3>{{beverage.menuName}}</h3>
                     <p>{{beverage.price}}</p>
@@ -109,7 +89,7 @@
                         <p v-if="beverage.explanation2">{{beverage.explanation2}}</p>
                         <p v-if="beverage.explanation3">{{beverage.explanation3}}</p>
                     </div>
-                    <button class='closemodal' @click='clickEvent'>close</button>
+                    <button class='closemodal' @click='clickEvent'>CLOSE</button>
                 </div>
         </div>
     </div>
@@ -246,6 +226,10 @@ export default {
         font-size: 22px;
     }
 
+    #noImage {
+        width: 50%;
+    }
+
     .closemodal {
         width: 20%;
         padding-top: 1%;
@@ -278,6 +262,7 @@ export default {
     #noImage {
         width: 40%;
     }
+
     .details {
         width: 85% !important;
     }

@@ -140,10 +140,14 @@ export default {
         flex-wrap: wrap;
         column-gap: 25px;
         justify-content: center;
+        
     }
 
     .opentime > li {
         border-bottom: 5px double orange;
+        padding: 0;
+        width: 20%;
+        text-align: center;
     }
 
     .opentime > li:last-child {

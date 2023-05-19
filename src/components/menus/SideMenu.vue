@@ -4,7 +4,7 @@
         <button class="accordion" @change="accordion()">Japanese Side Menu</button>
         <div class="displaymenu">      <!--FOR SIDE MENU -->
             <article>
-                <div class="gomodal" v-for="(side, index) in japanesesidefilter" @click='openModal(side)' :key='index'>
+                <div class="gomodal" v-for="(side, index) in sideFilter('jpnside')" @click='openModal(side)' :key='index'>
                 <div class="details">
                     <p>{{side.menuName}}</p>
                     <p>${{side.price}}
@@ -21,7 +21,7 @@
         <button class="accordion" @change="accordion()">Daily Soup & Salad</button>
         <div class="displaymenu">      <!--FOR DAIL SOUP & SALAD -->
             <article>
-                <div class="gomodal" v-for="(side, index) in dailysoupfilter" @click='openModal(side)' :key='index'>
+                <div class="gomodal" v-for="(side, index) in sideFilter('dailyside')" @click='openModal(side)' :key='index'>
                 <div class="details">
                     <p>{{side.menuName}}</p>
                     <p>${{side.price}}
@@ -39,7 +39,7 @@
         <button class="accordion" @change="accordion()">Other Side Menu</button>
         <div class="displaymenu">
             <article>
-                <div class="gomodal" v-for="(side, index) in othersidefilter" @click='openModal(side)' :key='index'>
+                <div class="gomodal" v-for="(side, index) in sideFilter('otherside')" @click='openModal(side)' :key='index'>
                 <div class="details">
                     <p>{{side.menuName}}</p>
                     <p>${{side.price}}
@@ -68,17 +68,6 @@ export default {
             showContent: false,
             sideDetail:[{},{}]
         }
-    },
-    computed:{
-        japanesesidefilter(){
-            return this.jpnsides.filter((jpnside)=>jpnside.category === 'jpnside')
-        },
-        dailysoupfilter(){
-            return this.jpnsides.filter((jpnside)=>jpnside.category === 'dailyside')
-        },
-        othersidefilter(){
-            return this.jpnsides.filter((jpnside)=>jpnside.category === 'otherside')
-        },
     },
     methods:{
     loadSide(){
@@ -113,7 +102,10 @@ export default {
                 }
             })
         }
-    }
+    },
+    sideFilter(sideCategory){
+            return this.jpnsides.filter((jpnside)=>jpnside.category === sideCategory)
+        },
   },
   mounted(){
     this.loadSide()

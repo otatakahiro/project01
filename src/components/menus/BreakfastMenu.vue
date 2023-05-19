@@ -2,27 +2,11 @@
     <article id="breakfast">
         <h2>ALL DAY BREAKFAST</h2>
 
-        <button class="accordion" @change="accordion()">Breakfast Plates</button>
-        <div class="displaymenu">   <!--FOR BREAKFAST PLATES -->
-            <article>
-                <div class="gomodal" v-for="(breakfast, index) in breakfastplatefilter" @click='openModal(breakfast)' :key='index' :breakfast='breakfast'>
-                    <div class="details">
-                        <p>{{breakfast.menuName}}</p>
-                        <p>${{breakfast.price}}
-                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                        </p>
-                    </div>
-                </div>
-                <modal-window v-show='showContent' @from-child='closeModal' :breakfast='breakfastDetail'></modal-window>
-            </article>
-        </div>
-
-
-
-        <button class="accordion">Japanese Style Breakfasts</button>
-        <div class="displaymenu">    <!--FOR JAPANESE STYLE BREAKFASTS -->
-            <article>
-                    <div class="gomodal" v-for="(breakfast, index) in jpnbreakfastfilter" @click='openModal(breakfast)' :key='index'>
+        <section v-for="(breakfastmenu,index) in breakfastmenus" :key='index'>
+            <button class="accordion" @change="accordion()">{{breakfastmenu.label}}</button>
+            <div class="displaymenu">   <!--FOR BREAKFAST PLATES -->
+                <article>
+                    <div class="gomodal" v-for="(breakfast, index) in breakfastilter(breakfastmenu.category)" @click='openModal(breakfast)' :key='index' :breakfast='breakfast'>
                         <div class="details">
                             <p>{{breakfast.menuName}}</p>
                             <p>${{breakfast.price}}
@@ -30,96 +14,10 @@
                             </p>
                         </div>
                     </div>
-                <modal-window v-show='showContent' @from-child='closeModal' :breakfast='breakfastDetail'></modal-window>
-            </article>
-        </div>
-
-
-<!--FOR EGGS BENNIES-->
-        <!-- <button class="accordion" @change="accordion()">Bennies on English Muffin</button>
-        <div class="displaymenu">    
-            <article>
-                <div class="gomodal" v-for="(breakfast, index) in eggbennyfilter" @click='openModal(breakfast)' :key='index'>
-                    <div class="details">
-                        <p>{{breakfast.menuName}}</p>
-                        <p>${{breakfast.price}}
-                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                        </p>
-                    </div>
-                </div>
-                <modal-window v-show='showContent' @from-child='closeModal' :breakfast='breakfastDetail'></modal-window>
-            </article>
-        </div>
- -->
-
-
-
-        <button class="accordion" @change="accordion()">Breakfast Wraps</button>
-        <div class="displaymenu">    <!--BREAKFAST WRAPS-->
-            <article>
-                <div class="gomodal" v-for="(breakfast, index) in breakfastwrapfilter" @click='openModal(breakfast)' :key='index'>
-                    <div class="details">
-                        <p>{{breakfast.menuName}}</p>
-                        <p>${{breakfast.price}}
-                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                        </p>
-                    </div>
-                </div>
-                <modal-window v-show='showContent' @from-child='closeModal' :breakfast='breakfastDetail'></modal-window>
-            </article>
-        </div>
-
-
-
-        <button class="accordion" @change="accordion()">Waffle / Yogurt</button>
-        <div class="displaymenu">    <!--FOR WAFFLE / YOGURT-->
-            <article>
-                <div class="gomodal" v-for="(breakfast, index) in waffleyogurtfilter" @click='openModal(breakfast)' :key='index'>
-                    <div class="details">
-                        <p>{{breakfast.menuName}}</p>
-                        <p>${{breakfast.price}}
-                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                        </p>
-                    </div>
-                </div>
-                <modal-window v-show='showContent' @from-child='closeModal' :breakfast='breakfastDetail'></modal-window>
-            </article>
-        </div>
-
-        
-
-        <button class="accordion" @change="accordion()">Sandwiches / Wraps</button>
-        <div class="displaymenu">    <!--FOR SANDWICHES / WRAPS-->
-            <article>
-                <div class="gomodal" v-for="(breakfast, index) in sandwichewrapfilter" @click='openModal(breakfast)' :key='index'>
-                    <div class="details">
-                        <p>{{breakfast.menuName}}</p>
-                        <p>${{breakfast.price}}
-                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                        </p>
-                    </div>
-                </div>
-                <modal-window v-show='showContent' @from-child='closeModal' :breakfast='breakfastDetail'></modal-window>
-            </article>
-        </div>
-
-
-
-
-        <button class="accordion" @change="accordion()">Daily Soup & Salad</button>
-        <div class="displaymenu">    <!--FOR DAILY SOUP AND SALAD-->
-            <article>
-                <div class="gomodal" v-for="(breakfast, index) in dailysoupfilter" @click='openModal(breakfast)' :key='index'>
-                    <div class="details">
-                        <p>{{breakfast.menuName}}</p>
-                        <p>${{breakfast.price}}
-                            <button class="modalbutton"><font-awesome-icon icon="fa-solid fa-angles-right" /></button>
-                        </p>
-                    </div>
-                </div>
-                <modal-window v-show='showContent' @from-child='closeModal' :breakfast='breakfastDetail'></modal-window>
-            </article>
-        </div>
+                    <modal-window v-show='showContent' @from-child='closeModal' :breakfast='breakfastDetail'></modal-window>
+                </article>
+            </div>
+        </section>
     </article>
 
 </template>
@@ -138,31 +36,14 @@ export default {
             breakfasts: new Array(),
             showContent: false,
             breakfastDetail: [{},{}],
-            noneImageList: ["img/noimage/noimage1.jpg","img/noimage/noimage2.jpg","img/noimage/noimage3.jpg","img/noimage/noimage4.jpg"],
-            src:null
-        }
-    },
-    computed:{
-        breakfastplatefilter() {
-            return this.breakfasts.filter((breakfast)=>breakfast.category === 'breakfast_plate');
-        },
-        jpnbreakfastfilter() {
-            return this.breakfasts.filter((breakfast)=>breakfast.category === 'japanese_breakfast')
-        },
-        // eggbennyfilter() {
-        //     return this.breakfasts.filter((breakfast)=>breakfast.category === 'egg_benny')
-        // },
-        breakfastwrapfilter() {
-            return this.breakfasts.filter((breakfast)=>breakfast.category === 'breakfast_wrap')
-        },
-        waffleyogurtfilter() {
-            return this.breakfasts.filter((breakfast)=>breakfast.category === 'waffle/yogurt')
-        },
-        sandwichewrapfilter() {
-            return this.breakfasts.filter((breakfast)=>breakfast.category === 'sandwiche/wrap')
-        },
-        dailysoupfilter() {
-            return this.breakfasts.filter((breakfast)=>breakfast.category === 'daily_soup/salad')
+            breakfastmenus: [
+                {label:'Breakfast Plates',category:'breakfast_plate'},
+                {label:'Japanese Breakfasts',category:'japanese_breakfast'},
+                {label:'Breakfast Wraps',category:'breakfast_wrap'},
+                {label:'Waffle / Yogurt',category:'waffle/yogurt'},
+                {label:'Sandwiches / Wraps',category:'sandwiche/wrap'},
+                {label:'Daily Soup & Salad',category:'daily_soup/salad'},
+            ]
         }
     },
     methods:{
@@ -195,6 +76,9 @@ export default {
                     }
                 })
             }
+        },
+        breakfastilter(breakfastCategory) {
+            return this.breakfasts.filter((breakfast)=>breakfast.category === breakfastCategory);
         }
     },
     mounted(){

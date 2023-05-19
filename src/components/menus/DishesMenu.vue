@@ -5,7 +5,7 @@
     <button class="accordion" @change="accordion()">Donburi</button>
     <div class="displaymenu">      <!--FOR DONBURI -->
         <article>
-            <div class="gomodal" v-for="(dish, index) in donburifilter" @click='openModal(dish)' :key='index'>
+            <div class="gomodal" v-for="(dish, index) in dishFilter('donburi')" @click='openModal(dish)' :key='index'>
                 <div class="details">
                     <p>{{dish.menuName}}</p>
                     <p>${{dish.price}}
@@ -20,7 +20,7 @@
     <button class="accordion" @change="accordion()">Yoshoku</button>
     <div class="displaymenu">      <!--FOR OTHER YOSHOKU -->
         <article>
-            <div class="gomodal" v-for="(dish, index) in yoshokufilter" @click='openModal(dish)' :key='index'>
+            <div class="gomodal" v-for="(dish, index) in dishFilter('yoshoku')" @click='openModal(dish)' :key='index'>
                 <div class="details">
                     <p>{{dish.menuName}}</p>
                     <p>${{dish.price}}
@@ -36,7 +36,7 @@
     <button class="accordion" @change="accordion()">Hamburger Steaks</button>
     <div class="displaymenu">      <!--FOR HAMBURGER STEAKS -->
         <article>
-            <div class="gomodal" v-for="(dish, index) in steakfilter" @click='openModal(dish)' :key='index'>
+            <div class="gomodal" v-for="(dish, index) in dishFilter('steak')" @click='openModal(dish)' :key='index'>
                 <div class="details">
                     <p>{{dish.menuName}}</p>
                     <p>${{dish.price}}
@@ -54,7 +54,7 @@
         <article class="rice">      <!--FOR WHITE RICE -->
             <p>with White Rice</p>
             <section class="inmenu">
-            <div class="gomodal" v-for="(dish, index) in omuwhitefilter" @click='openModal(dish)' :key='index'>
+            <div class="gomodal" v-for="(dish, index) in dishFilter('white_rice')" @click='openModal(dish)' :key='index'>
                 <div class="details">
                     <p>{{dish.menuName}}</p>
                     <p>${{dish.price}}
@@ -71,7 +71,7 @@
         <article class="rice">      <!--FOR GARLIC RICE -->
             <p>with Garlic Rice</p>
             <section class="inmenu">
-            <div class="gomodal" v-for="(dish, index) in omugarlicfilter" 
+            <div class="gomodal" v-for="(dish, index) in dishFilter('garlic_rice')" 
             @click='openModal(dish)' :key='index'>
                 <div class="details">
                     <p>{{dish.menuName}}</p>
@@ -91,7 +91,7 @@
         <article class="rice">      <!--FOR KETCHUP RICE -->
             <p>with Ketchup Rice</p>
             <section class="inmenu">
-            <div class="gomodal" v-for="(dish, index) in omuketchupfilter" 
+            <div class="gomodal" v-for="(dish, index) in dishFilter('ketchup_rice')" 
             @click='openModal(dish)' :key='index'>
                 <div class="details">
                     <p>{{dish.menuName}}</p>
@@ -122,26 +122,6 @@ export default {
             jpndishes: new Array(),
             showContent: false,
             dishDetail:[{},{}]
-        }
-    },
-    computed:{
-        donburifilter() {
-            return this.jpndishes.filter((jpndish)=>jpndish.category === 'donburi');
-        },
-        yoshokufilter() {
-            return this.jpndishes.filter((jpndish)=>jpndish.category === 'yoshoku')
-        },
-        steakfilter() {
-            return this.jpndishes.filter((jpndish)=>jpndish.category === 'steak')
-        },
-        omuwhitefilter() {
-            return this.jpndishes.filter((jpndish)=>jpndish.category === 'white_rice')
-        },
-        omugarlicfilter() {
-            return this.jpndishes.filter((jpndish)=>jpndish.category === 'garlic_rice')
-        },
-        omuketchupfilter() {
-            return this.jpndishes.filter((jpndish)=>jpndish.category === 'ketchup_rice')
         }
     },
     methods:{
@@ -176,6 +156,9 @@ export default {
                 }
             })
         }
+    },
+    dishFilter(dishCategory) {
+        return this.jpndishes.filter((jpndish)=>jpndish.category === dishCategory);
     }
   },
   mounted(){
@@ -311,12 +294,15 @@ export default {
         align-items: center;
         padding: 10px;
     }
+
     .rice > p {
+        font-size: 20px;
         text-align: center;
         width: 70%;
         color: black;
         font-family: 'Rye', cursive;
-        border-bottom: 2px solid black;
+        color: #97B8C2;
+        border-bottom: 5px double black;
     }
 
     .inmenu {
