@@ -15,9 +15,6 @@
             </div>
         </div>
 
-
-
-
         <div id="content" v-on:click='stopEvent' v-if='dish'>
             <img v-if='dish.menuImg' :src="dish.menuImg" :alt="dish.menuName">
             <img v-else v-bind:src="noneImage(dish)" id="noImage">
@@ -32,10 +29,6 @@
                 <button class='closemodal' @click='clickEvent'>CLOSE</button>
             </div>
         </div>
-
-
-
-
 
         <div id="content" v-on:click='stopEvent' v-if='side'>
             <img v-if='side.menuImg' :src="side.menuImg" :alt="side.menuName">
@@ -52,11 +45,6 @@
             </div>
         </div>
 
-
-
-
-
-
         <div id="content" v-on:click='stopEvent' v-if='sweet'>
             <img v-if='sweet.menuImg' :src="sweet.menuImg" :alt="sweet.menuName">
             <img v-else v-bind:src="noneImage(sweet)" id="noImage">
@@ -72,17 +60,9 @@
             </div>
         </div>
 
-
-
-
-
-
-
         <div id="content" v-on:click='stopEvent' v-if='beverage'>
-            <div>
                 <img v-if='beverage.menuImg' :src="beverage.menuImg" :alt="beverage.menuName" id="menuImage">
                 <img v-else v-bind:src="noneImage(beverage)" id="noImage">
-            </div>
             <div>
                 <h3>{{beverage.menuName}}</h3>
                 <p>{{beverage.price}}</p>
@@ -106,7 +86,7 @@ export default {
         return {
             noneImageList: ["img/noimage/noimage1.jpg","img/noimage/noimage2.jpg","img/noimage/noimage3.jpg","img/noimage/noimage4.jpg"],
             src: null,
-            flag: false
+            flag: false,
         }
     },
     props:{
@@ -125,12 +105,12 @@ export default {
             this.$emit('from-child');
         },
         noneImage(menuCategory) {
-                if(!menuCategory.menuImg){
-                    this.flag = true;
-                    const select = Math.floor(Math.random() * this.noneImageList.length);
-                    console.log(this.noneImageList[select])
-                    return this.noneImageList[select]
-                }
+            if(!menuCategory.menuImg){
+                this.flag = true;
+                const select = Math.floor(Math.random() * this.noneImageList.length);
+                console.log(this.noneImageList[select])
+                return this.noneImageList[select]
+            }
         }
         
     }
@@ -265,6 +245,5 @@ export default {
     .details {
         width: 85%;
     }
-
 }
 </style>

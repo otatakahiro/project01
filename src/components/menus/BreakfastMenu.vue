@@ -42,7 +42,7 @@ export default {
                 {label:'Breakfast Wraps',category:'breakfast_wrap'},
                 {label:'Waffle / Yogurt',category:'waffle/yogurt'},
                 {label:'Sandwiches / Wraps',category:'sandwiche/wrap'},
-                {label:'Daily Soup & Salad',category:'daily_soup/salad'},
+                {label:'Daily Soup & Salad',category:'daily_soup/salad'}
             ]
         }
     },
