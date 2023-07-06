@@ -78,7 +78,7 @@ export default {
         }
 
         a {
-            font-size: 20px;
+            font-size: 18px;
             background-color: white;
             border-radius: 10px;
             padding: 3px 8px;
@@ -125,7 +125,7 @@ export default {
         }
 
         .opentime {
-            font-size: 28px;
+            font-size: 25px;
             letter-spacing: 2px;
         }
 }
@@ -152,8 +152,10 @@ export default {
 
     .opentime > li:last-child {
         border-bottom: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    
 }
 
 </style>

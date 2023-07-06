@@ -1,218 +1,205 @@
 [
-{"menuId":0,"menuName":"","price":0,"category":"","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":0,"menuName":"","price":0,"category":"","menuImg":"","explanation1":"","explanation2":""},
 
-{"menuId":1,"menuName":"Freshly Brewed Coffee","price":"12oz $1.75 / 16oz $1.95","category":"coffee","menuImg":"","explanation1":"Refills 12oz $1.00 / 16oz $1.20","explanation2":"","online":true},
+{"menuId":1,"menuName":"Freshly Brewed Coffee","price":"12oz $1.75 / 16oz $1.95","category":"coffee","menuImg":"","explanation1":"Refills 12oz $1.00 / 16oz $1.20","explanation2":""},
 
-{"menuId":2,"menuName":"Freshly Brewed Refills","price":"12oz $1.00 / 16oz $1.20","category":"coffee","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":2,"menuName":"Freshly Brewed Refills","price":"12oz $1.00 / 16oz $1.20","category":"coffee","menuImg":"","explanation1":"","explanation2":""},
 
-{"menuId":3,"menuName":"Americano","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":3,"menuName":"Americano","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"","explanation2":""},
 
-{"menuId":4,"menuName":"Americano Misto","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":4,"menuName":"Americano Misto","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"","explanation2":""},
 
-{"menuId":5,"menuName":"Canadiano","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":5,"menuName":"Canadiano","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"","explanation2":""},
 
-{"menuId":6,"menuName":"Cappuccino","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":6,"menuName":"Cappuccino","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"","explanation2":""},
 
-{"menuId":7,"menuName":"Café Latte","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":7,"menuName":"Café Latte","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"","explanation2":""},
 
-{"menuId":8,"menuName":"Rosie Latte","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":8,"menuName":"Rosie Latte","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"","explanation2":""},
 
-{"menuId":9,"menuName":"Maple Latte","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":9,"menuName":"Maple Latte","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"","explanation2":""},
 
-{"menuId":10,"menuName":"Mocha","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"Made w/ Belgian Chocolate","explanation2":"","online":true},
+{"menuId":10,"menuName":"Mocha","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"Made w/ Belgian Chocolate","explanation2":""},
 
-{"menuId":11,"menuName":"White Mocha","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":11,"menuName":"White Mocha","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"","explanation2":""},
 
-{"menuId":12,"menuName":"Creamy Caramel Mocha","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":12,"menuName":"Creamy Caramel Mocha","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"","explanation2":""},
 
-{"menuId":13,"menuName":"Caramel Macciato","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":13,"menuName":"Caramel Macciato","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"","explanation2":""},
 
-{"menuId":14,"menuName":"Café Jelly Latte (Iced only)","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"Choice of Vanilla, Caramel and Hazelnut","explanation2":"","online":true},
+{"menuId":14,"menuName":"Café Jelly Latte (Iced only)","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"Choice of Vanilla, Caramel and Hazelnut","explanation2":""},
 
-{"menuId":15,"menuName":"Flavored for Drinks","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"Vanilla, Caramel and Hazelnut","explanation2":"Whole Milk, Skim Milk, Soy Milk, Almond Milk  Plus $1.00","online":true},
+{"menuId":15,"menuName":"Flavored for Drinks","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"Vanilla, Caramel and Hazelnut","explanation2":"Whole Milk, Skim Milk, Soy Milk, Almond Milk  Plus $1.00"},
 
 
 
 
-{"menuId":16,"menuName":"Espresso","price":"Single $2.30 / Double $2.95","category":"espresso","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":16,"menuName":"Espresso","price":"Single $2.30 / Double $2.95","category":"espresso","menuImg":"","explanation1":"","explanation2":""},
 
-{"menuId":17,"menuName":"Espresso Mocha","price":"Single $2.30 / Double $2.95","category":"espresso","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":17,"menuName":"Espresso Mocha","price":"Single $2.30 / Double $2.95","category":"espresso","menuImg":"","explanation1":"","explanation2":""},
 
-{"menuId":18,"menuName":"Con Panna","price":"Single $2.30 / Double $2.95","category":"espresso","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":18,"menuName":"Con Panna","price":"Single $2.30 / Double $2.95","category":"espresso","menuImg":"","explanation1":"","explanation2":""},
 
-{"menuId":19,"menuName":"Espresso Affogato","price":"Single $2.30 / Double $2.95","category":"espresso","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":19,"menuName":"Espresso Affogato","price":"Single $2.30 / Double $2.95","category":"espresso","menuImg":"","explanation1":"","explanation2":""},
 
 
 
 
 
 
-{"menuId":20,"menuName":"Earl Gray","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Flavored Black Tea with Bergamot Oil","explanation2":"","online":true},
+{"menuId":20,"menuName":"Earl Gray","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Flavored Black Tea with Bergamot Oil","explanation2":""},
 
-{"menuId":21,"menuName":"Earl Gray Decaf","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Flavored Black Tea with Bergamot Oil","explanation2":"The caffeine content max 0.1%","online":true},
+{"menuId":21,"menuName":"Earl Gray Decaf","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Flavored Black Tea with Bergamot Oil","explanation2":"The caffeine content max 0.1%"},
 
-{"menuId":22,"menuName":"Cream Earl Gray","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Flavored Black Tea with Bergamot Oil","explanation2":"","online":true},
+{"menuId":22,"menuName":"Cream Earl Gray","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Flavored Black Tea with Bergamot Oil","explanation2":""},
 
-{"menuId":23,"menuName":"Assam","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Rich flavor and taste, a good much with Milk","explanation2":"","online":true},
+{"menuId":23,"menuName":"Assam","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Rich flavor and taste, a good much with Milk","explanation2":""},
 
-{"menuId":24,"menuName":"English Breakfast","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Very tick Fullbody Blend Tea for Breakfast","explanation2":"A good much with Milk","online":true},
+{"menuId":24,"menuName":"English Breakfast","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Very tick Fullbody Blend Tea for Breakfast","explanation2":"A good much with Milk"},
 
-{"menuId":25,"menuName":"Darjeeling(FTGFOP1)","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Tea of the Year. Very Aromatic Black Tea","explanation2":"","online":true},
+{"menuId":25,"menuName":"Darjeeling(FTGFOP1)","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Tea of the Year. Very Aromatic Black Tea","explanation2":""},
 
-{"menuId":26,"menuName":"Russia Caravan","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"In the typical Rich & Smoky aroma of Popoff Russian Tea","explanation2":"","online":true},
+{"menuId":26,"menuName":"Russia Caravan","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"In the typical Rich & Smoky aroma of Popoff Russian Tea","explanation2":""},
 
-{"menuId":27,"menuName":"Rose Congue","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Black Tea with Rose Petal","explanation2":"","online":true},
+{"menuId":27,"menuName":"Rose Congue","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Black Tea with Rose Petal","explanation2":""},
 
-{"menuId":28,"menuName":"Marsala Chai","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Black Tea, Ginger, Citrus Peel, All Spice, Cardamom, Cloves, Star Anis Seed, Nutmeg","explanation2":"","online":true},
+{"menuId":28,"menuName":"Marsala Chai","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Black Tea, Ginger, Citrus Peel, All Spice, Cardamom, Cloves, Star Anis Seed, Nutmeg","explanation2":""},
 
-{"menuId":29,"menuName":"Vanilla Kipfer","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Black Tea with 3% Vanilla bits","explanation2":"","online":true},
+{"menuId":29,"menuName":"Vanilla Kipfer","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Black Tea with 3% Vanilla bits","explanation2":""},
 
-{"menuId":30,"menuName":"Caramel","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Black Tea with Caramelized Almond","explanation2":"","online":true},
+{"menuId":30,"menuName":"Caramel","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Black Tea with Caramelized Almond","explanation2":""},
 
-{"menuId":31,"menuName":"Ceylon Decaf","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Black Tea that Product of Sri Lanka","explanation2":"","online":true},
+{"menuId":31,"menuName":"Ceylon Decaf","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Black Tea that Product of Sri Lanka","explanation2":""},
 
-{"menuId":32,"menuName":"Ice Princess(Seasonal)","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Black Tea w/CornFlower, Almond, Lemon Juice with Snowflake Sugar Candy","explanation2":"Served only on December - February","online":true},
+{"menuId":32,"menuName":"Ice Princess(Seasonal)","price":"Per pot 2.99","category":"blacktea","menuImg":"","explanation1":"Black Tea w/CornFlower, Almond, Lemon Juice with Snowflake Sugar Candy","explanation2":"Served only on December - February"},
 
 
 
 
-{"menuId":33,"menuName":"Jasmin Green","price":"Per pot 2.99","category":"greentea","menuImg":"","explanation1":"Green Tea flavored in a natural way with Jasmin Blossoms","explanation2":"","online":true},
+{"menuId":33,"menuName":"Jasmin Green","price":"Per pot 2.99","category":"greentea","menuImg":"","explanation1":"Green Tea flavored in a natural way with Jasmin Blossoms","explanation2":""},
 
-{"menuId":34,"menuName":"Mint Green","price":"Per pot 2.99","category":"greentea","menuImg":"","explanation1":"Green Tea Blended with Peppermint","explanation2":"","online":true},
+{"menuId":34,"menuName":"Mint Green","price":"Per pot 2.99","category":"greentea","menuImg":"","explanation1":"Green Tea Blended with Peppermint","explanation2":""},
 
-{"menuId":35,"menuName":"Sen-Cha(Pure Green Tea)","price":"Per pot 2.99","category":"greentea","menuImg":"","explanation1":"Pure Young Leaf Green Tea","explanation2":"Bitter Taste Green Tea","online":true},
+{"menuId":35,"menuName":"Sen-Cha(Pure Green Tea)","price":"Per pot 2.99","category":"greentea","menuImg":"","explanation1":"Pure Young Leaf Green Tea","explanation2":"Bitter Taste Green Tea"},
 
-{"menuId":36,"menuName":"Ban-Cha(Green Tea w/Stalk)","price":"Per pot 2.99","category":"greentea","menuImg":"","explanation1":"Green Tea with Stalk.","explanation2":"Mellow Taste Green Tea","online":true},
+{"menuId":36,"menuName":"Ban-Cha(Green Tea w/Stalk)","price":"Per pot 2.99","category":"greentea","menuImg":"","explanation1":"Green Tea with Stalk.","explanation2":"Mellow Taste Green Tea"},
 
-{"menuId":37,"menuName":"Genmai-Cha(Green Tea w/Brown Rice)","price":"Per pot 2.99","category":"greentea","menuImg":"","explanation1":"Green Tea with Brown Rice","explanation2":"","online":true},
+{"menuId":37,"menuName":"Genmai-Cha(Green Tea w/Brown Rice)","price":"Per pot 2.99","category":"greentea","menuImg":"","explanation1":"Green Tea with Brown Rice","explanation2":""},
 
-{"menuId":38,"menuName":"Hoji-Cha(Roasted Green Tea)","price":"Per pot 2.99","category":"greentea","menuImg":"","explanation1":"Roasted Pure Green Tea","explanation2":"","online":true},
+{"menuId":38,"menuName":"Hoji-Cha(Roasted Green Tea)","price":"Per pot 2.99","category":"greentea","menuImg":"","explanation1":"Roasted Pure Green Tea","explanation2":""},
 
-{"menuId":39,"menuName":"Matcha Green Tea","price":"Served with Special Cup $4.25","category":"greentea","menuImg":"","explanation1":"Very fine grind Sen-Cha in Millstone","explanation2":"Served with Special Cup","online":true},
+{"menuId":39,"menuName":"Matcha Green Tea","price":"Served with Special Cup $4.25","category":"greentea","menuImg":"","explanation1":"Very fine grind Sen-Cha in Millstone","explanation2":"Served with Special Cup"},
 
 
 
 
-{"menuId":40,"menuName":"Pu Er","price":"Per pot 2.99","category":"chinesetea","menuImg":"","explanation1":"Chinese Green Tea fermented with Aspergillus","explanation2":"","online":true},
+{"menuId":40,"menuName":"Pu Er","price":"Per pot 2.99","category":"chinesetea","menuImg":"","explanation1":"Chinese Green Tea fermented with Aspergillus","explanation2":""},
 
-{"menuId":41,"menuName":"White Tea(Vanilla & Lavender)","price":"Per pot 2.99","category":"chinesetea","menuImg":"","explanation1":"White Tea with Vanilla & Lavender","explanation2":"","online":true},
+{"menuId":41,"menuName":"White Tea(Vanilla & Lavender)","price":"Per pot 2.99","category":"chinesetea","menuImg":"","explanation1":"White Tea with Vanilla & Lavender","explanation2":""},
 
-{"menuId":42,"menuName":"Oolong","price":"Per pot 2.99","category":"chinesetea","menuImg":"","explanation1":"Iron Buddha Oolong Tea, Good for Improvement of Poor Circulation","explanation2":"","online":true},
+{"menuId":42,"menuName":"Oolong","price":"Per pot 2.99","category":"chinesetea","menuImg":"","explanation1":"Iron Buddha Oolong Tea, Good for Improvement of Poor Circulation","explanation2":""},
 
 
 
-{"menuId":43,"menuName":"Organic Pure Rooibos","price":"Per pot 2.99","category":"rooibostea","menuImg":"","explanation1":"Certified Organic Pure Rooibos.","explanation2":"","online":true},
+{"menuId":43,"menuName":"Organic Pure Rooibos","price":"Per pot 2.99","category":"rooibostea","menuImg":"","explanation1":"Certified Organic Pure Rooibos.","explanation2":""},
 
-{"menuId":44,"menuName":"Raspberry/Vanilla Rooibos","price":"Per pot 2.99","category":"rooibostea","menuImg":"","explanation1":"Pure Rooibos flavored with Vanilla and Raspberry Bits.","explanation2":"","online":true},
+{"menuId":44,"menuName":"Raspberry/Vanilla Rooibos","price":"Per pot 2.99","category":"rooibostea","menuImg":"","explanation1":"Pure Rooibos flavored with Vanilla and Raspberry Bits.","explanation2":""},
 
-{"menuId":45,"menuName":"Candied Almond Rooibos","price":"Per pot 2.99","category":"rooibostea","menuImg":"","explanation1":"Pure Rooibos flavored with Candied Almonds and Sugar-harts.","explanation2":"","online":true},
+{"menuId":45,"menuName":"Candied Almond Rooibos","price":"Per pot 2.99","category":"rooibostea","menuImg":"","explanation1":"Pure Rooibos flavored with Candied Almonds and Sugar-harts.","explanation2":""},
 
-{"menuId":46,"menuName":"Provence Rooibos","price":"Per pot 2.99","category":"rooibostea","menuImg":"","explanation1":"Pure Rooibos w/Lavender, Berries, Rosehip, Raisin, Black Currant, Red Currant, Blueberry, Rose Leaf, and Rose Petal","explanation2":"","online":true},
+{"menuId":46,"menuName":"Provence Rooibos","price":"Per pot 2.99","category":"rooibostea","menuImg":"","explanation1":"Pure Rooibos w/Lavender, Berries, Rosehip, Raisin, Black Currant, Red Currant, Blueberry, Rose Leaf, and Rose Petal","explanation2":""},
 
-{"menuId":47,"menuName":"Cream Blulee","price":"Per pot 2.99","category":"rooibostea","menuImg":"","explanation1":"Pure Rooibos w/Carob Bits, Sweet Blakberry Leaf, Puffed Rice, Sunflower Petal, Tonka Bean, Vanilla Bits and Amaranth","explanation2":"","online":true},
+{"menuId":47,"menuName":"Cream Blulee","price":"Per pot 2.99","category":"rooibostea","menuImg":"","explanation1":"Pure Rooibos w/Carob Bits, Sweet Blakberry Leaf, Puffed Rice, Sunflower Petal, Tonka Bean, Vanilla Bits and Amaranth","explanation2":""},
 
-{"menuId":48,"menuName":"Chai Massai","price":"Per pot 2.99","category":"rooibostea","menuImg":"","explanation1":"Pure Rooibos w/Cinnamon, Cardamom, Citrus Peels, Ginger Bits, Pepper, Star Anise and Clove","explanation2":"","online":true},
+{"menuId":48,"menuName":"Chai Massai","price":"Per pot 2.99","category":"rooibostea","menuImg":"","explanation1":"Pure Rooibos w/Cinnamon, Cardamom, Citrus Peels, Ginger Bits, Pepper, Star Anise and Clove","explanation2":""},
 
-{"menuId":49,"menuName":"Chocolate-Coconut","price":"Per pot 2.99","category":"rooibostea","menuImg":"","explanation1":"Flavoured Rooibos with Chocolate & Coconut taste, Rooibos, Choco Flakes, Cocoa Kernels, Coconut Chips, Carob Bits","explanation2":"","online":true},
+{"menuId":49,"menuName":"Chocolate-Coconut","price":"Per pot 2.99","category":"rooibostea","menuImg":"","explanation1":"Flavoured Rooibos with Chocolate & Coconut taste, Rooibos, Choco Flakes, Cocoa Kernels, Coconut Chips, Carob Bits","explanation2":""},
 
-{"menuId":50,"menuName":"Honey Bush","price":"Per pot 2.99","category":"rooibostea","menuImg":"","explanation1":"Traditional South African Tea","explanation2":"","online":true},
+{"menuId":50,"menuName":"Honey Bush","price":"Per pot 2.99","category":"rooibostea","menuImg":"","explanation1":"Traditional South African Tea","explanation2":""},
 
 
 
-{"menuId":51,"menuName":"Organic Peppermint","price":"Per pot 2.99","category":"herbaltea","menuImg":"","explanation1":"Green tea flavored in a natural way with Jasmin Blossoms","explanation2":"","online":true},
+{"menuId":51,"menuName":"Organic Peppermint","price":"Per pot 2.99","category":"herbaltea","menuImg":"","explanation1":"Green tea flavored in a natural way with Jasmin Blossoms","explanation2":""},
 
-{"menuId":52,"menuName":"Chamomile Flowers","price":"Per pot 2.99","category":"herbaltea","menuImg":"","explanation1":"Dried Chamomile Flowers","explanation2":"","online":true},
+{"menuId":52,"menuName":"Chamomile Flowers","price":"Per pot 2.99","category":"herbaltea","menuImg":"","explanation1":"Dried Chamomile Flowers","explanation2":""},
 
-{"menuId":53,"menuName":"Mate","price":"Per pot 2.99","category":"herbaltea","menuImg":"","explanation1":"Green Mate(Dried Mate Leaves)","explanation2":"","online":true},
+{"menuId":53,"menuName":"Mate","price":"Per pot 2.99","category":"herbaltea","menuImg":"","explanation1":"Green Mate(Dried Mate Leaves)","explanation2":""},
 
-{"menuId":54,"menuName":"Lavender","price":"Per pot 2.99","category":"herbaltea","menuImg":"","explanation1":"Pure Dried Lavender","explanation2":"","online":true},
+{"menuId":54,"menuName":"Lavender","price":"Per pot 2.99","category":"herbaltea","menuImg":"","explanation1":"Pure Dried Lavender","explanation2":""},
 
-{"menuId":55,"menuName":"Rose Hip","price":"Per pot 2.99","category":"herbaltea","menuImg":"","explanation1":"Dried Fruit of Rosa Canina","explanation2":"","online":true},
+{"menuId":55,"menuName":"Rose Hip","price":"Per pot 2.99","category":"herbaltea","menuImg":"","explanation1":"Dried Fruit of Rosa Canina","explanation2":""},
 
-{"menuId":56,"menuName":"Hibiscus","price":"Per pot 2.99","category":"herbaltea","menuImg":"","explanation1":"Dried Hibiscus Petal","explanation2":"","online":true},
+{"menuId":56,"menuName":"Hibiscus","price":"Per pot 2.99","category":"herbaltea","menuImg":"","explanation1":"Dried Hibiscus Petal","explanation2":""},
 
-{"menuId":57,"menuName":"Source of Luck","price":"Per pot 2.99","category":"herbaltea","menuImg":"","explanation1":"Apple Bits, Citrus Peels, Lemon Grass, Verbena, Lemon, Myrtle, Marigold Petal and Candied Orange","explanation2":"","online":true},
+{"menuId":57,"menuName":"Source of Luck","price":"Per pot 2.99","category":"herbaltea","menuImg":"","explanation1":"Apple Bits, Citrus Peels, Lemon Grass, Verbena, Lemon, Myrtle, Marigold Petal and Candied Orange","explanation2":""},
 
-{"menuId":58,"menuName":"Sweet Rose Fairy(Seasonal)","price":"Per pot 2.99","category":"herbaltea","menuImg":"","explanation1":"Fragrant of Rose Blosoms, w/Grape, Apple, Hibiscus, Rose Petals & Rosebuds","explanation2":"Served only on March - June","online":true},
+{"menuId":58,"menuName":"Sweet Rose Fairy(Seasonal)","price":"Per pot 2.99","category":"herbaltea","menuImg":"","explanation1":"Fragrant of Rose Blosoms, w/Grape, Apple, Hibiscus, Rose Petals & Rosebuds","explanation2":"Served only on March - June"},
 
 
 
 
 
-{"menuId":59,"menuName":"Organic Pink Grapefruit","price":"Per pot 2.99","category":"tisanetea","menuImg":"","explanation1":"Grapefruit Peel, Apple Bits, Rose hip, Hibiscus, Pnapple Bits, Papaya Bits, Cornflower Petal, Rice Flour","explanation2":"","online":true},
+{"menuId":59,"menuName":"Organic Pink Grapefruit","price":"Per pot 2.99","category":"tisanetea","menuImg":"","explanation1":"Grapefruit Peel, Apple Bits, Rose hip, Hibiscus, Pnapple Bits, Papaya Bits, Cornflower Petal, Rice Flour","explanation2":""},
 
-{"menuId":60,"menuName":"Cranberry","price":"Per pot 2.99","category":"tisanetea","menuImg":"","explanation1":"Dried Cranberry, Apple Bits, Hibiscus","explanation2":"","online":true},
+{"menuId":60,"menuName":"Cranberry","price":"Per pot 2.99","category":"tisanetea","menuImg":"","explanation1":"Dried Cranberry, Apple Bits, Hibiscus","explanation2":""},
 
-{"menuId":61,"menuName":"Mango Flip","price":"Per pot 2.99","category":"tisanetea","menuImg":"","explanation1":"Candied Mango Bits & Pinapple Bits, Hibiscus, Grapes, Sunflower Petal","explanation2":"","online":true},
+{"menuId":61,"menuName":"Mango Flip","price":"Per pot 2.99","category":"tisanetea","menuImg":"","explanation1":"Candied Mango Bits & Pinapple Bits, Hibiscus, Grapes, Sunflower Petal","explanation2":""},
 
-{"menuId":62,"menuName":"Yuzu-Cha","price":"Per pot 2.99","category":"tisanetea","menuImg":"","explanation1":"Japanese Citron Tea, jelly-like concentrate of honeyed citron","explanation2":"Served in a Cup","online":true},
+{"menuId":62,"menuName":"Yuzu-Cha","price":"Per pot 2.99","category":"tisanetea","menuImg":"","explanation1":"Japanese Citron Tea, jelly-like concentrate of honeyed citron","explanation2":"Served in a Cup"},
 
-{"menuId":63,"menuName":"Sleigh-Ride(Seasonal)","price":"Per pot 2.99","category":"tisanetea","menuImg":"","explanation1":"Orange w/Apple Bits, Hibiscus, Grape, Rosehip, Cardamom, Almond, Coriander, Pink Pepper, Genuine Vanilla","explanation2":"Served only on December - February","online":true},
+{"menuId":63,"menuName":"Sleigh-Ride(Seasonal)","price":"Per pot 2.99","category":"tisanetea","menuImg":"","explanation1":"Orange w/Apple Bits, Hibiscus, Grape, Rosehip, Cardamom, Almond, Coriander, Pink Pepper, Genuine Vanilla","explanation2":"Served only on December - February"},
 
 
 
 
-{"menuId":64,"menuName":"Chai Latte w/Marsala Chai Leaves","price":"12oz $3.85 / 16oz $4.45","category":"other_beverage","menuImg":"","explanation1":"Choice of Sweet or Unsweet","explanation2":"","online":true},
+{"menuId":64,"menuName":"Chai Latte w/Marsala Chai Leaves","price":"12oz $3.85 / 16oz $4.45","category":"other_beverage","menuImg":"","explanation1":"Choice of Sweet or Unsweet","explanation2":"Add Choco Marshmallow Stick Plus $2.00"},
 
-{"menuId":65,"menuName":"Chai Latte w/Chai Massai Rooibos(Decaf)","price":"12oz $3.85 / 16oz $4.45","category":"other_beverage","menuImg":"","explanation1":"Choice of Sweet or Unsweet","explanation2":"","online":true},
+{"menuId":65,"menuName":"Chai Latte w/Chai Massai Rooibos(Decaf)","price":"12oz $3.85 / 16oz $4.45","category":"other_beverage","menuImg":"","explanation1":"Choice of Sweet or Unsweet","explanation2":"Add Choco Marshmallow Stick Plus $2.00"},
 
-{"menuId":66,"menuName":"London Fog Tea Latte","price":"12oz $3.85 / 16oz $4.45","category":"other_beverage","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":66,"menuName":"London Fog Tea Latte","price":"12oz $3.85 / 16oz $4.45","category":"other_beverage","menuImg":"","explanation1":"Add Choco Marshmallow Stick Plus $2.00","explanation2":""},
 
-{"menuId":67,"menuName":"Royal Milk Tea Latte","price":"12oz $3.85 / 16oz $4.45","category":"other_beverage","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":67,"menuName":"Royal Milk Tea Latte","price":"12oz $3.85 / 16oz $4.45","category":"other_beverage","menuImg":"","explanation1":"Add Choco Marshmallow Stick Plus $2.00","explanation2":""},
 
-{"menuId":68,"menuName":"Jasmin Tea Latte","price":"12oz $3.85 / 16oz $4.45","category":"other_beverage","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":68,"menuName":"Jasmin Tea Latte","price":"12oz $3.85 / 16oz $4.45","category":"other_beverage","menuImg":"","explanation1":"Add Choco Marshmallow Stick Plus $2.00","explanation2":""},
 
-{"menuId":69,"menuName":"Hoji Cha Latte","price":"12oz $3.85 / 16oz $4.45","category":"other_beverage","menuImg":"","explanation1":"Choice of Sweet or Unsweet","explanation2":"","online":true},
+{"menuId":69,"menuName":"Hoji Cha Latte","price":"12oz $3.85 / 16oz $4.45","category":"other_beverage","menuImg":"","explanation1":"Choice of Sweet or Unsweet","explanation2":"Add Choco Marshmallow Stick Plus $2.00"},
 
-{"menuId":70,"menuName":"Lavender Tea Latte","price":"12oz $3.85 / 16oz $4.45","category":"other_beverage","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":70,"menuName":"Lavender Tea Latte","price":"12oz $3.85 / 16oz $4.45","category":"other_beverage","menuImg":"","explanation1":"Add Choco Marshmallow Stick Plus $2.00","explanation2":""},
 
-{"menuId":71,"menuName":"Lavender London Fog Tea Latte","price":"12oz $4.75 / 16oz $5.45","category":"other_beverage","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":71,"menuName":"Lavender London Fog Tea Latte","price":"12oz $4.75 / 16oz $5.45","category":"other_beverage","menuImg":"","explanation1":"Add Choco Marshmallow Stick Plus $2.00","explanation2":""},
 
-{"menuId":72,"menuName":"Matcha Latte (Unsweet)","price":"12oz $3.99 / 16oz $4.65","category":"other_beverage","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":72,"menuName":"Matcha Latte (Unsweet)","price":"12oz $3.99 / 16oz $4.65","category":"other_beverage","menuImg":"","explanation1":"Add Choco Marshmallow Stick Plus $2.00","explanation2":""},
 
-{"menuId":73,"menuName":"Matcha Vanilla Latte","price":"12oz $3.99 / 16oz $4.65","category":"other_beverage","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":73,"menuName":"Matcha Vanilla Latte","price":"12oz $3.99 / 16oz $4.65","category":"other_beverage","menuImg":"","explanation1":"Add Choco Marshmallow Stick Plus $2.00","explanation2":""},
 
-{"menuId":74,"menuName":"Mhite Choco Match Latte","price":"12oz $4.99 / 16oz $5.75","category":"other_beverage","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":74,"menuName":"Mhite Choco Match Latte","price":"12oz $4.99 / 16oz $5.75","category":"other_beverage","menuImg":"","explanation1":"Add Choco Marshmallow Stick Plus $2.00","explanation2":""},
 
-{"menuId":75,"menuName":"Belgian Hot Chocolate","price":"12oz $3.55 / 16oz $4.05","category":"other_beverage","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":75,"menuName":"Belgian Hot Chocolate","price":"12oz $3.55 / 16oz $4.05","category":"other_beverage","menuImg":"","explanation1":"Add Choco Marshmallow Stick Plus $2.00","explanation2":""},
 
-{"menuId":76,"menuName":"Belgian Hot White Chocolate","price":"12oz $3.55 / 16oz $4.05","category":"other_beverage","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":76,"menuName":"Belgian Hot White Chocolate","price":"12oz $3.55 / 16oz $4.05","category":"other_beverage","menuImg":"","explanation1":"Add Choco Marshmallow Stick Plus $2.00","explanation2":""},
 
-{"menuId":77,"menuName":"Sweet Rosie Milk","price":"12oz $2.95 / 16oz $3.50","category":"other_beverage","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":77,"menuName":"Sweet Rosie Milk","price":"12oz $2.95 / 16oz $3.50","category":"other_beverage","menuImg":"","explanation1":"Add Choco Marshmallow Stick Plus $2.00","explanation2":""},
 
-{"menuId":78,"menuName":"Add Choco Marshmallow Stick","price":"$2.00","category":"other_beverage","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":82,"menuName":"Sparkling Yuzunade","price":"$4.99","category":"other_beverage","menuImg":"","explanation1":"","explanation2":"","explanation3":""},
 
-{"menuId":79,"menuName":"Strawberry Smoothies(16oz only)","price":"16oz $7.99","category":"other_beverage","menuImg":"","explanation1":"Choice of Homo Milk, Skim Milk","explanation2":"Soy Milk, Almond Milk, Plain Yogurt, Vanilla Yogurt  Plus $1.00","explanation3":"Apple Jice, or Orange Juice  Plus $1.75","online":true},
+{"menuId":83,"menuName":"Bottled Juice (Orange)","price":"$2.00","category":"other_beverage","menuImg":"","explanation1":"","explanation2":"","explanation3":""},
 
-{"menuId":80,"menuName":"Strawberry Banana Smoothies(16oz only)","price":"16oz $7.99","category":"other_beverage","menuImg":"","explanation1":"Choice of Homo Milk, Skim Milk","explanation2":"Soy Milk, Almond Milk, Plain Yogurt, Vanilla Yogurt  Plus $1.00","explanation3":"Apple Jice, or Orange Juice  Plus $1.75","online":true},
+{"menuId":84,"menuName":"Bottled Water","price":"$1.75","category":"other_beverage","menuImg":"","explanation1":"","explanation2":"","explanation3":""},
 
-{"menuId":81,"menuName":"Strawberry Mango Smoothies(16oz only)","price":"16oz $7.99","category":"other_beverage","menuImg":"","explanation1":"Choice of Homo Milk, Skim Milk","explanation2":"Soy Milk, Almond Milk, Plain Yogurt, Vanilla Yogurt  Plus $1.00","explanation3":"Apple Jice, or Orange Juice  Plus $1.75","online":true},
+{"menuId":85,"menuName":"Club Soda","price":"$2.00","category":"other_beverage","menuImg":"","explanation1":"","explanation2":"","explanation3":""},
 
-{"menuId":82,"menuName":"Sparkling Yuzunade","price":"$4.99","category":"other_beverage","menuImg":"","explanation1":"","explanation2":"","explanation3":"","online":true},
 
-{"menuId":83,"menuName":"Bottled Juice (Apple or Orange)","price":"$2.00","category":"other_beverage","menuImg":"","explanation1":"","explanation2":"","explanation3":"","online":true},
 
-{"menuId":84,"menuName":"Bottled Water","price":"$1.75","category":"other_beverage","menuImg":"","explanation1":"","explanation2":"","explanation3":"","online":true},
 
-{"menuId":85,"menuName":"Club Soda","price":"$2.00","category":"other_beverage","menuImg":"","explanation1":"","explanation2":"","explanation3":"","online":true},
 
 
 
+{"menuId":86,"menuName":"Sapporo Beer(341ml Bottled)","price":"$6.60 w/Tax","category":"alcoholic","menuImg":"","explanation1":"Please provide 2 Photo IDs","explanation2":"","explanation3":""},
 
+{"menuId":89,"menuName":"Rose Lemonade Soda","price":"$7.95 w/Tax","category":"alcoholic","menuImg":"","explanation1":"Please provide 2 Photo IDs","explanation2":"Smirnoff Vodka 1.50oz","explanation3":""},
 
+{"menuId":90,"menuName":"Sparkling Yuzunade Soda","price":"$7.95 w/Tax","category":"alcoholic","menuImg":"","explanation1":"Please provide 2 Photo IDs","explanation2":"Smirnoff Vodka 1.50oz","explanation3":""},
 
-
-{"menuId":86,"menuName":"Sapporo Beer(341ml Bottled)","price":"$6.60 w/Tax","category":"alcoholic","menuImg":"","explanation1":"Please provide 2 Photo IDs","explanation2":"","explanation3":"","online":true},
-
-{"menuId":87,"menuName":"Boozy Latte (Ichigo Milk)","price":"$6.95 w/Tax","category":"alcoholic","menuImg":"","explanation1":"Please provide 2 Photo IDs","explanation2":"Choice of Hot or Iced / Espresso or No Espresso","explanation3":"2oz Baja Rosa","online":true},
-
-{"menuId":88,"menuName":"Boozy Latte (Kahlua Milk)","price":"$6.95 w/Tax","category":"alcoholic","menuImg":"","explanation1":"Please provide 2 Photo IDs","explanation2":"Choice of Hot or Iced / Espresso or No Espresso","explanation3":"1.50oz Kahlua","online":true},
-
-{"menuId":89,"menuName":"Rose Lemonade Soda","price":"$7.95 w/Tax","category":"alcoholic","menuImg":"","explanation1":"Please provide 2 Photo IDs","explanation2":"Smirnoff Vodka 1.50oz","explanation3":"","online":true},
-
-{"menuId":90,"menuName":"Sparkling Yuzunade Soda","price":"$7.95 w/Tax","category":"alcoholic","menuImg":"","explanation1":"Please provide 2 Photo IDs","explanation2":"Smirnoff Vodka 1.50oz","explanation3":"","online":true},
-
-{"menuId":91,"menuName":"Extra Shot Smirnoff","price":"$2.00 w/Tax","category":"alcoholic","menuImg":"","explanation1":"Please provide 2 Photo IDs","explanation2":"1oz shot","explanation3":"","online":true}
-
+{"menuId":91,"menuName":"Extra Shot Smirnoff","price":"$2.00 w/Tax","category":"alcoholic","menuImg":"","explanation1":"Please provide 2 Photo IDs","explanation2":"1oz shot","explanation3":""}
 
 ]

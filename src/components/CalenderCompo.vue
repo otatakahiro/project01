@@ -21,9 +21,9 @@ export default {
             const date = new Date();
             
             const year = date.getFullYear();
-            const month = date.getMonth();
+            const month = date.getMonth() + 1;
             const month_for_date = date.getMonth() + 1;
-            const month_english = month_english_list[month];
+            const month_english = month_english_list[month - 1];
             console.log(month_english)
             const startDate = new Date(year, month_for_date - 1, 1); // 月の最初の日を取得
             const endDate = new Date(year, month,  0); // 月の最後の日を取得
@@ -58,12 +58,6 @@ export default {
                     } else {
                         calendarHtml += '<td id="day-td">' + dayCount + '</td>';
                         dayCount++;
-
-                        // if(date.getMonth() == 12 && date.getDate == 25){
-                        //     calendarHtml += '<td id="day-td" class="today">' + dayCount + '</td>';
-                        // }else if(date.getMonth() == 1 && date.getDate == 1){
-                        //     calendarHtml += '<td id="today-td">' + dayCount + '</td>';
-                        // }
                     }
 
                 }

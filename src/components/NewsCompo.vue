@@ -12,9 +12,12 @@
                     <h5 class="closes"></h5>
                     <p>:close</p>
                 </div>
+                <div>
+                    <h5>※We close every Tuesday, X'MAS and New Year Day</h5>
+                </div>
             </article>
             <article class="another">
-                <img src="/img/jpbreakfastAll.jpg" alt="">
+                <img src="/img/marulilu02.jpg" alt="marulilu_tapestory">
             </article>
         </div>
         <div id="access"></div>
@@ -42,6 +45,11 @@ export default {
         font-weight: 400;
         color: rgba(142, 94, 69, 1);
     }
+
+    h5 {
+        font-size: 15px;
+    }
+
     h6 {
         width: 60%;
         border-bottom: 3px solid rgba(142, 94, 69, 1);

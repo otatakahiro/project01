@@ -17,10 +17,6 @@
             </article>
         </div>
 
-
-
-
-
         <button class="accordion" @change="accordion()">Sweets & Desserts</button>
         <div class="displaymenu">      
             <article>
@@ -58,11 +54,8 @@
                 </div>
                 <modal-window v-show='showContent' @from-child='closeModal' :sweet='sweetDetail'></modal-window>
             </article>
-
-
-
-
         </div>
+        
     </article>
 </template>
 <script>

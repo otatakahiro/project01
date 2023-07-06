@@ -7,8 +7,8 @@
         </article> -->
 
         <article class="introduction">
-            <img :src="require('/public/img/sign.jpg')" alt='malu' />
-            <p>Marulilu cafe is a Japanese style cafe at West Broadway, Vancouver. We provid coffee, tea and Japanese meals popular in Japan like Omu-Rice and Curry-Rice. You will defenetly have great time at Marulilu cafe. We are looking forward to see you !! Enjoy !!</p>
+            <img :src="require('/public/img/marulilu01.jpg')" alt='malu' />
+            <p>Marulilu cafe is a Japanese style cafe at West Broadway, Vancouver. We provid coffee, tea and Japanese meals popular in Japan like Omu-Rice and Curry-Rice. You would have great time at Marulilu cafe. We are looking forward to see you !! See you soon ! <font-awesome-icon icon="far fa-face-smile-wink" /></p>
         </article>
         <div id="menu"></div>
     </section>

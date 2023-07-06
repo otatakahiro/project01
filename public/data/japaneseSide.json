@@ -1,49 +1,48 @@
 [
-{"menuId":0,"menuName":"","price":0,"category":"","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":0,"menuName":"","price":0,"category":"","menuImg":"","explanation1":"","explanation2":""},
 
-{"menuId":1,"menuName":"Tonkatsu","price":6.99,"category":"jpnside","menuImg":"","explanation1":"Breaded Deep-fried Pork Cutlet comes with Tonkatsu Sauce","explanation2":"Add Side Tartar plas $1.25","online":true},
+{"menuId":1,"menuName":"Tonkatsu","price":6.99,"category":"jpnside","menuImg":"","explanation1":"Breaded Deep-fried Pork Cutlet comes with Tonkatsu Sauce","explanation2":"Add Side Tartar plas $1.25"},
 
-{"menuId":2,"menuName":"Mini Aji Fry","price":2.75,"category":"jpnside","menuImg":"","explanation1":"Breaded Deep-fried Mackerel comes with Tonkatsu Sauce","explanation2":"Add Side Tartar plas $1.25","online":true},
+{"menuId":2,"menuName":"Mini Aji Fry","price":2.75,"category":"jpnside","menuImg":"./img/ajifry.jpg","explanation1":"Breaded Deep-fried Mackerel comes with Tonkatsu Sauce","explanation2":"Add Side Tartar plas $1.25"},
 
-{"menuId":3,"menuName":"Karaage","price":7.50,"category":"jpnside","menuImg":"","explanation1":"Floured Deepfried Chicken Thigh","explanation2":"","online":true},
+{"menuId":3,"menuName":"Karaage","price":7.50,"category":"jpnside","menuImg":"./img/karaage.jpg","explanation1":"Floured Deepfried Chicken Thigh","explanation2":""},
 
-{"menuId":4,"menuName":"Takoyaki","price":7.50,"category":"jpnside","menuImg":"","explanation1":"Octopus ball, topped with Takoyaki Sauce, Mayo, Ao-Nori, Red Ginger, and shaved Bonito","explanation2":"","online":true},
+{"menuId":4,"menuName":"Takoyaki","price":7.50,"category":"jpnside","menuImg":"","explanation1":"Octopus ball, topped with Takoyaki Sauce, Mayo, Ao-Nori, Red Ginger, and shaved Bonito","explanation2":""},
 
-{"menuId":5,"menuName":"Hamburger Stake w/Tomato Sauce","price":5.99,"category":"jpnside","menuImg":"","explanation1":"1 Hamburger Stake served with Tomato Bisque Sauce","explanation2":"","online":true},
+{"menuId":5,"menuName":"Hamburger Stake w/Tomato Sauce","price":5.99,"category":"jpnside","menuImg":"","explanation1":"1 Hamburger Stake served with Tomato Bisque Sauce","explanation2":""},
 
-{"menuId":6,"menuName":"Hamburger Stake w/Cheese Sauce","price":7.99,"category":"jpnsidebun","menuImg":"","explanation1":"1 Hamburger Stake served with Cheese Jalapeno Sauce","explanation2":"","online":true},
-
-{"menuId":7,"menuName":"Daikon no Nikomi","price":5.75,"category":"jpnside","menuImg":"","explanation1":"","explanation2":"","online":true},
-
-{"menuId":8,"menuName":"Miso Soup","price":1.50,"category":"jpnside","menuImg":"","explanation1":"","explanation2":"","online":true},
-
-{"menuId":9,"menuName":"Rice","price":1.50,"category":"jpnside","menuImg":"","explanation1":"","explanation2":"","online":true},
-
-{"menuId":10,"menuName":"Hiya Yakko (To-fu)","price":2.00,"category":"jpnside","menuImg":"","explanation1":"","explanation2":"","online":true},
-
-{"menuId":11,"menuName":"Oshinko","price":1.75,"category":"jpnside","menuImg":"","explanation1":"","explanation2":"","online":true},
-
-{"menuId":12,"menuName":"Nori (2packs)","price":1.00,"category":"jpnside","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":6,"menuName":"Hamburger Stake w/Cheese Sauce","price":7.99,"category":"jpnsidebun","menuImg":"","explanation1":"1 Hamburger Stake served with Cheese Jalapeno Sauce","explanation2":""},
 
 
+{"menuId":8,"menuName":"Miso Soup","price":1.50,"category":"jpnside","menuImg":"./img/misosoup.jpg","explanation1":"","explanation2":""},
 
-{"menuId":13,"menuName":"Daily Meat Soup or Veggie Soup w/Toast","price":5.00,"category":"dailyside","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":9,"menuName":"Rice","price":1.50,"category":"jpnside","menuImg":"./img/rice.jpg","explanation1":"","explanation2":""},
 
-{"menuId":15,"menuName":"House Salad","price":4.75,"category":"dailyside","menuImg":"","explanation1":"Our Dressing Selection \n Italian, Toasted Sesame, Raspberry Vinaigrette, Extra Virgin Olive Oil, Vinegar","explanation2":"","online":true},
+{"menuId":10,"menuName":"Hiya Yakko (To-fu)","price":2.00,"category":"jpnside","menuImg":"./img/tofu.jpg","explanation1":"","explanation2":""},
 
-{"menuId":16,"menuName":"Soup & Salad Set","price":9.25,"category":"dailyside","menuImg":"","explanation1":"Comes with Toast","explanation2":"Our Dressing Selection \n Italian, Toasted Sesame, Raspberry Vinaigrette, Extra Virgin Olive Oil, Vinegar","online":true},
+{"menuId":11,"menuName":"Oshinko","price":1.75,"category":"jpnside","menuImg":"./img/oshinko.jpg","explanation1":"","explanation2":""},
 
-{"menuId":17,"menuName":"Grilled Salmon Salad","price":10.99,"category":"dailyside","menuImg":"","explanation1":"Served with Raspberry Vinaigrette","explanation2":"","online":true},
+{"menuId":12,"menuName":"Nori (2packs)","price":1.00,"category":"jpnside","menuImg":"./img/nori.jpg","explanation1":"","explanation2":""},
 
+
+
+{"menuId":13,"menuName":"Daily Meat Soup or Veggie Soup w/Toast","price":5.00,"category":"dailyside","menuImg":"","explanation1":"","explanation2":""},
+
+{"menuId":15,"menuName":"House Salad","price":4.75,"category":"dailyside","menuImg":"./img/housesalad.jpg","explanation1":"Our Dressing Selection \n Italian, Toasted Sesame, Raspberry Vinaigrette, Extra Virgin Olive Oil, Vinegar","explanation2":""},
+
+{"menuId":16,"menuName":"Soup & Salad Set","price":9.25,"category":"dailyside","menuImg":"","explanation1":"Comes with Toast","explanation2":"Our Dressing Selection \n Italian, Toasted Sesame, Raspberry Vinaigrette, Extra Virgin Olive Oil, Vinegar"},
+
+{"menuId":17,"menuName":"Grilled Salmon Salad","price":10.99,"category":"dailyside","menuImg":"","explanation1":"Served with Raspberry Vinaigrette","explanation2":""},
 
 
 
 
-{"menuId":18,"menuName":"Hashbrown / 1pec","price":1.25,"category":"otherside","menuImg":"","explanation1":"","explanation2":"","online":true},
 
-{"menuId":19,"menuName":"Bacon / 1strip","price":1.25,"category":"otherside","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":18,"menuName":"Hashbrown / 1pec","price":1.25,"category":"otherside","menuImg":"","explanation1":"","explanation2":""},
 
-{"menuId":20,"menuName":"Sausage / 1pec","price":1.25,"category":"otherside","menuImg":"","explanation1":"","explanation2":"","online":true},
+{"menuId":19,"menuName":"Bacon / 1strip","price":1.25,"category":"otherside","menuImg":"","explanation1":"","explanation2":""},
 
-{"menuId":21,"menuName":"Half Waffle","price":5.75,"category":"otherside","menuImg":"","explanation1":"Comes with Whipping Cream & Syrup","explanation2":"","online":true}
+{"menuId":20,"menuName":"Sausage / 1pec","price":1.25,"category":"otherside","menuImg":"","explanation1":"","explanation2":""},
+
+{"menuId":21,"menuName":"Half Waffle","price":5.75,"category":"otherside","menuImg":"","explanation1":"Comes with Whipping Cream & Syrup","explanation2":""}
 ]

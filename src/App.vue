@@ -1,6 +1,8 @@
 <template>
-<link href="https://fonts.googleapis.com/css?family=Rye&family=Chilanka" rel="stylesheet">
-  <main-menu></main-menu>
+<div>
+  <link href="https://fonts.googleapis.com/css?family=Rye&family=Chilanka" rel="stylesheet">
+  <MainMenu></MainMenu>
+</div>
 </template>
 
 <script>

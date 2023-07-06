@@ -1,8 +1,11 @@
 <template>
     <div id='overlay' v-on:click='clickEvent'>
         <div id="content" v-on:click='stopEvent' v-if='breakfast'>
-            <img v-if='breakfast.menuImg' :src="breakfast.menuImg" :alt="breakfast.menuName">
-            <img v-else v-bind:src="noneImage(breakfast)" id="noImage">
+            <div id="imagearea">
+                <img v-if='breakfast.menuImg' :src="breakfast.menuImg" :alt="breakfast.menuName">
+                <img v-if="breakfast.menuImg2" :src="breakfast.menuImg2" :alt="breakfast.menuName">
+                <img v-else v-bind:src="noneImage(breakfast)" id="noImage">
+            </div>
             <div>
                 <h3>{{breakfast.menuName}}</h3>
                 <p>${{breakfast.price}}</p>
@@ -86,7 +89,7 @@ export default {
         return {
             noneImageList: ["img/noimage/noimage1.jpg","img/noimage/noimage2.jpg","img/noimage/noimage3.jpg","img/noimage/noimage4.jpg"],
             src: null,
-            flag: false,
+            flag: false
         }
     },
     props:{
@@ -108,11 +111,9 @@ export default {
             if(!menuCategory.menuImg){
                 this.flag = true;
                 const select = Math.floor(Math.random() * this.noneImageList.length);
-                console.log(this.noneImageList[select])
                 return this.noneImageList[select]
             }
         }
-        
     }
 }
 
@@ -123,8 +124,9 @@ export default {
 @media (min-width:300px){
 
     img {
-        width: 90%;
+        width: 100%;
         border-radius: 5px;
+        border: 1px solid black;
     }
 
     h3 {
@@ -149,6 +151,7 @@ export default {
     }
 
     #content {
+        border: 2px solid black;
         border-radius: 15px;
         z-index: 1;
         overflow-y: scroll;
@@ -174,6 +177,10 @@ export default {
 
     #content::-webkit-scrollbar{    
         display: none;
+    }
+
+    #imagearea {
+        width: 90%;
     }
 
 
@@ -221,13 +228,15 @@ export default {
 }
 
 @media (min-width:1200px){
+    
+
     img {
-        width: 50%;
+        width: 100%;
     }
 
     #content {
         flex-direction: row;
-        column-gap: 5%;
+        column-gap: 10%;
         align-items: center;
         height: 80vh;
         overflow-y: scroll;
@@ -235,11 +244,11 @@ export default {
 
     #content > div {
         margin: auto;
-        width: 50%;
+        width: 100%;
     }
 
     #noImage {
-        width: 40%;
+        width: 90%;
     }
 
     .details {

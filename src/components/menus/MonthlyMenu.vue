@@ -1,12 +1,14 @@
 <template>
-<article id="monthly">
-    <h2>MONTHLY</h2>
-</article>
-<article class="special-menu">
-    <img src="/img/special/Monthly_SP_May_2023.jpg" alt="">
-    <img src="/img/special/Morning_Happy_Hour_May_2023.jpg">
-    <!--このページでpdfをjpgにしてくださいhttps://pdftoimage.com/pdf-to-jpg -->
-</article>
+<div>
+    <article id="monthly">
+        <h2>MONTHLY</h2>
+    </article>
+    <article class="special-menu">
+        <img src="/img/special/Monthly_SP_June_2023.jpg">
+        <img src="/img/special/Morning_Happy_Hour_May_2023.jpg">
+        <!-- このページでpdfをjpgにしてくださいhttps://pdftoimage.com/pdf-to-jpg -->
+    </article>
+</div>
 </template>
 <script>
 export default {
@@ -17,6 +19,11 @@ export default {
 <style scoped>
 
 @media (min-width:300px){
+    div {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
 
     h2 {
         background-color: #97B8C2;
@@ -55,6 +62,14 @@ export default {
 
     .special-menu > img {
         width: 45%;
+    }
+}
+
+@media (min-width:1200px) {
+    div {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
     }
 }
 

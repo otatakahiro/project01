@@ -5,7 +5,7 @@
             <li v-for='(nav, index) in navs' :key='index'><a :href="nav.href">{{nav.text}}</a></li>
         </ul>
         <details>
-            <summary ><font-awesome-icon icon="fa-solid fa-bars" /></summary>
+            <summary><font-awesome-icon icon="fas fa-bars" /></summary>
             <ul>
                 <li v-for='(nav, index) in navs' :key='index'><a :href="nav.href">{{nav.text}}</a></li>
             </ul>

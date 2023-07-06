@@ -243,10 +243,10 @@ export default {
         font-size: 20px;
         text-align: center;
         width: 70%;
-        color: black;
         font-family: 'Rye', cursive;
         color: #97B8C2;
         border-bottom: 5px double black;
+        font-weight: 400;
     }
 
     .inmenu {

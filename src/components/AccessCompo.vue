@@ -29,7 +29,7 @@
                                     <td class="td2">Mon, Wed - Fri 8:00 AM - 6:00 PM</td>
                                 </tr>
                                 <tr>
-                                    <td class="td2">Sat - Sun 8:30 AM - 6:00 PM</td>
+                                    <td class="td2">Sat, Sun 8:30 AM - 6:00 PM</td>
                                 </tr>
                                 <tr>
                                     <td class="td2">Holiday 9:00 AM - 6:00 PM</td>

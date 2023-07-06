@@ -281,12 +281,13 @@ export default {
         padding: 10px;
     }
     .rice > p {
+        font-size: 20px;
         text-align: center;
-        width: 50%;
-        color: black;
+        width: 70%;
+        color: #97B8C2;
         font-family: 'Rye',cursive;
         font-weight: 400;
-        border-bottom: 2px solid black;
+        border-bottom: 5px double black;
     }
 
     .inmenu {
