@@ -1,24 +1,24 @@
 [
 {"menuId":0,"menuName":"","price":0,"category":"","menuImg":"","explanation1":"","explanation2":""},
 
-{"menuId":1,"menuName":"2 Dolce Set A","price":6.99,"category":"set","menuImg":"","explanation1":"Please Choose 2 Dolces from Mini Dolce List below","explanation2":"Japanese Style Coffee Jelly\nJp Style Baked Cheese Cake\nChoice of Matcha Cheese Cake\nYuzu Cheese Cake\nRed Velvet\nSacher Torte\nTiramisu\nOld-Fashioned Lemon SQ\nPecan SQ, Butter Tart\nVery Berries Crumbles\nApple Crumbles"},
+{"menuId":1,"menuName":"2 Dolce Set A","price":6.99,"category":"set","menuImg":"","explanation1":"Please Choose 2 Dolces from Mini Dolce List below","explanation2":"Japanese Style Coffee Jelly\nRed Velvet\nSacher Torte\nTiramisu\nOld-Fashioned Lemon SQ\nButter Tart\nVery Berries Crumbles\nApple Crumbles"},
 
-{"menuId":2,"menuName":"2 Dolce Set B","price":7.99,"category":"set","menuImg":"","explanation1":"Please Choose 1 Mini Dolce from the below, and 1 Dolce from the second below.","explanation2":"Japanese Style Coffee Jelly\nJp Style Baked Cheese Cake\nChoice of Matcha Cheese Cake\nYuzu Cheese Cake\nRed Velvet\nSacher Torte\nTiramisu\nOld-Fashioned Lemon SQ\nPecan SQ, Butter Tart\nVery Berries Crumbles\nApple Crumbles","explanation3":"Annin Tofu\nIchigo Pudding\nMango Pudding\nSeasonal Pudding\nRaspberry\nMatcha\nBelgium Chocolate\nApple Crumble w/Vanilla Ice Cream\nVery Berries Crumble w/Vanilla Ice Cream\nBelgium Chocolate Mousse Cake\nEspresso Affogato(Single)\nTeapresso Affogato(Single)"},
+{"menuId":2,"menuName":"2 Dolce Set B","price":7.99,"category":"set","menuImg":"","explanation1":"Please Choose 1 Mini Dolce from the below, and 1 Dolce from the second below.","explanation2":"Japanese Style Coffee Jelly\nRed Velvet\nSacher Torte\nTiramisu\nOld-Fashioned Lemon SQ\nButter Tart\nVery Berries Crumbles\nApple Crumbles","explanation3":"Annin Tofu\nIchigo Pudding\nMango Pudding\nSeasonal Pudding\nStrawberry Mousse\nMatcha Mousse\nBelgium Chocolate Mousse\nApple Crumble w/Vanilla Ice Cream\nVery Berries Crumble w/Vanilla Ice Cream\nBelgium Chocolate Mousse Cake\nEspresso Affogato(Single)\nTeapresso Affogato(Single)"},
 
-{"menuId":3,"menuName":"2 Dolce Set C","price":8.99,"category":"set","menuImg":"","explanation1":"Please Choose 2 Dolces from Tart or Cake below","explanation2":"Annin Tofu\nIchigo Pudding\nMango Pudding\nSeasonal Pudding\nRaspberry\nMatcha\nBelgium Chocolate\nApple Crumble w/Vanilla Ice Cream\nVery Berries Crumble w/Vanilla Ice Cream\nBelgium Chocolate Mousse Cake\nEspresso Affogato(Single)\nTeapresso Affogato(Single)"},
+{"menuId":3,"menuName":"2 Dolce Set C","price":8.99,"category":"set","menuImg":"","explanation1":"Please Choose 2 Dolces from Tart or Cake below","explanation2":"Annin Tofu\nIchigo Pudding\nMango Pudding\nSeasonal Pudding\nStrawberry Mousse\nMatcha Mousse\nBelgium Chocolate Mousse\nApple Crumble w/Vanilla Ice Cream\nVery Berries Crumble w/Vanilla Ice Cream\nBelgium Chocolate Mousse Cake\nEspresso Affogato(Single)\nTeapresso Affogato(Single)"},
 
 
 
 
 {"menuId":4,"menuName":"Japanese Style Coffee Jelly","price":3.99,"category":"s_3doller","menuImg":"","explanation1":"Unsweetened","explanation2":"Choice of Whipping Cream on Top, or Comes with Coffee Cream & Sugar Syrup"},
 
-{"menuId":5,"menuName":"Mini Cake","price":3.99,"category":"s_3doller","menuImg":"","explanation1":"Red Velvet\nSacher Torte\nTiramisu\nOld-Fashioned Lemon SQ\nPecan SQ\nButter Tart\nVery Berries Crumbles\nApple Crumbles","explanation2":""},
+{"menuId":5,"menuName":"Mini Cake","price":3.99,"category":"s_3doller","menuImg":"","explanation1":"Red Velvet\nSacher Torte\nTiramisu\nOld-Fashioned Lemon SQ\nButter Tart\nVery Berries Crumbles\nApple Crumbles","explanation2":""},
 
 {"menuId":6,"menuName":"Original Milk Pudding","price":4.99,"category":"s_4doller","menuImg":"","explanation1":"Annin Tofu, Ichigo Pudding, Mango Pudding","explanation2":"Seasonal Pudding"},
 
 {"menuId":7,"menuName":"Original Mousse","price":4.99,"category":"s_4doller","menuImg":"","explanation1":"Strawberry, Matcha, Belgium Chocolate","explanation2":""},
 
-{"menuId":7,"menuName":"Apple Crumble w/Vanilla Ice Cream","price":4.99,"category":"s_4doller","menuImg":"./img/apple_crumbul.jpg","explanation1":"","explanation2":""},
+{"menuId":7,"menuName":"Apple Crumble w/Vanilla Ice Cream","price":4.99,"category":"s_4doller","menuImg":"","explanation1":"","explanation2":""},
 
 {"menuId":8,"menuName":"Very Berries Crumble w/Vanilla Ice Cream","price":4.99,"category":"s_4doller","menuImg":"","explanation1":"","explanation2":""},
 
@@ -29,5 +29,4 @@
 {"menuId":11,"menuName":"Espresso Affogato","price":"Single $4.99 / Double $6.99","category":"s_46doller","menuImg":"","explanation1":"Vanilla Ice Cream with Espresso","explanation2":""},
 
 {"menuId":12,"menuName":"Teapresso Affogato","price":"Single $4.99 / Double $6.99","category":"s_46doller","menuImg":"","explanation1":"Vanilla Ice Cream with Rose Tea","explanation2":""}
-
 ]

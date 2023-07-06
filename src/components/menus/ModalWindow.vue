@@ -96,7 +96,6 @@ export default {
             breakfast: Object,
             dish: Object,
             side: Object,
-            month: Object,
             sweet: Object,
             beverage: Object
     },

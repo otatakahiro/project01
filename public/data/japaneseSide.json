@@ -20,29 +20,29 @@
 
 {"menuId":10,"menuName":"Hiya Yakko (To-fu)","price":2.00,"category":"jpnside","menuImg":"./img/tofu.jpg","explanation1":"","explanation2":""},
 
-{"menuId":11,"menuName":"Oshinko","price":1.75,"category":"jpnside","menuImg":"./img/oshinko.jpg","explanation1":"","explanation2":""},
+{"menuId":11,"menuName":"Oshinko","price":1.75,"category":"jpnside","menuImg":"./img/oshinko.jpg","explanation1":"Oshinko is a japanese pickle.","explanation2":""},
 
-{"menuId":12,"menuName":"Nori (2packs)","price":1.00,"category":"jpnside","menuImg":"./img/nori.jpg","explanation1":"","explanation2":""},
-
-
-
-{"menuId":13,"menuName":"Daily Meat Soup or Veggie Soup w/Toast","price":5.00,"category":"dailyside","menuImg":"","explanation1":"","explanation2":""},
-
-{"menuId":15,"menuName":"House Salad","price":4.75,"category":"dailyside","menuImg":"./img/housesalad.jpg","explanation1":"Our Dressing Selection \n Italian, Toasted Sesame, Raspberry Vinaigrette, Extra Virgin Olive Oil, Vinegar","explanation2":""},
-
-{"menuId":16,"menuName":"Soup & Salad Set","price":9.25,"category":"dailyside","menuImg":"","explanation1":"Comes with Toast","explanation2":"Our Dressing Selection \n Italian, Toasted Sesame, Raspberry Vinaigrette, Extra Virgin Olive Oil, Vinegar"},
-
-{"menuId":17,"menuName":"Grilled Salmon Salad","price":10.99,"category":"dailyside","menuImg":"","explanation1":"Served with Raspberry Vinaigrette","explanation2":""},
+{"menuId":12,"menuName":"Nori (2packs)","price":1.00,"category":"jpnside","menuImg":"./img/nori.jpg","explanation1":"Nori is a Seaweed","explanation2":"People usually eat with rice."},
 
 
 
+{"menuId":13,"menuName":"Daily Meat Soup or Veggie Soup w/Toast","price":5.00,"category":"dailyside","menuImg":"","explanation1":"Please, ask to staff what today's soup is.","explanation2":""},
+
+{"menuId":14,"menuName":"House Salad","price":4.75,"category":"dailyside","menuImg":"./img/housesalad.jpg","explanation1":"Our Dressing Selection \n Italian, Toasted Sesame, Raspberry Vinaigrette, Extra Virgin Olive Oil, Vinegar","explanation2":""},
+
+{"menuId":15,"menuName":"Soup & Salad Set","price":9.25,"category":"dailyside","menuImg":"","explanation1":"Comes with Toast","explanation2":"Our Dressing Selection \n Italian, Toasted Sesame, Raspberry Vinaigrette, Extra Virgin Olive Oil, Vinegar"},
+
+{"menuId":16,"menuName":"Grilled Salmon Salad","price":10.99,"category":"dailyside","menuImg":"","explanation1":"Served with Raspberry Vinaigrette","explanation2":""},
 
 
-{"menuId":18,"menuName":"Hashbrown / 1pec","price":1.25,"category":"otherside","menuImg":"","explanation1":"","explanation2":""},
 
-{"menuId":19,"menuName":"Bacon / 1strip","price":1.25,"category":"otherside","menuImg":"","explanation1":"","explanation2":""},
 
-{"menuId":20,"menuName":"Sausage / 1pec","price":1.25,"category":"otherside","menuImg":"","explanation1":"","explanation2":""},
 
-{"menuId":21,"menuName":"Half Waffle","price":5.75,"category":"otherside","menuImg":"","explanation1":"Comes with Whipping Cream & Syrup","explanation2":""}
+{"menuId":17,"menuName":"Hashbrown / 1pc","price":1.25,"category":"otherside","menuImg":"","explanation1":"","explanation2":""},
+
+{"menuId":18,"menuName":"Bacon / 1strip","price":1.25,"category":"otherside","menuImg":"","explanation1":"","explanation2":""},
+
+{"menuId":19,"menuName":"Sausage / 1pc","price":1.25,"category":"otherside","menuImg":"","explanation1":"","explanation2":""},
+
+{"menuId":20,"menuName":"Half Waffle","price":5.75,"category":"otherside","menuImg":"","explanation1":"Comes with Whipping Cream & Syrup","explanation2":""}
 ]

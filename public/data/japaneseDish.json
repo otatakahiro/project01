@@ -94,7 +94,7 @@
 {"menuId":44,"menuName":"Omu-Rice w/Lobstar Sauce","price":17.99,"category":"ketchup_rice","menuImg":"./img/omu-lob.jpg","explanation1":"The Omu-Rice comes with Lobstar Sauce.","explanation2":""},
 
 
-{"menuId":45,"menuName":"Cheese in Omu-Rice","price":11.99,"category":"ketchup_rice","menuImg":"","explanation1":"There are Cheddar Cheese and Mozzallera Cheese in the Omu-Rice","explanation2":""},
+{"menuId":45,"menuName":"Cheese in Omu-Rice","price":11.99,"category":"ketchup_rice","menuImg":"","explanation1":"There are Cheddar Cheese and Mozzallera Cheese in the Omu-Rice.","explanation2":""},
 
 {"menuId":46,"menuName":"Cheese in Omu-Rice with Mushroom Tomato Sauce","price":19.99,"category":"ketchup_rice","menuImg":"","explanation1":"Cheese in Omu-Rice comes w/Cheesy Mushroom Tomato Sauce.","explanation2":""},
 

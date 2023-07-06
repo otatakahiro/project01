@@ -21,7 +21,9 @@
 
 {"menuId":10,"menuName":"Mocha","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"Made w/ Belgian Chocolate","explanation2":""},
 
-{"menuId":11,"menuName":"White Mocha","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"","explanation2":""},
+{"menuId":11,"menuName":"White Mocha","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"Made w/ White Chocolate","explanation2":""},
+
+{"menuId":11,"menuName":"Yin Yan Mocha","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"Made w/ Half Belgian Chocolate and Half White Chocolate","explanation2":""},
 
 {"menuId":12,"menuName":"Creamy Caramel Mocha","price":"12oz $2.30 / 16oz $2.95","category":"coffee","menuImg":"","explanation1":"","explanation2":""},
 
