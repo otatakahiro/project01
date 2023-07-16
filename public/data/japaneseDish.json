@@ -1,11 +1,11 @@
 [
 {"menuIj_dish":0,"menuName":"","price":0,"category":"","menuImg":"","explanation1":"","explanation2":""},
 
-{"menuId":1,"menuName":"Wild Smoked Salmon Avocado Salad Don","price":14.99,"category":"donburi","menuImg":"./img/salmonavo.jpg","explanation1":"Wild Smoked Salmon, Fresh Avocado, Spring Mix, and Nori(Seaweed) on top of Rice.","explanation2":"with Miso Soup Plus $1.50,\n with Oshinko Set (Oshinko, Miso Soup, and Salad) Plus $5.00"},
+{"menuId":1,"menuName":"Wild Smoked Salmon Avocado Salad Don","price":14.99,"category":"donburi","menuImg":"./img/avocadodon.jpg","explanation1":"Wild Smoked Salmon, Fresh Avocado, Spring Mix, and Nori(Seaweed) on top of Rice.","explanation2":"with Miso Soup Plus $1.50,\n with Oshinko Set (Oshinko, Miso Soup, and Salad) Plus $5.00"},
 
 {"menuId":2,"menuName":"Katsu-Don","price":12.99,"category":"donburi","menuImg":"./img/katsudon.jpg","explanation1":"Breaded Deep-fried Pork Cutlet is cooked w/Egg, Onion, and Sweet Soy-sauce on top of Rice","explanation2":"with Miso Soup Plus $1.50,\n with Oshinko Set (Oshinko, Miso Soup, and Salad) Plus $5.00"},
 
-{"menuId":3,"menuName":"Sauce Katsu-Don","price":12.99,"category":"donburi","menuImg":"","explanation1":"Breaded Deep-fried Pork Cutlet on top of Rice with Shredded Cabbage, Tonkatsu Sauce, and Mayo.","explanation2":"with Miso Soup Plus $1.50,\n with Oshinko Set (Oshinko, Miso Soup, and Salad) Plus $5.00"},
+{"menuId":3,"menuName":"Sauce Katsu-Don","price":12.99,"category":"donburi","menuImg":"./img/saucekatsudon.jpg","explanation1":"Breaded Deep-fried Pork Cutlet on top of Rice with Shredded Cabbage, Tonkatsu Sauce, and Mayo.","explanation2":"with Miso Soup Plus $1.50,\n with Oshinko Set (Oshinko, Miso Soup, and Salad) Plus $5.00"},
 
 {"menuId":4,"menuName":"Kinoko-Don(Mushrooms)","price":12.99,"category":"donburi","menuImg":"./img/kinokodon.jpg","explanation1":"Shimeji Mushrooms, Enoki Mushrooms, and Shitake Mushrooms are cooked w/Egg, Onion, and Sweet Soy-sauce on top of Rice","explanation2":"with Miso Soup Plus $1.50,\n with Oshinko Set(Oshinko, Miso Soup, and Salad) Plus $5.00"},
 
@@ -23,13 +23,13 @@
 
 {"menuId":11,"menuName":"Wild Salmon Miso Risotto with Aji Fry","price":15.99,"category":"yoshoku","menuImg":"./img/risotto.jpg","explanation1":"","explanation2":"Add Daily Soup & Salad Plus $8.00"},
 
-{"menuId":12,"menuName":"Hamburger Steak with Tomato Bisque Sauce","price":18.99,"category":"steak","menuImg":"","explanation1":"Tomato Bisque Sauce on 2 Hamburger Stakes Comes with White Rice, Tossed Salad with Sesame Dressing","explanation2":""},
+{"menuId":12,"menuName":"Hamburger Steak with Tomato Bisque Sauce","price":18.99,"category":"steak","menuImg":"./img/hambergtomato.jpg","explanation1":"Tomato Bisque Sauce on 2 Hamburger Stakes Comes with White Rice, Tossed Salad with Sesame Dressing","explanation2":""},
 
-{"menuId":13,"menuName":"Hamburger Steak with Tomato Bisque Sauce and Garlic Rice","price":19.99,"category":"steak","menuImg":"","explanation1":"Tomato Bisque Sauce on 2 Hamburger Stakes come with Garlic Rice, Tossed Salad with Sesame Dressing","explanation2":""},
+{"menuId":13,"menuName":"Hamburger Steak with Tomato Bisque Sauce and Garlic Rice","price":19.99,"category":"steak","menuImg":"./img/hambergtomato.jpg","explanation1":"Tomato Bisque Sauce on 2 Hamburger Stakes come with Garlic Rice, Tossed Salad with Sesame Dressing","explanation2":""},
 
-{"menuId":14,"menuName":"Hamburger Steak with Tomato Bisque Sauce Teishoku","price":26.99,"category":"steak","menuImg":"","explanation1":"Tomato Bisque Sauce on 2 Hamburger Stakes come with White Rice, Tossed Salad with Sesame Dressing","explanation2":"Teishoku is that comes with Daily Soup & Dessert"},
+{"menuId":14,"menuName":"Hamburger Steak with Tomato Bisque Sauce Teishoku","price":26.99,"category":"steak","menuImg":"./img/hambergtomatoteishoku.jpg","explanation1":"Tomato Bisque Sauce on 2 Hamburger Stakes come with White Rice, Tossed Salad with Sesame Dressing","explanation2":"Teishoku is that comes with Daily Soup & Dessert"},
 
-{"menuId":15,"menuName":"Hamburger Steak with Tomato Bisque Sauce Teishoku with Garlic Rice","price":27.99,"category":"steak","menuImg":"","explanation1":"Tomato Bisque Sauce on 2 Hamburger Stakes Comes with Garlic Rice, Tossed Salad with Sesame Dressing","explanation2":"Teishoku is that comes with Daily Soup & Dessert"},
+{"menuId":15,"menuName":"Hamburger Steak with Tomato Bisque Sauce Teishoku with Garlic Rice","price":27.99,"category":"steak","menuImg":"./img/hambergtomatoteishoku.jpg","explanation1":"Tomato Bisque Sauce on 2 Hamburger Stakes Comes with Garlic Rice, Tossed Salad with Sesame Dressing","explanation2":"Teishoku is that comes with Daily Soup & Dessert"},
 
 {"menuId":16,"menuName":"Hamburger Steak with Cheese Jalapeno Sauce","price":18.99,"category":"steakbun","menuImg":"","explanation1":"Cheddar Cheese w/Jalapeno Sauce on 2 Hamburger Steaks come with White Rice, Tossed Salad with Sesame Dressing","explanation2":""},
 
@@ -67,7 +67,7 @@
 
 {"menuId":31,"menuName":"Omu-Hayashi Rice with Nikomi Hamburger Patty","price":19.99,"category":"white_rice","menuImg":"","explanation1":"White Rice is coverd with Thin Omelet. Demi-glace Sauce w/Hashed Beef, Onion, and Mushroom","explanation2":""},
 
-{"menuId":32,"menuName":"Garlic Omurice w/Mushroom Tomato Sauce","price":13.99,"category":"garlic_rice","menuImg":"","explanation1":"Garlic Rice is covered with Thin Omelet and Cheesy Mushroom Tomato Sauce","explanation2":""},
+{"menuId":32,"menuName":"Garlic Omurice w/Mushroom Tomato Sauce","price":13.99,"category":"garlic_rice","menuImg":"./img/omu-mashroom.jpg","explanation1":"Garlic Rice is covered with Thin Omelet and Cheesy Mushroom Tomato Sauce","explanation2":""},
 
 {"menuId":33,"menuName":"Garlic Omurice w/Hayashi Sauce","price":14.99,"category":"garlic_rice","menuImg":"","explanation1":"Garlic Rice is coverd with Thin Omelet. Demi-glace Sauce w/Hashed Beef, Onion, and Mushroom","explanation2":""},
 
@@ -87,7 +87,7 @@
 
 {"menuId":41,"menuName":"Omu-Rice","price":9.99,"category":"ketchup_rice","menuImg":"","explanation1":"Ketchup Rice is cooked with Bacon, Onion, and Mixed Veggie. Thin Omelet Cover on the Rice.","explanation2":""},
 
-{"menuId":42,"menuName":"Omu-Rice w/Mushroom Tomato Sauce","price":17.99,"category":"ketchup_rice","menuImg":"","explanation1":"The Omurice comes with Cheesy Mushroom and Tomato Sauce.","explanation2":""},
+{"menuId":42,"menuName":"Omu-Rice w/Mushroom Tomato Sauce","price":17.99,"category":"ketchup_rice","menuImg":"./img/omu-mashroom.jpg","explanation1":"The Omurice comes with Cheesy Mushroom and Tomato Sauce.","explanation2":""},
 
 {"menuId":43,"menuName":"Omu-Rice w/Hayashi Sauce","price":17.99,"category":"ketchup_rice","menuImg":"","explanation1":"The Omu-Rice comes with Hayashi Sauce.","explanation2":""},
 
@@ -96,7 +96,7 @@
 
 {"menuId":45,"menuName":"Cheese in Omu-Rice","price":11.99,"category":"ketchup_rice","menuImg":"","explanation1":"There are Cheddar Cheese and Mozzallera Cheese in the Omu-Rice.","explanation2":""},
 
-{"menuId":46,"menuName":"Cheese in Omu-Rice with Mushroom Tomato Sauce","price":19.99,"category":"ketchup_rice","menuImg":"","explanation1":"Cheese in Omu-Rice comes w/Cheesy Mushroom Tomato Sauce.","explanation2":""},
+{"menuId":46,"menuName":"Cheese in Omu-Rice with Mushroom Tomato Sauce","price":19.99,"category":"ketchup_rice","menuImg":"./img/omu-mashroom.jpg","explanation1":"Cheese in Omu-Rice comes w/Cheesy Mushroom Tomato Sauce.","explanation2":""},
 
 {"menuId":47,"menuName":"Cheese in Omu-Rice w/Hayashi Sauce","price":19.99,"category":"ketchup_rice","menuImg":"","explanation1":"Cheese in Omu-Rice comes w/Hayashi Sauce.","explanation2":""},
 

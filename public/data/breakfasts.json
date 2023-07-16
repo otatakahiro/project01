@@ -9,13 +9,13 @@
 
 {"menuId":4,"menuName":"Breakfast Plate D with Waffles","price":18.50,"category":"breakfast_plate","menuImg":"", "menuImg2":"","explanation1":"2 Organic Eggs, 2 Gluten Free Hashbrowns. You can choice of Gluten Free Vanilla Yogurt, w/Granola or House Salad","explanation2":"How would you like your eggs? \n Scrumble (Add Chedder Or Mozzarella Plus $1.50),\n Sunny Side Up, Over Easy, Over Medium, Over Hard, Poached, Baste.","explanation3":"Our Dressing Selection \n Italian, Toasted Sesame, Raspberry Vinaigrette, Extra Virgin Olive Oil, Vinegar"},
 
-{"menuId":5,"menuName":"Mini Breakfast Plate A with Toast","price":5.50,"category":"breakfast_plate","menuImg":"","explanation1":"1 Organic Egg, 1 Gluten Free Hashbrowns. You can choice of Bacon, or Pork Sausage","explanation2":"How would you like your eggs? \n Scrumble (Add Chedder Or Mozzarella Plus $1.00),\n Sunny Side Up, Over Easy, Over Medium, Over Hard, Poached, Baste.","explanation3":""},
+{"menuId":5,"menuName":"Mini Breakfast Plate A with Toast","price":5.50,"category":"breakfast_plate","menuImg":"./img/miniplatea.jpg","explanation1":"1 Organic Egg, 1 Gluten Free Hashbrowns. You can choice of Bacon, or Pork Sausage","explanation2":"How would you like your eggs? \n Scrumble (Add Chedder Or Mozzarella Plus $1.00),\n Sunny Side Up, Over Easy, Over Medium, Over Hard, Poached, Baste.","explanation3":""},
 
 {"menuId":6,"menuName":"Mini Breakfast Plate B with Toast","price":6.50,"category":"breakfast_plate","menuImg":"./img/miniplateb.jpg","explanation1":"1 Organic Egg,  Gluten Free Hashbrowns. You can choice of Gluten Free Vanilla Yogurt, w/Granola or House Salad","explanation2":"How would you like your eggs? \n Scrumble (Add Chedder Or Mozzarella Plus $1.00),\n Sunny Side Up, Over Easy, Over Medium, Over Hard, Poached, Baste.","explanation3":"Our Dressing Selection \n Italian, Toasted Sesame, Raspberry Vinaigrette, Extra Virgin Olive Oil, Vinegar"},
     
 {"menuId":7,"menuName":"Mini Breakfast Plate C with Waffle","price":9.50,"category":"breakfast_plate","menuImg":"","explanation1":"1 Organic Egg, 1 Gluten Free Hashbrowns. You can choice of Bacon, or Pork Sausage","explanation2":"How would you like your eggs? \n Scrumble (Add Chedder Or Mozzarella Plus $1.00),\n Sunny Side Up, Over Easy, Over Medium, Over Hard, Poached, Baste.","explanation3":""},
 
-{"menuId":8,"menuName":"Mini Breakfast Plate D with Waffle","price":9.99,"category":"breakfast_plate","menuImg":"","explanation1":"1 Organic Egg,  Gluten Free Hashbrowns. You can choice of Gluten Free Vanilla Yogurt, w/Granola or House Salad","explanation2":"How would you like your eggs? \n Scrumble (Add Chedder Or Mozzarella Plus $1.00),\n Sunny Side Up, Over Easy, Over Medium, Over Hard, Poached, Baste.","explanation3":"Our Dressing Selection \n Italian, Toasted Sesame, Raspberry Vinaigrette, Extra Virgin Olive Oil, Vinegar"},
+{"menuId":8,"menuName":"Mini Breakfast Plate D with Waffle","price":9.99,"category":"breakfast_plate","menuImg":"./img/miniplated.jpg","explanation1":"1 Organic Egg,  Gluten Free Hashbrowns. You can choice of Gluten Free Vanilla Yogurt, w/Granola or House Salad","explanation2":"How would you like your eggs? \n Scrumble (Add Chedder Or Mozzarella Plus $1.00),\n Sunny Side Up, Over Easy, Over Medium, Over Hard, Poached, Baste.","explanation3":"Our Dressing Selection \n Italian, Toasted Sesame, Raspberry Vinaigrette, Extra Virgin Olive Oil, Vinegar"},
 
 {"menuId":9,"menuName":"Japanese Style Breakfast","price":10.99,"category":"japanese_breakfast","menuImg":"./img/jptofu.jpg","menuImg2":"./img/jpnatto.jpg","explanation1":"Grilled Wild Salmon, Japanese Plain Omelet, Rice, Miso Soup","explanation2":"Choice of Natto or Tofu","explanation3":"Add Nori(Seaweed) 2packs for $1.00,\nSample Natto(1 spoon) $1.00,\nOshinko $1.75"},
 
@@ -31,7 +31,7 @@
 
 {"menuId":15,"menuName":"Granola Vanilla Yogurt","price":5.50,"category":"waffle/yogurt","menuImg":"","explanation1":"Granola has Almond, no peanuts, gluten-free","explanation2":""},
 
-{"menuId":16,"menuName":"Katsu-Sandwich","price":11.99,"category":"sandwiche/wrap","menuImg":"","explanation1":"Breaded Deep-fried Pork Cutlet, Shredded Cabbage, Tomatoes, Tonkatsu Sauce, Tartar, and Garlic Butter","explanation2":"Add Daily Soup & Salad Combo Plus $8.00"},
+{"menuId":16,"menuName":"Katsu-Sandwich","price":11.99,"category":"sandwiche/wrap","menuImg":"./img/katsusand.jpg","explanation1":"Breaded Deep-fried Pork Cutlet, Shredded Cabbage, Tomatoes, Tonkatsu Sauce, Tartar, and Garlic Butter","explanation2":"Add Daily Soup & Salad Combo Plus $8.00"},
 
 {"menuId":17,"menuName":"Katsu Curry-Sandwich","price":12.99,"category":"sandwiche/wrap","menuImg":"./img/katsucurrysand.jpg","explanation1":"Breaded Deep-fried Pork Cutlet, Shredded Cabbage, Tomatoes, Tonkatsu Sauce, Tartar, Garlic Butter, and Marulilu Curry Sauce","explanation2":"Add Daily Soup & Salad Combo Plus $8.00"},
 
@@ -41,7 +41,7 @@
 
 {"menuId":20,"menuName":"Tuna Melt/Spicy Tuna Melt Sandwich or Wrap","price":7.99,"category":"sandwiche/wrapbun","menuImg":"","explanation1":"Tuna Mix(Tuna, Celery, Red Onion, Pepper, Mayo), Cheddar Cheese, Tomato, Lettuce and Garlic Butter","explanation2":"Add Daily Soup & Salad Combo Plus $8.00"},
 
-{"menuId":21,"menuName":"Cheesy Veggie Sandwich or Wrap","price":7.99,"category":"sandwiche/wrap","menuImg":"","explanation1":"Tomato, Cucumber, Paprika, Red Onion, Antipasto, Sundried Tomato Cream Cheese, Monterey Jack Cheese","explanation2":"Add Daily Soup & Salad Combo Plus $8.00"},
+{"menuId":21,"menuName":"Cheesy Veggie Sandwich or Wrap","price":7.99,"category":"sandwiche/wrap","menuImg":"./img/cheesyveggiesand.jpg","explanation1":"Tomato, Cucumber, Paprika, Red Onion, Antipasto, Sundried Tomato Cream Cheese, Monterey Jack Cheese","explanation2":"Add Daily Soup & Salad Combo Plus $8.00"},
 
 {"menuId":22,"menuName":"Daily Meat Soup or Veggie Soup w/Toast","price":5.50,"category":"daily_soup/salad","menuImg":"","explanation1":"","explanation2":""},
 
