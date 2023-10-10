@@ -16,6 +16,9 @@
                     <h5>※We close every Tuesday, X'MAS and New Year Day</h5>
                 </div>
             </article>
+            <article class="newses">
+                <img src="/img/special/Morning_Happy_Hour_May_2023.jpg" alt="happy_hour">
+            </article>
             <article class="another">
                 <img src="/img/marulilu02.jpg" alt="marulilu_tapestory">
             </article>
@@ -48,6 +51,7 @@ export default {
 
     h5 {
         font-size: 15px;
+        background-color: pink;
     }
 
     h6 {
@@ -75,6 +79,7 @@ export default {
         width: 80%;
         color: black;
         text-align: center;
+        margin: auto;
     }
 
     .title {
@@ -107,6 +112,16 @@ export default {
         height: 25px;
         background-color: #ED6D3D;
     } 
+
+    .newses {
+        width: 100%;
+    }
+
+    .newses > img {
+        width: 90%;
+        margin-left: auto;
+    }
+
     .another {
         display: none;
     }
@@ -146,6 +161,23 @@ export default {
         height: 26px;
         background-color: #ED6D3D;
     }
+
+    .newses {
+        width: 40%;
+        margin: auto 0;
+    }
+
+}
+
+@media (min-width:1200px) {
+    /* .calender {
+        padding-top: 40px;
+    } */
+
+    .news > div {
+        width: 90%;
+    }
+
     .another {
         width: 40%;
         display: flex;
@@ -155,12 +187,6 @@ export default {
     .another > img{
         width: 100%;
         border-radius: 30px;
-    }
-}
-
-@media (min-width:800px) {
-    .calender {
-        padding-top: 40px;
     }
 }
 

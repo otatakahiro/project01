@@ -9,13 +9,13 @@
 
 {"menuId":4,"menuName":"Kinoko-Don(Mushrooms)","price":12.99,"category":"donburi","menuImg":"./img/kinokodon.jpg","explanation1":"Shimeji Mushrooms, Enoki Mushrooms, and Shitake Mushrooms are cooked w/Egg, Onion, and Sweet Soy-sauce on top of Rice","explanation2":"with Miso Soup Plus $1.50,\n with Oshinko Set(Oshinko, Miso Soup, and Salad) Plus $5.00"},
 
-{"menuId":5,"menuName":"Oyako w/Kinoko-Don","price":13.99,"category":"donburi","menuImg":"./img/oyakodon.jpg","explanation1":"Chicken Breast, Enoki Mushroom, Shimeji Mushroom, and Shitake Mushrooms are cooked w/Egg, Onion, and Sweet Soy-sauce on top of Rice","explanation2":"with Miso Soup Plus $1.50,\n with Oshinko Set(Oshinko, Miso Soup, and Salad) Plus $5.00"},
+{"menuId":5,"menuName":"Oyako w/Kinoko-Don","price":13.99,"category":"donburi","menuImg":"./img/oyako-kinoko.jpg","explanation1":"Chicken Breast, Enoki Mushroom, Shimeji Mushroom, and Shitake Mushrooms are cooked w/Egg, Onion, and Sweet Soy-sauce on top of Rice","explanation2":"with Miso Soup Plus $1.50,\n with Oshinko Set(Oshinko, Miso Soup, and Salad) Plus $5.00"},
 
 {"menuId":6,"menuName":"Mabo Tofu-Don","price":13.99,"category":"donburi","menuImg":"","explanation1":"Tofu & Grind beef are cooked with SP spicy sauce on top of Rice","explanation2":"with Miso Soup Plus $1.50,\n with Oshinko Set(Oshinko, Miso Soup, and Salad) Plus $5.00"},
 
-{"menuId":7,"menuName":"Karaage-Don","price":14.5,"category":"donburi","menuImg":"","explanation1":"Karaage","explanation2":"with Miso Soup Plus $1.50,\n with Oshinko Set(Oshinko, Miso Soup, and Salad) Plus $5.00"},
+{"menuId":7,"menuName":"Karaage-Don","price":14.5,"category":"donburi","menuImg":"./img/karaagedon.jpg","explanation1":"Karaage","explanation2":"with Miso Soup Plus $1.50,\n with Oshinko Set(Oshinko, Miso Soup, and Salad) Plus $5.00"},
 
-{"menuId":8,"menuName":"Mentaiko Udon","price":12.99,"category":"yoshoku","menuImg":"./img/udon.jpg","explanation1":"Dress with Butter and Spicy Cod Roe and come w/Mini Salad(Dress w/Sesame Dressing)","explanation2":"Add Daily Soup & Salad Plus $8.00"},
+{"menuId":8,"menuName":"Mentaiko Udon","price":12.99,"category":"yoshoku","menuImg":"./img/udonmentai.jpg","explanation1":"Dress with Butter and Spicy Cod Roe and come w/Mini Salad(Dress w/Sesame Dressing)","explanation2":"Add Daily Soup & Salad Plus $8.00"},
 
 {"menuId":9,"menuName":"Tomato Bisque Udon","price":12.99,"category":"yoshoku","menuImg":"./img/udontomato.jpg","explanation1":"Dress with SP Tomato & Pepper Bisque Sauce and come w/Mini Salad(Dress w/Sesame Dressing)","explanation2":"Add Daily Soup & Salad Plus $8.00"},
 
@@ -85,21 +85,21 @@
 
 {"menuId":40,"menuName":"Omu Curry with Garlic Rice add Karaage","price":20.99,"category":"garlic_rice","menuImg":"","explanation1":"Garlic Rice is covered with Thin Omelet and comes with Fukushinzuke(Special Pickles for Japanese Curry).","explanation2":""},
 
-{"menuId":41,"menuName":"Omu-Rice","price":9.99,"category":"ketchup_rice","menuImg":"","explanation1":"Ketchup Rice is cooked with Bacon, Onion, and Mixed Veggie. Thin Omelet Cover on the Rice.","explanation2":""},
+{"menuId":41,"menuName":"Omu-Rice","price":9.99,"category":"ketchup_rice","menuImg":"./img/omurice.jpg","explanation1":"Ketchup Rice is cooked with Bacon, Onion, and Mixed Veggie. Thin Omelet Cover on the Rice.","explanation2":""},
 
-{"menuId":42,"menuName":"Omu-Rice w/Mushroom Tomato Sauce","price":17.99,"category":"ketchup_rice","menuImg":"./img/omu-mushroom.jpg","explanation1":"The Omurice comes with Cheesy Mushroom and Tomato Sauce.","explanation2":""},
+{"menuId":42,"menuName":"Omu-Rice w/Mushroom Tomato Sauce","price":17.99,"category":"ketchup_rice","menuImg":"./img/omurice-mushroom.jpg","explanation1":"The Omurice comes with Cheesy Mushroom and Tomato Sauce.","explanation2":""},
 
 {"menuId":43,"menuName":"Omu-Rice w/Hayashi Sauce","price":17.99,"category":"ketchup_rice","menuImg":"","explanation1":"The Omu-Rice comes with Hayashi Sauce.","explanation2":""},
 
-{"menuId":44,"menuName":"Omu-Rice w/Lobstar Sauce","price":17.99,"category":"ketchup_rice","menuImg":"./img/omu-lob.jpg","explanation1":"The Omu-Rice comes with Lobstar Sauce.","explanation2":""},
+{"menuId":44,"menuName":"Omu-Rice w/Lobstar Sauce","price":17.99,"category":"ketchup_rice","menuImg":"./img/omurice-lob.jpg","explanation1":"The Omu-Rice comes with Lobstar Sauce.","explanation2":""},
 
 
-{"menuId":45,"menuName":"Cheese in Omu-Rice","price":11.99,"category":"ketchup_rice","menuImg":"","explanation1":"There are Cheddar Cheese and Mozzallera Cheese in the Omu-Rice.","explanation2":""},
+{"menuId":45,"menuName":"Cheese in Omu-Rice","price":11.99,"category":"ketchup_rice","menuImg":"./img/omurice-cheese.jpg","explanation1":"There are Cheddar Cheese and Mozzallera Cheese in the Omu-Rice.","explanation2":""},
 
-{"menuId":46,"menuName":"Cheese in Omu-Rice with Mushroom Tomato Sauce","price":19.99,"category":"ketchup_rice","menuImg":"./img/omu-mushroom.jpg","explanation1":"Cheese in Omu-Rice comes w/Cheesy Mushroom Tomato Sauce.","explanation2":""},
+{"menuId":46,"menuName":"Cheese in Omu-Rice with Mushroom Tomato Sauce","price":19.99,"category":"ketchup_rice","menuImg":"./img/omurice-mushroom.jpg","explanation1":"Cheese in Omu-Rice comes w/Cheesy Mushroom Tomato Sauce.","explanation2":""},
 
 {"menuId":47,"menuName":"Cheese in Omu-Rice w/Hayashi Sauce","price":19.99,"category":"ketchup_rice","menuImg":"","explanation1":"Cheese in Omu-Rice comes w/Hayashi Sauce.","explanation2":""},
 
-{"menuId":48,"menuName":"Cheese in Omu-Rice w/Lobstar Sauce","price":19.99,"category":"ketchup_rice","menuImg":"./img/omu-lob.jpg","explanation1":"Cheese in Omu-Rice comes w/Lobstar Sauce.","explanation2":""}
+{"menuId":48,"menuName":"Cheese in Omu-Rice w/Lobstar Sauce","price":19.99,"category":"ketchup_rice","menuImg":"./img/omurice-lob.jpg","explanation1":"Cheese in Omu-Rice comes w/Lobstar Sauce.","explanation2":""}
 
 ]
